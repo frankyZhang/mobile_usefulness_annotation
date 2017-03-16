@@ -1,0 +1,23 @@
+Loading a web page
+TypeError: null is not an object (evaluating '$('logininput').style')
+
+  http://www.cjh.com.cn/resource/js/webcomm.js:67 in onComplete
+  http://www.cjh.com.cn/resource/js/mootools-core.js:57 in e
+  http://www.cjh.com.cn/resource/js/mootools-core.js:58
+  http://www.cjh.com.cn/resource/js/mootools-core.js:106
+  :0 in forEach
+  http://www.cjh.com.cn/resource/js/mootools-core.js:106 in fireEvent
+  http://www.cjh.com.cn/resource/js/mootools-core.js:97
+  http://www.cjh.com.cn/resource/js/mootools-core.js:331 in onSuccess
+  http://www.cjh.com.cn/resource/js/mootools-core.js:97
+  http://www.cjh.com.cn/resource/js/mootools-core.js:357 in success
+  http://www.cjh.com.cn/resource/js/mootools-core.js:97
+  http://www.cjh.com.cn/resource/js/mootools-core.js:329 in onStateChange
+  http://www.cjh.com.cn/resource/js/mootools-core.js:97
+  :0
+{
+    "document.body.scrollHeight": 2985,
+    "document.body.offsetHeight": 751,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2985
+}

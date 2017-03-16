@@ -1,0 +1,438 @@
+<style>
+    .pc-pop{display:none;}
+</style>
+<script>
+//定义搜狗页面需替换的location.href
+window.ourl = "http://wap.sogou.com/web/searchList.jsp?uID=NRsPDU8CCkmoxme8&v=5&w=1274&t=1422857915216&s_t=1422857949287&keyword=&pg=webSearchList";
+
+function getUrlParamByName(paraname) {
+    var str = location.href;
+    var sValue = str.match(new RegExp("[?&]" + paraname + "=([^&]*)(&?)", "i"));
+    if (sValue ? sValue[1] : sValue == null)
+    	return sValue ? sValue[1] : sValue;
+}
+
+var site = "m360",
+	m = getUrlParamByName("m");
+function __init(){
+    var hideList=[],showList=[],css={},
+        css2 = {
+            ".sbs_btns":"clear:both;",
+            ".vr_btns":"clear:both;float:right;position:absolute;top:20px;right:0;z-index:10000",
+            ".vr_btns span":"color:white; margin-right: 10px; padding: 6px 12px;  margin-bottom: 0;  " +
+            "font-size: 14px;  font-weight: normal;  line-height: 0.7;  text-align: center;  white-space: nowrap;  " +
+            "vertical-align: middle;  cursor: pointer;  border: 1px solid transparent;  border-radius: 4px;  " +
+            "-webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;       -o-user-select:" +
+            " none;          user-select: none;text-shadow: 0 -1px 0 rgba(0,0,0,0.2);-webkit-box-shadow: inset 0 1px " +
+            "0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 " +
+            "1px 1px rgba(0,0,0,0.075);",
+            ".sbs_over, .vr_area":"position:relative",
+            ".sbs_over .sbs_btns":"position:absolute;top:20px;left:0;z-index:10000",
+            ".sbs_btns2":"border-top:1px solid #ddd;border-bottom:1px solid #ddd;display:block;position:static;margin-bottom:5px",
+            ".sbs_btns span":"display:none;color:white; margin-right: 10px; padding: 6px 12px;  margin-bottom: 0;  " +
+            "font-size: 14px;  font-weight: normal;  line-height: 0.7;  text-align: center;  white-space: nowrap;  " +
+            "vertical-align: middle;  cursor: pointer;  border: 1px solid transparent;  border-radius: 4px;  " +
+            "-webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;       -o-user-select:" +
+            " none;          user-select: none;text-shadow: 0 -1px 0 rgba(0,0,0,0.2);-webkit-box-shadow: inset 0 1px " +
+            "0 rgba(255,255,255,0.15),0 1px 1px rgba(0,0,0,0.075);box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 " +
+            "1px 1px rgba(0,0,0,0.075);",
+            ".sbs_btns2 span":"line-height:1",
+            ".sbs_reason5 span":"background-image: -webkit-gradient(linear,left 0,left 100%,from(#d9534f),to(#c9302c));background-image: -webkit-linear-gradient(top,#d9534f,0%,#c9302c,100%);background-image: -moz-linear-gradient(top,#d9534f 0,#c9302c 100%);background-image: linear-gradient(to bottom,#d9534f 0,#c9302c 100%);background-repeat: repeat-x;border-color: #c12e2a;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f',endColorstr='#ffc9302c',GradientType=0);",
+            ".sbs_reason4 span":"background-image: -webkit-gradient(linear,left 0,left 100%,from(#f0ad4e),to(#f0ad4e));background-image: -webkit-linear-gradient(top,#f0ad4e,0%,#f0ad4e,100%);background-image: -moz-linear-gradient(top,#f0ad4e 0,#f0ad4e 100%);background-image: linear-gradient(to bottom,#f0ad4e 0,#f0ad4e 100%);background-repeat: repeat-x;border-color: #eb9316;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e',endColorstr='#fff0ad4e',GradientType=0);",
+            ".sbs_reason3 span":"background-image: -webkit-gradient(linear,left 0,left 100%,from(#5cb85c),to(#449d44));background-image: -webkit-linear-gradient(top,#5cb85c,0%,#449d44,100%);background-image: -moz-linear-gradient(top,#5cb85c 0,#449d44 100%);background-image: linear-gradient(to bottom,#5cb85c 0,#449d44 100%);background-repeat: repeat-x;border-color: #419641;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c',endColorstr='#ff449d44',GradientType=0);",
+            ".sbs_reason2 span":"background-image: -webkit-gradient(linear,left 0,left 100%,from(#5bc0de),to(#46b8da));background-image: -webkit-linear-gradient(top,#5bc0de,0%,#46b8da,100%);background-image: -moz-linear-gradient(top,#5bc0de 0,#46b8da 100%);background-image: linear-gradient(to bottom,#5bc0de 0,#46b8da 100%);background-repeat: repeat-x;border-color: #2aabd2;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de',endColorstr='#ff46b8da',GradientType=0);",
+            ".sbs_reason1 span":"background-image: -webkit-gradient(linear,left 0,left 100%,from(#428bca),to(#3071a9));background-image: -webkit-linear-gradient(top,#428bca,0%,#3071a9,100%);background-image: -moz-linear-gradient(top,#428bca 0,#3071a9 100%);background-image: linear-gradient(to bottom,#428bca 0,#3071a9 100%);background-repeat: repeat-x;border-color: #2d6ca2;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca',endColorstr='#ff3071a9',GradientType=0);",
+            ".sbs_btns span.active": "-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);",
+            ".sbs_btns2 span,.sbs_over .sbs_btns span,.sbs_btns span.active":"display:inline-block"
+        };
+
+    if(site == 'sogou') {
+        hideList = [".headsearch, .header", ".hintBox", ".right", ".cr", ".fb a ", ".safetips", ".sponsored", ".foot", "#pagebar_container", "#PZL"];
+        showList = ["#main .results"];
+        css = {".wrapper":"padding-left:0",".fb":"color:white"};
+    }else if(site == 'baidu') {
+        hideList = ["#wrapper>div", "#wrapper>div#wrapper_wrapper>div#container>div","#wrapper>div#wrapper_wrapper>div", "#wrapper>div#container>div", ".to_tieba", "#page", ".m", ".c-tools", ".EC_result", "#content_left>div", ".sftip_com","#content_left>table"];
+        showList = ["#wrapper>div#container",  "#wrapper>div#wrapper_wrapper", "#wrapper>div#wrapper_wrapper>div#container>div#content_left", "#wrapper>div#container>div#content_left", "#wrapper>div#wrapper_wrapper>div#container", "#content_left>div[class^=result]"];
+        css = {"#content_left":"padding-left:0",".f13":"color:white"};
+    }else if(site == '360') {
+        hideList = ["#hd", "#g-hd", "#g-hd-tools", "#warper>div", "#warper>div#container>div", "#warper>div#container>div#main>*", ".m", ".tip-info,.tip-icp,.tip-empty"];
+        showList = ["#warper>div#container", "#warper>div#container>div#main", "#warper>div#container>div#main>ul"];
+        css = {"#container":"padding-left:0",".res-linkinfo":"color:white"};
+    }else if(site == 'msogou') {
+        hideList = [".newver>div", "#mainBody>div","#mainBody>a"];
+        showList = ["div.searchresult","#mainBody>div.results",".newver>div#mainBody", '#mainBody>div.reswrap'];
+        css = {".wrapper":"padding-left:0",".fb":"color:white"};
+    }else if(site == 'mbaidu') {
+        hideList = ['#page>div',"#page_relative","#page_controller","#page-relative","#page-controller"];
+        showList = ["#page>div#page_bd", "#page>div#page-bd"];
+        css = {"#results":"padding-left:0",".f13":"color:white"};
+    }else if(site == 'm360') {
+        hideList = ["#main>div","header","footer","#load-more-wrapper"];
+        showList = ["#main>div.r-results", '#main>div.g-corr-for-onebox'];
+        css = {"#container":"padding-left:0",".res-linkinfo":"color:white"};
+    }else if(site == 'msm') {
+        hideList = ["#content>div",'header','#content>a#pager',"footer"];
+        showList = ["#content>div#results", '#content>div.guide'];
+        css = {"#content":"padding-left:0",".res-linkinfo":"color:white"};
+    }else {//同msogou
+        hideList = [".newver>div", "#mainBody>div","#mainBody>a"];
+        showList = ["div.searchresult","#mainBody>div.results",".newver>div#mainBody", '#mainBody>div.reswrap'];
+        css = {".wrapper":"padding-left:0",".fb":"color:white"};
+    }
+
+    function initStyle(d){
+        var styles = [], i;
+        function addStyle(elem_name, elem_css){
+            styles.push(elem_name,"{",elem_css,"}");
+        }
+        for (i = 0; i < hideList.length; i++){
+            addStyle(hideList[i], "display:none !important");
+        }
+        for (i = 0; i < showList.length; i++){
+            addStyle(showList[i], "display:block !important");
+        }
+        for (i in css){
+            addStyle(i, css[i]);
+        }
+        for (i in css2){
+            addStyle(i, css2[i]);
+        }
+        addStyle('#mainBody > div.vrResult','display:block !important');//显示顶部VR
+        addStyle('#mainBody > div.jiucuo-box','display:block !important');//显示顶部纠错信息
+        var style_node = d.createElement("style");
+        style_node.setAttribute("type", "text/css");
+        d.getElementsByTagName("head")[0].appendChild(style_node);
+        style_node.appendChild(d.createTextNode(styles.join("")));
+    }
+    initStyle(document);
+}
+
+__init();
+</script>
+
+ <div id="page">    
+
+
+
+
+
+<header id="header" class="g-header
+		"> <div class="g-header-search-wrap"> <h1 class="g-header-logo g-night-bgimage"> <a href="/?src=result_logo">360搜索</a> </h1> <div class="g-header-search-box" id="search-box"> <div class="g-header-search-form-container" style="position: relative;"> <form class="g-header-search-form" action="/s" autocomplete="off"> <div class="g-header-input-container"> <textarea id="q" name="q" class="g-header-q" maxlength="100" autocomplete="off" autocorrect="off" x-webkit-speech="" style="height: 40px;">诗经中最唯美的句子</textarea> <span class="g-header-textarea-hidden"></span><input type="hidden" name="rg" value="0"> <input type="hidden" name="_ms" value="0"><input type="hidden" name="log_id" value="1132329"> </div> <button type="submit" class="g-header-search-button g-night-bgimage">搜一下</button> </form> <div class="suggest-container" style="display: none;"><div class="suggest-box" role="listbox"><div class="suggest-content"></div><div class="suggest-toolbar m-1px-t"><div class="suggest-clearhistory m-1px-r" mo-p="suggest-clearhistory">清空历史记录</div><div class="suggest-blank"></div><div class="suggest-close m-1px-l" mo-p="suggest-close">关闭</div></div></div></div><div class="suggest-reset" style="display: none;"></div></div> </div> </div> <div class="g-header-container"> <div class="g-header-nav"> <ul class="nav-item-warp "> <li class="item"> <span>网页</span> <a href="http://m.news.so.com/?src=m_www" data-search="http://m.news.so.com/ns?src=m_www&amp;q=">新闻</a> <a href="http://api.reader.m.so.com/mbook/index.php?src=m_www" data-search="http://api.reader.m.so.com/mbook/index.php?src=m_www&amp;a=search&amp;q=">小说</a> <a href="http://m.image.so.com/?src=m_www" data-search="http://m.image.so.com/i?src=m_www&amp;q=">图片</a> <a href="http://m.map.so.com/?src=m_www#nearby" data-search="http://m.map.so.com/?ie=utf-8&amp;t=map&amp;src=m_www&amp;k=">身边</a> <a class="g-header-nav-more" href="javascript:;">更多</a> </li><li class="item g-header-more-container" id="more-container"> <a href="http://m.map.so.com/?src=m_www&amp;_modeType=map" data-search="http://m.map.so.com/?src=m_www&amp;_modeType=map&amp;q=">地图</a> <a href="http://m.video.so.com/?src=m_www" data-search="http://m.video.so.com/android/search/index.php?src=m_www&amp;kw=">影视</a> <a href="http://m.music.so.com/?src=m_www" data-search="http://m.music.so.com/s?src=m_www&amp;q=">音乐</a> <a href="http://m.wenda.so.com/?src=m_www" data-search="http://m.wenda.so.com/search/?src=m_www&amp;q=">问答</a> <a href="http://m.baike.so.com/?src=m_www" data-search="http://m.baike.so.com/doc/search/?src=m_www&amp;c=doc&amp;a=search&amp;word=">百科</a> </li></ul> </div> </div> </header>    <script>_loader.add("sumext_more_css","http://s8.qhimg.com/static/0db0f2c5e1051b89/result/sumext_more.css").use("sumext_more_css")</script> <section class="page-content"> <div id="main">  <script>_loader.add("zeptoTouchH","http://s8.qhimg.com/static/f0e53254bbf1945b/zepto_touch_h.js"),_loader.add("gallary","http://s8.qhimg.com/static/ae1c4d562222e331/gallary.js"),_loader.add("iScroll5","http://s8.qhimg.com/static/d4aff7543340dbc3/iscroll-probe.js"),_loader.add("novaWidget","http://s8.qhimg.com/static/c8b7de8c67377042/widget.1.0.2.js"),_loader.add("novaCarousel","http://s8.qhimg.com/static/96c41735be3c0bee/carousel.1.0.4.js"),_loader.add("novaSwipable","http://s8.qhimg.com/static/cd00e5b0ab939a47/swipable.1.0.0.js")</script><style>.adv_item{-webkit-box-flex:1;display:block}.adv_item,.adv_item:visited{color:#666}.m-adv-tips b{color:#c00}.adv_item:nth-of-type(1){color:#999}.adv_item.selected{color:#00be3c}#adv_banner{background:#fff;border-bottom:1px solid #d8d8d8;display:none;font-size:12px;height:44px;line-height:44px;text-align:center}</style> <div id="adv_banner"> <a class="adv_item">时间筛选:</a> <a class="adv_item selected" href="/s?q=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90">全部</a>  <a class="adv_item" href="/s?q=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90&amp;adv_t=d">1天内</a>  <a class="adv_item" href="/s?q=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90&amp;adv_t=w">1周内</a>  <a class="adv_item" href="/s?q=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90&amp;adv_t=m">1月内</a>  <a class="adv_item" href="/s?q=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90&amp;adv_t=y">1年内</a>  </div> <script>_loader.use("zepto",function(){if($("body").hasClass("fullscreen"))return;var e=$(window),t=$("#adv_banner"),n=Math.max(window.innerHeight,600),r=20,i=!1,s=function(){var e={mod:"advSearch"};window.monitor&&monitor.log(e,"msodisp")},o=function(){var u=e.scrollTop();u>n&&(i=!0),u<r&&i&&(t.css("display","-webkit-box"),$("#appBnnr").hide(),MSO.cookie("res_adv_filter",monitorConfig.q),e.off("scroll",o),s())};e.on("scroll",o)})</script> <div class="r-results"><script>monitorSids=this.monitorSids||[];monitorSids[0]="eae927a7551b9b83d3694d766a87117a"</script>                    <style type="text/css">
+.e_idea_list {background-color: #fff;margin: 6px 0 0;padding:15px 15px 7px;word-break: break-word;}
+.e_idea_list .appdown{background-color: #effaec;padding:2px 8px;border: 1px solid #a8d1a7;color: #38aa07;line-height: 26px;text-align: center;}
+.e_idea_list a.call{float:right;}
+.e_idea_list .callphone{padding:0;color: #666;line-height:28px;padding-left:8px}
+.e_idea_list .callphone i.icon-phone {display:inline-block;background-image: url(http://p4.qhimg.com/t012843920f27a4ad7b.png);height: 15px;width: 13px;margin-right: 3px;vertical-align:-2px;background-size: cover;}
+.e_biyi_childLink{border-color:#e2e2fa;color:#00f;margin:.4em 0 .4em;text-align:left}
+.e_biyi_childLink a{padding-left:12px;padding-right:10px;background: url(http://p2.qhimg.com/t011b8b05133cae20ad.png) 0 2px no-repeat;}
+.e_biyi_childLink a.first{padding-left:0; background:none}
+.e_idea_mobile{width:75px;display: block;height: 75px;margin: 0 15px 0 0;border:1px solid #eaeaea}
+.e_idea_mobile img.applogo{width:75px;height:75px;}
+.applogo_small{width:25px;height:25px; float:left; border-radius:5px;}
+.e_idea_desc{margin-bottom: 2px;height:22px;-webkit-line-clamp:1;line-height:22px;display:-webkit-box;overflow: hidden;white-space: normal; text-overflow:ellipsis}
+.eidea_height2{height:auto;max-height:48px;-webkit-line-clamp:2; line-height:22px;white-space: normal;}
+.eidea_height3{height:auto;max-height:72px;-webkit-line-clamp:3; line-height:22px;white-space: normal;}
+.e_idea_list a.title h3 {color: #03c;}
+.e_idea_list .e_idea_title {height:22px;overflow:hidden;color: #03c;font-size: 18px;padding-bottom: 15px;text-decoration: none;white-space:nowrap; text-overflow:ellipsis}
+.e_idea_list a:visited.title h3, .e_idea_list a:visited.title {color: purple;}
+.e_idea_list a.title {color: #222;}
+.e_idea_list .title {display: block;z-index: 9;}
+.e_idea_list a {text-decoration: none;}
+.e_idea_list .content {color: #222;word-break: break-all;-webkit-box-orient: horizontal;display: -webkit-box;-webkit-line-clamp: 3;overflow: hidden;text-overflow: ellipsis;}
+.e_idea_list .des_cont{-webkit-box-flex: 1;}
+.e_idea_list .res-supplement{padding:5px 0 0;}
+.e_idea_showurl{color: #999;font-size: 12px;line-height: 22px;margin-right: 8px;}
+.e_idea_sitename {color: #093;}
+.e_idea_list em, .e_idea_list b {color: #da142b;}
+</style>
+<script type="text/javascript">
+var eLogAndPv={sendlog:function(e){if(document.getElementById(e)){var t=document.getElementById(e),n=this,__this=this;function a(e){function n(){return(new Date).getTime()}function r(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}var i,s,o=(new Date).getTime(),u=function(e){i=n();var r,e=window.event||e,s=e.srcElement||e.target;for(var d=1;d<10;d++){if(s.getAttribute("e_href"))break;s=s.parentNode;if(s==t||s.nodeName=="BODY")return}r=s.getAttribute("e_href"),s.setAttribute("href",r+"&st="+o+"&dd="+i)},a=function(e){var e=window.event||e,r=e.srcElement||e.target;for(var i=1;i<10;i++){if(r.getAttribute("e_href"))break;r=r.parentNode;if(r==t||r.nodeName=="BODY")return}var s=r.getAttribute("href"),o=n();r.setAttribute("href",s+"&ud="+o)};r(t,"mousedown",u),r(t,"mouseup",a)}a(e)}},sendpv:function(e){if(document.getElementById(e)){document.getElementById(e).submit()}}};
+</script>
+       <iframe width="0" height="0" id="e_idea_frame_1" name="e_idea_frame_1" frameborder="0" scrolling="no" style="display:none"></iframe>
+<form action="http://e.tf.360.cn/search/mpv?rt=14669500746166&amp;pl=0" style="display:none" method="post" id="e_idea_form_1" target="e_idea_frame_1">
+    <input type="hidden" id="e_count_pv" name="asin" value="f5a6YJYnKypr4kuy25wZ8FGCqRWmKHv9Ge0E2OKjvmytxDY8LRZOnsEGFjwJ9uFzphNSTQC4bv9G4L72yHrfpBSeuFq8g_G8bj-ap98fTvL8LdwnQVkdB4XDqJvMFibjbDSGJSeMpPw43pKNg7RCZq0nCvQqdpM75FTaSIgSJGfh0y99ebEkMqkdG0rXy3dqtYs6V4WyUZUjueFIomsVJIHxwUwCR0sffDsdALYqFpIS9Z7-dazlercKhcNDmK-hF_syOBVpEM_LMNEaZQBSkMjkB7a3uhzg7YizqkydH-zxBn6f6xMDRSab_AfoZBZC-0Oog0pzv9OwiONbJAHtj6cYmJ_oHd634a7OJi8PvVBlVlD6Cw2FkoDO1rXUEWACWRyiY1HH5yJr2lXpUJqSE30bLBmeRHX6p3nIAqYCtrmEvtvfsZriP4IzzZE-bHhhfcwmATNl2EQqkE2Q3XWq3-zV6g6Xd4_XlAHJ8kspBQvAWo4LACMx-8qvsQ_2Rw3wlb27SXEn4E9jVQ">
+</form>
+<script type="text/javascript">
+        eLogAndPv.sendpv("e_idea_form_1");//pv上报函数，参数为要上报pv的form的id
+</script>                            <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;transnew&quot;}" data-img-loaded="1"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Findex.php%3Fa%3DnewTranscode%26u%3Dhttp%253A%252F%252Fwww.gkstk.com%252Farticle%252Fwk-75537945857379.html%26m%3D2f1f52fbe68f9b5eb1a3458691f7d70f8a303ca8%26q%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26t%3Dnews%26sid%3Deae927a7551b9b83d3694d766a87117a&amp;m=d6adb7&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90%2C%E8%AF%97%E7%BB%8F" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>(带译文) </h3><div class="g-time">2016年2月10日</div>  <div class="g-main"> <div class="summary"> 1、关关雎鸠,在河之洲,窈窕淑女,君子好逑。《<b>诗经</b>•国风•周南•关雎》译:水鸟应和声声唱,成双在河滩。美丽贤德的好姑娘,正是我的好伴侣。2、... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">www.gkstk.com</cite> </div> </div>                                <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;transnew&quot;}" data-img-loaded="1"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Findex.php%3Fa%3DnewTranscode%26u%3Dhttp%253A%252F%252Fwww.wsh0511.com%252FArticle%252F201606%252F26%252F20153.html%26m%3Da1bbd002133b29fdef2fb64caf8faf3ecfbbd6d1%26q%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26t%3Dnews%26sid%3Deae927a7551b9b83d3694d766a87117a&amp;m=fd988f&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>，正如上面所说 </h3><div class="g-time">12小时前</div>  <div class="g-main"> <div class="summary"> <b>诗经中最唯美的句子</b> 正如上面所说,无论是几天进行一次性爱,只要是在夫妻共同达成一致的基础上即可。但也要注意,男女的性需求标准是不一样的,... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">www.wsh0511.com</cite> </div> </div>                                <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;transnew&quot;}" data-img-loaded="1"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Findex.php%3Fa%3DnewTranscode%26u%3Dhttp%253A%252F%252Fwww.wsh0858.com%252FArticle%252F201606%252F25%252F18096.html%26m%3D53e4372ca3096a3dc6307e14e175b6ea6ca96ad5%26q%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26t%3Dnews%26sid%3Deae927a7551b9b83d3694d766a87117a&amp;m=354829&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>，正如上面所说 </h3><div class="g-time">23小时前</div>  <div class="g-main"> <div class="summary"> <b>诗经中最唯美的句子</b> 正如上面所说,无论是几天进行一次性爱,只要是在夫妻共同达成一致的基础上即可。但也要注意,男女的性需求标准是不一样的,... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">www.wsh0858.com</cite> </div> </div>                                   <div class="g-card"> <div class="mso-recommend-related res-list mb" data-cat="mso-recommend-normal-rel-1" data-img-loaded="1"> <div class="mso-recommend-box"> <h3 class="res-title"><b>91%</b>的人还搜了：</h3> <ul class="mso-recommend-box-list"> <li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E6%25A5%259A%25E8%25BE%259E%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=cdf925&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t01ddca65cea2d88448.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">楚辞</strong> </a>  </li><li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E4%25B8%25AD%25E5%259B%25BD%25E6%259C%2580%25E7%25BE%258E%25E5%258F%25A4%25E8%25AF%2597%25E8%25AF%258D%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=7f639e&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t015b7a2f218ad57c7e.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">中国最美古诗词</strong> </a>  </li><li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E5%2594%2590%25E8%25AF%2597%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=632e93&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t01d379e676d5a2921c.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">唐诗</strong> </a>  </li><li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%2592%25B9%25E8%2591%25AD%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=e1c9bd&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t01747983cc2cbffd06.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">蒹葭</strong> </a>  </li></ul> </div> <div class="related-search-b"> <div class="related-search-waterflow"> <ul> <li> <div> <a data-index="0" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Drel&amp;m=7cdd8e&amp;from=m.so.com">诗经中唯美的句子</a> </div> </li><li> <div> <a data-index="1" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E7%25BB%258F%25E5%2594%25AF%25E7%25BE%258E%25E5%258F%25A5%25E5%25AD%2590%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Drel&amp;m=987070&amp;from=m.so.com">诗经唯美句子</a> </div>  </li><li> <div> <a data-index="2" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E7%25BB%258F%25E9%2587%258C%25E7%259A%2584%25E5%2594%25AF%25E7%25BE%258E%25E5%258F%25A5%25E5%25AD%2590%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Drel&amp;m=fd9f23&amp;from=m.so.com">诗经里的唯美句子</a> </div> </li><li> <div> <a data-index="3" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E7%25BB%258F%25E9%2587%258C%25E9%259D%25A2%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Drel&amp;m=fa96ce&amp;from=m.so.com">诗经里面唯美的句子</a> </div>  </li><li> <div> <a data-index="4" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E7%25BB%258F%25E9%2587%258C%25E6%259C%2580%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Drel&amp;m=f49a97&amp;from=m.so.com">诗经里最美的句子</a> </div> </li><li> <div> <a data-index="5" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Drel&amp;m=81a2bf&amp;from=m.so.com">诗经中最美的句子</a> </div>  </li></ul> </div> </div> </div> </div>                                  <div class="g-card res-list mso sumext-wenda sumext-wenda-b fix-height time-mb g-clearfix " data-cat="mso-wenda-longsummary" data-jss="{&quot;urlType&quot;:&quot;web&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fwenda.so.com%2Fq%2F1450009096722075%3Fsrc%3D140&amp;m=593597&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90%2C%E8%AF%97%E7%BB%8F" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>有我爱你静静_360问答 </h3>  <div class="g-time"> <span class="tag">360问答 -</span> 2015年12月11日  </div> <div class="g-main"> <div class="summary2"> <div class="no-show" id="no-show"> <b>诗经</b>里多用吾,女,孰,君,等,不会出现白话的“我”“你”等称呼 </div> <div class="info g-clearfix"> <div class="txt-wrap-b" data-len="31"> <div class="con-inner sumext-line-3"> <i class="tag-best-answer"></i> <b>诗经</b>里多用吾,女,孰,君,等,不会出现白话的“我”“你”等称呼 </div> </div> </div> </div> </div> </a> <div class="g-clearfix all-show-wrap" style="display: none;"> <a href="http://m.so.com/jump?u=http%3A%2F%2Fwenda.so.com%2Fq%2F1450009096722075%3Fsrc%3D140&amp;m=593597&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90%2C%E8%AF%97%E7%BB%8F" class="all-show-content" data-md="{&quot;b&quot;:&quot;fulltext&quot;}">查看全文</a> </div> <a href="javascript:void(0)" class="sumext-wenda-b-more sumext-arrow-b" data-md="{&quot;b&quot;:&quot;expand&quot;}" style="display: none;">展开</a> </div><script>_loader.use("zepto",function(){var e=$(".sumext-wenda-b-more");e.each(function(){var e=$(this),t=e.parents(".g-card").find(".txt-wrap-b"),n=e.parents(".g-card").find("#no-show"),r=e.parents(".g-card").find(".con-inner"),i=e.parents(".g-card").find(".sumext-wenda-b"),s=e.parents(".g-card").find(".all-show-content"),o=e.parents(".g-card").find(".all-show-wrap");o.eq(0).hide();if(!t.data("show")){function u(){t.data("show")||(n.height()>110?(t.addClass("sumext-line-3"),i.removeClass("fix-height"),e.show(),e.css("display","block"),t.data("show",1)):e.hide())}u(),MSO.Observer.subscribe("fold-expand",u)}e.data("click")||(e.on("click",function(){t.hasClass("sumext-line-3")?(t.removeClass("sumext-line-3"),r.removeClass("sumext-line-3"),e.removeClass("sumext-arrow-b").addClass("sumext-arrow-t"),e.attr("data-md",'{"b":"packup"}'),e.text("\u6536\u8d77"),o.eq(0).show(),parseInt(t.data("len"))>500&&s.show()):(t.addClass("sumext-line-3"),r.addClass("sumext-line-3"),e.removeClass("sumext-arrow-t").addClass("sumext-arrow-b"),e.attr("data-md",'{"b":"expand"}'),e.text("\u5c55\u5f00"),o.eq(0).hide(),s.hide())}),e.data("click",1))})})</script>                                  <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;transnew&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Findex.php%3Fa%3DnewTranscode%26u%3Dhttp%253A%252F%252Fwww.chachaba.com%252Fnews%252Fyulu%252Fqgyl%252F20160224_266315.html%26m%3De4f374f2e9a67760aea7fba7c132269888021473%26q%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26t%3Dnews%26sid%3Deae927a7551b9b83d3694d766a87117a&amp;m=c5cb6f&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中</em><em>唯美的句子</em>精选<em>诗经中最唯美的句子</em> </h3><div class="g-time">2016年2月24日</div>  <div class="g-main"> <div class="summary"> <b>诗经中</b>有很多<b>唯美的句子</b>,下面精选了一些<b>诗经中</b><b>唯美的句子</b>,一起来看看<b>诗经中最唯美的句子</b>吧! 1、北风其凉,雨雪其雾。惠而好我,携手同行。 2、... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">www.chachaba.com</cite> </div> </div>                                <div class=" g-card res-list og " data-jss="{&quot;urlType&quot;:&quot;wap&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.wenda.so.com%2Fq%2F1457435492724728%3Fsrc%3D110&amp;m=b29c5e&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em> 名字大全集_360问答 </h3>    <p class="g-main summary">    青青子衿,悠悠我心。纵我不往,子宁不嗣音!   青青子佩,悠悠我思。纵我不往,子宁不来!   挑兮达兮,在城阙兮。一日不见,如三月兮!     (求采纳)  </p></a>   <div class="res-supplement"> <cite class="res-show-url">m.wenda.so.com</cite></div>  </div>                              <div class="g-card"> <div class="mso-recommend-related res-list mb" data-cat="mso-recommend-normal-1" data-img-loaded="0"> <div class="mso-recommend-box"> <h3 class="res-title">相关古诗</h3> <ul class="mso-recommend-box-list"> <li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E5%25AD%2590%25E8%25A1%25BF%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=3b8cb3&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t01e4ab64fea8b22674.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">子衿</strong> </a>  </li><li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E6%25A1%2583%25E5%25A4%25AD%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=36da50&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t01f22c3a5fdbca8cf5.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">桃夭</strong> </a>  </li><li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E9%259D%2599%25E5%25A5%25B3%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=1ee2fd&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t017d3483a181440f84.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">静女</strong> </a>  </li><li> <a href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Fs%3Fq%3D%25E8%25AF%2597%25E8%25AF%258D%26pq%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26src%3Dmso_recommend&amp;m=0fda87&amp;from=m.so.com"> <div data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic g-night-bgimage" style="background-image:url(http://p8.qhimg.com/dmsmty/180_180_80/ss/40_130/t0183ced895bcc500f8.webp)"> </div> <strong data-md="{&quot;b&quot;:&quot;word&quot;}" class="name">诗词</strong> </a>  </li></ul> </div> </div> </div>                               <div class="g-card sumext-news res-list mso " data-cat="mso-news-pic" data-jss="{&quot;urlType&quot;:&quot;wap&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Flizhi.shangc.net%2Fa%2F201602%2F19295.html&amp;m=41bab8&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90%2C%E5%8F%A5%E5%AD%90" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>世界上最美100情诗美到尘埃里 </h3><span class="g-time" data-cls="news">2016年2月23日</span>  <div class="g-main sumext-pic-con"> <figure data-md="{&quot;b&quot;:&quot;pic&quot;}" class="pic"> <img data-index="0" data-delay-src="http://p8.qhimg.com/dmsmflm/150_150_/ss/40_130/t01c3fbb4a100444b73.webp"> </figure> <section data-md="{&quot;b&quot;:&quot;brief&quot;}" class="con"> <div class="summary"> 时间:2016-02-23 16:11:37 来源:经典<b>句子</b>网 编辑:经典<b>句子</b>网 1、关关雎鸠,在河之洲,窈窕淑女,君子好逑。《<b>诗经</b>·国风·周南·关雎》 译:水鸟应... </div> </section> </div> </a> <div class="res-supplement"> <cite class="res-show-url">lizhi.shangc.net</cite> </div> </div>                                   <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;wap&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.qqtn.com%2Fc%2F118127&amp;m=839b78&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90%2C%E8%AF%97%E7%BB%8F" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>解释带翻译的<em>诗经</em><em>唯美的句子</em> </h3><div class="g-time">2015年12月1日</div>  <div class="g-main"> <div class="summary"> 带翻译的<b>诗经</b><b>唯美的句子</b> 日期: 2015/12/1 16:18:00人气: 0我来评论 导读:到现在我都会梦到你我们第一次见面的时候。那时候觉得没什么。可是现... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">m.qqtn.com</cite> </div> </div>                             <div class=" g-card res-list og " data-jss="{&quot;urlType&quot;:&quot;trans&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Findex.php%3Fa%3DnewTranscode%26u%3Dhttp%253A%252F%252Fwww.qqjia.com%252Fjuzi%252Fjuzi3301.htm%26m%3D3645c07a287901395c1ae7ec36a7ccae45d702ba%26q%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26sid%3Deae927a7551b9b83d3694d766a87117a&amp;m=e3f9b9&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%2C%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最</em><em>美的句子</em>_<em>唯美的句子</em> - 碧云轩-QQ家园 </h3>    <p class="g-main summary">   上一篇:2014<b>最唯美的句子</b>_<b>唯美的句子</b> 下一篇:六一儿童节的现代诗句_<b>优美</b>的诗句 关注碧云轩 猜你喜欢 感恩父母的一段话_经典<b>语句</b> 暖心<b>的句子</b>_经典语句 羊年辞旧迎新的句子...  </p></a>   <div class="res-supplement"> <cite class="res-show-url">www.qqjia.com</cite></div>  </div>                           <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;transnew&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fm.so.com%2Findex.php%3Fa%3DnewTranscode%26u%3Dhttp%253A%252F%252Flizhi.shangc.net%252Ft%252F782%252Findex.html%26m%3D444db1659bbaa7b5ff6f165f460e65d06bdd7e6b%26q%3D%25E8%25AF%2597%25E7%25BB%258F%25E4%25B8%25AD%25E6%259C%2580%25E5%2594%25AF%25E7%25BE%258E%25E7%259A%2584%25E5%258F%25A5%25E5%25AD%2590%26t%3Dnews%26sid%3Deae927a7551b9b83d3694d766a87117a&amp;m=9b9d51&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90%2C%E8%AF%97%E7%BB%8F" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em>八个字的<em>唯美句子</em> </h3><div class="g-time">2016年1月14日</div>  <div class="g-main"> <div class="summary"> “关关雎鸠,在河之洲。窈窕淑女,君子好逑” 。 一提起《<b>诗经</b>》 ,大家脑海中首先出现的应该就是这首《关雎》吧。《<b>诗经</b>》<b>中最唯美的</b>诗句你还... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">lizhi.shangc.net</cite> </div> </div>                                <div class="g-card sumext-news res-list mso " data-cat="mso-news" data-jss="{&quot;urlType&quot;:&quot;wap&quot;}" data-img-loaded="0"> <a class="alink" href="http://m.so.com/jump?u=http%3A%2F%2Fwww.shanxiol.com%2Finfo%2F2015-10%2F28112845.html&amp;m=c2060e&amp;from=&amp;words=%E8%AF%97%E7%BB%8F%E4%B8%AD%E6%9C%80%E5%94%AF%E7%BE%8E%E7%9A%84%E5%8F%A5%E5%AD%90" data-md="{&quot;b&quot;:&quot;title&quot;}"> <h3 class="res-title "> <em>诗经中最唯美的句子</em> </h3><div class="g-time">2015年10月28日</div>  <div class="g-main"> <div class="summary"> <b>诗经中最唯美的句子</b> 发布时间:2015-10-28 19:04 | 文章来源:邵叶翠 1、终风且暴,顾我则笑。谑浪笑敖,心中是悼。 2、北风其凉,雨雪其雾。惠而好... </div> </div> </a> <div class="res-supplement"> <cite class="res-show-url">www.shanxiol.com</cite> </div> </div>       <div id="mso-artifical"></div> <div id="mso-regional"></div>  </div> <div id="load-more-wrapper" class="g-night-bgcolor"> <div id="load-more" class="load-more g-night-bgcolor" data-q="诗经中最唯美的句子"> <div class="logo-icon"></div> </div> </div> <div id="load-more-nodata" class="g-night-bgcolor"> 没有更多结果了~ </div> <script id="stc_result_folding_js">(function(e){function t(){clearTimeout(l),s.removeEventListener("load",t);if(ENV.msoapp&&ENV.android)try{window.mso_app.pageFinish()}catch(e){}setTimeout(function(){MSO.Observer.publish("page:load")},10)}function n(e){var t=e.querySelectorAll("img[data-delay-src]");for(var n=0;n<t.length;n++){var r=t[n];r.setAttribute("src",r.getAttribute("data-delay-src")),r.removeAttribute("data-delay-src")}var i=e.querySelectorAll("[data-delay-style]");for(var n=0;n<i.length;n++){var s=i[n];s.setAttribute("style",s.getAttribute("data-delay-style")),s.removeAttribute("data-delay-style")}}function r(){var e=u.clientHeight,t=0;for(var i=0;i<a.length;i++){var o=a[i];if(o.getAttribute("data-img-loaded")=="1")continue;t++;var f=o.getBoundingClientRect(),l=f.top,c=f.bottom;if(l==0&&c==0)continue;e-l>-10&&c>-10&&(o.setAttribute("data-img-loaded","1"),n(o))}t||s.removeEventListener("scroll",r)}function i(){o.className=o.className.replace(/(\s+|^)(result-folding|result-folding-\d+)(?=\s+|$)/ig," ").replace(/(\s+|^)(fullscreen)(?=\s+|$)/ig,"fullscreen fullscreen-nofolding"),u.className=u.className.replace(/(\s+|^)(mohe-fullscreen)(?=\s+|$)/ig," "),f&&(f.style.display="none"),MSO.Observer.publish("fold-expand"),r()}var s=window,o=e.body,u=e.documentElement,a=o.querySelectorAll(".e_idea_list, .res-list"),f=e.getElementById("only-one-answer");s.addEventListener("load",t);var l=setTimeout(t,2e3);for(var c=0;c<a.length;c++){var h=a[c];h.setAttribute("data-img-loaded","0")}MSO.Observer.subscribe("page:load",function(){s.addEventListener("scroll",r),r();var e=document.querySelector("#header");e&&n(e)}),MSO.Observer.subscribe("fullscreen-fold",function(){if(o.className.indexOf("result-folding")==-1)return;u.className+=" mohe-fullscreen",o.className+=" fullscreen"}),MSO.Observer.subscribe("fullscreen-expand",function(){i()}),f&&f.addEventListener("click",function(e){e.preventDefault(),i()},!1),document.querySelector(".g-mohe.g-cool, .mso-site-cool")&&(document.documentElement.className+=" env-cool")})(document)</script><script>LS.html2ls("stc_result_folding_js","stc_result_folding_js");LS.updateVersion('stc_ls','W','R')</script> </div></section>   </div>       <div class="mohe-pull-loading" style="display:none"> <svg><circle cx="15" cy="15" r="13" stroke="#3eaf1e" stroke-width="2" transform="rotate(-90,15,15)" fill="none"></circle></svg> <span class="mh-tips"></span></div>  <script id="stc_result_header_js">_loader.add("suggest","http://s8.qhimg.com/static/81ece8b2066c1956/suggest.js").use("zepto,suggest",function(){var e=encodeURIComponent,t=window.Suggest;(function(){var e=function(e){var t=document.createElement("pre"),n=document.createTextNode(e);return t.appendChild(n),e=t.innerHTML.replace(/\s/g,"&nbsp;"),e},t=$("#header"),n=document.getElementById("q"),r=document.querySelector(".g-header-textarea-hidden"),i=document.querySelector(".g-header-search-form-container"),s=document.querySelector(".g-header-search-form"),o=document.getElementById("search-box"),u=document.querySelector(".g-header-logo"),a=r.offsetHeight,f=function(s){t.addClass("g-header-status-nologo"),setTimeout(function(){r.innerHTML=e(n.value),r.offsetHeight>=64?(/\bmore-line\b/.test(i.className)||(i.className+=" more-line"),n.style.height="64px",ENV.ios&&(n.style.height="63px",setTimeout(function(){n.style.height="64px"},1))):l(),Math.abs(r.offsetHeight-a)>5&&(a=r.offsetHeight,MSO.Observer.publish("bodyHeight:change"))},155)},l=function(){n.style.height="40px",i.className=i.className.replace(/\s*more-line/,"")};n.addEventListener("focus",f,!1),n.addEventListener("input",function(e){if(/[\r\n]/.test(this.value)){this.value=this.value.replace(/[\r\n]/g,"");try{var t=document.createEvent("HTMLEvents");t.initEvent("submit",!1,!0),s.dispatchEvent(t)}catch(e){}s.submit();return}f()},!1),MSO.Observer.subscribe("orientation:change",function(e){setTimeout(l,90)}),MSO.Observer.subscribe("searchHeight:change",function(){l()}),MSO.Observer.subscribe("suggest:close",function(){t.removeClass("g-header-status-nologo")})})(),function(){var n=$(".g-header-nav-more"),r=$(".g-header-more-container"),i=$(".g-header a[data-search]"),s=$(".nav-item-warp");n.on("click",function(){s.toggleClass(function(e,t){var r=$(this);return r.is(".nav-show-more")?(r.removeClass("nav-show-more"),n.html("\u66f4\u591a"),""):(n.html("\u6536\u8d77"),"nav-show-more")}),MSO.Observer.publish("bodyHeight:change")}),i.each(function(t,n){$(n).on("click",function(){var t=this.getAttribute("data-search"),n=e($(".g-header-q").val().trim());n&&t&&(this.href=t+n)})}),["g-header-"].forEach(function(e){var n=$("."+e+"q"),r=$("."+e+"search-form-container"),i=$("."+e+"search-form"),s=$("."+e+"search-box-reset");new t({elements:{input:n[0],wrap:r[0]}})})}()})</script><script>LS.html2ls("stc_result_header_js","stc_result_header_js");LS.updateVersion('stc_ls','0','S')</script><script>wpo.tti=new Date*1-wpo.start</script> <script>MSO.relatedData = ['诗经中唯美的句子','诗经唯美句子','诗经里的唯美句子','诗经里面唯美的句子','诗经中最美的句子','诗经里最美的句子','诗经最美的句子','诗经中关于花的句子','诗经中描写花的句子','诗经中励志的句子'];MSO.storage.setItem('guessulike', MSO.relatedData.slice(0, 8).join('|||'))</script> <div id="tantan" data-cat="ad-tantan"></div><script id="stc_tantan_seed_js">(function(){var e=document.getElementById("tantan"),t=e.getAttribute("data-topicid");if(t=="56dfee46a15903a7538b46e2"){_loader.add("marquee","http://s8.qhimg.com/static/f05109e4921c725c/marquee.js"),_loader.add("tantan","http://s8.qhimg.com/static/1b0374cdcf12f320/tantan.js"),_loader.use("zepto,marquee,tantan",function(){new MSO.Tantan(t)});return}})()</script><script>LS.html2ls("stc_tantan_seed_js","stc_tantan_seed_js");LS.updateVersion('stc_ls','X','R')</script><script id="stc_result_basic_js">(function(){if(!/(360 Aphone|mso_app)/i.test(navigator.userAgent)){MSO.Observer.publish("oia-ready",!1);return}var e=50;setTimeout(function t(){e--,e?window.openinapp_packagename_list?MSO.Observer.publish("oia-ready",window.openinapp_packagename_list):setTimeout(t,10):MSO.Observer.publish("oia-ready",!1)},1)})(),MSO.Observer.subscribe("oia-ready",function(e){var t=["com.qihoo.gaia","com.qihoo.haosou"],n={};if(e)for(var r in e)for(var i=0;i<t.length;i++){var s=t[i];r===s&&(n[s]=1)}if(MSO.cookie){MSO.cookie("env_noapp",!1),MSO.cookie("env_noapp_mso",!1),MSO.cookie("env_noapp_gaia",!1);if(typeof ENV!="undefined"&&!ENV.msoapp){var o="";for(var i=0;i<t.length;i++){var s=t[i];n[s]?o+="1":o+="0"}o=parseInt(o,2).toString(),MSO.cookie("env_app_status",o,{path:"/",expires:7})}}}),function(){var e="http://127.0.0.1:38517",t=encodeURIComponent,n={_id:1,_jsonp:function(e,t,r){var i="zscb"+n._id++,s=document,o=s.head,u=s.createElement("script");window[i]=function(e){t&&t(e)},u.onerror=r,u.src=e+(e.indexOf("?")>-1?"&":"?")+"callback="+i+"&_="+ +(new Date),o.insertBefore(u,o.firstChild)},_sign:function(e,r,i){n._jsonp("http://openbox.mobilem.360.cn/qing/spiritkey?key="+t(e),function(e){r(e.sign)},i)},ready:function(t){var r=0,i,s,o=function(){if(r>=15){if(s)return;t(!1),s=!0;return}n._jsonp(e+"/getClientInfo",function(){clearTimeout(i);if(s)return;t(!0),s=!0},function(){clearTimeout(i),r++,o()}),i=setTimeout(function(){r++,o()},50)};o()},install:function(r,i,s){n._sign(s,function(o){n._jsonp(e+"/in?name="+t(r)+"&logo="+t(i)+"&url="+t(s)+"&sign="+o)})},isInstalled:function(r,i){var s=function(e){i(e.isInstalled)},o=function(){i(!1)};n._sign(r,function(i){n._jsonp(e+"/isAppInstalled?packageName="+t(r)+"&sign="+i,s,o)},o)}};window.ZSInstall=n}(),function(){function e(){r.style.display="none",r.innerHTML=""}function t(){MSO.cookie("r_noad","1",{path:"/",domain:"",expires:7})}function n(e){var t=["com.qihoo.gaia","com.qihoo.haosou"],n=parseInt(MSO.cookie("r_ad_clicked"),10)||0,r={"com.qihoo.gaia":n&2,"com.qihoo.haosou":n&1};r[e]=1;var i="";for(var s=0;s<t.length;s++){var o=t[s];r[o]?i+="1":i+="0"}i=parseInt(i,2).toString(),MSO.cookie("r_ad_clicked",i,{path:"/",expires:7})}var r=document.getElementById("appBnnr");if(!r)return;var i=r.querySelector("a"),s=r.querySelector("i.close"),o=r.querySelector("img.icon"),u=i.href;if(document.querySelector("html#null")){e();return}if(document.querySelector(".g-mohe.g-cool, .mso-site-cool")){e();return}r.style.visibility="visible",i.href="###nogo",o&&MSO.Observer.subscribe("page:load",function(){o.src=o.getAttribute("data-delay-src"),o.removeAttribute("data-delay-src")}),i.addEventListener("click",function(e){e.preventDefault(),i.className+=" clicked";var r=i.getAttribute("data-name"),s=i.getAttribute("data-icon"),o=i.getAttribute("data-pkg");o?n(o):t(),r&&s?ZSInstall.ready(function(e){e?ZSInstall.install(r,s,u):(ENV.weixin&&(u="http://openbox.mobilem.360.cn/qcms/view/t/detail?sid=2455251"),location.href=u)}):location.href=u}),s&&s.addEventListener("click",function(n){n.stopPropagation(),e(),t()})}(),function(){var e=document.getElementById("mso-speed-tips");e&&e.querySelector("i").addEventListener("click",function(t){t.preventDefault(),e.className=""})}(),function(){var e=document.querySelector("div.r-results")||document.body,t=[e.clientWidth-12,ENV.webp?1:0,window.devicePixelRatio||1];t=t.join("!"),MSO.cookie("mso_ext",t,{path:"/",domain:"",expires:300})}(),_loader.use("zepto",function(){var e=$(".switch-close");e.length&&e.on("click",function(){$(".switch-version").parent(".g-card").hide(),MSO.cookie("r_notip",1,{path:"/",domain:"",expires:7})})}),function(){var e=document.querySelectorAll(".g-mohe a");for(var t=0;t<e.length;t++){var n=e[t];if(!/\/s\/?\?q=/i.test(n.href))continue;if(/&srcg=/i.test(n.href))continue;n.href+="&srcg="+encodeURIComponent(monitorConfig.srcg),location.href.indexOf("&nav=0")>-1&&(n.href+="&nav=0")}}(),function(e,t){var n=t.getElementById("mso-goto-top");if(!n)return;_loader.use("zepto",function(){$(n).on("click",function(){var e=$(this);e.toggleClass("open")}).on("click",".gotop",function(){function e(e){var i=(new Date-r)/s;i>=1?(clearTimeout(n),t.body.scrollTop=0):t.body.scrollTop=Math.round((1-i*i)*o)}var n,r,i=13,s=350,o=window.scrollY;return r=new Date,n=setInterval(e,i),!1}).on("click",".panel li",function(){var e=$(this),t=e.find("a"),n=e.data("cat");MSO.Observer.subscribe("monitordo:ok",function(){monitor.log({mod:"waterfall",cat:n},"msoclick")})}).on("click",function(){var e=$(this),t=e.hasClass("open")?"toolspanel_open":"toolspanel_close";MSO.Observer.subscribe("monitordo:ok",function(){monitor.log({mod:"waterfall",cat:t},"msoclick")})}).on("click",".panel li, .mso-goto-top-wrap",function(){var e=$(this);e.addClass("active"),setTimeout(function(){e.removeClass("active")},100)})});var r=Math.max(e.innerHeight,600);e.addEventListener("scroll",function(){var e=t.body.scrollTop,i=n.className;~i.indexOf("open")&&(n.className="show"),e>r?i||(n.className="show",MSO.Observer.subscribe("monitordo:ok",function(){monitor.log({mod:"waterfall",cat:"toolspanel"},"msodisp")})):i&&(n.className="")})}(window,document),function(){var e=MSO.cookie("__huid");if(!e){window.setHuid=function(e){e&&e.huid&&MSO.cookie("__huid",e.huid,{path:"/",expires:300,domain:ENV.domain})};var t=document.createElement("script");t.src=location.protocol+"//huid.ad.360.cn/?api=set&cb=setHuid",t.onload=function(){document.head.removeChild(t)},document.head.appendChild(t)}}(),document.addEventListener("DOMContentLoaded",function(){clearTimeout(MSO._speedTimer),Math.random()<.01&&(wpo.dom=new Date*1-wpo.start,MSO.Observer.subscribe("monitordo:ok",function(){delete wpo.start,delete wpo.now,wpo.w=window.screen.width,wpo.h=window.screen.height,monitor.setConf("wpoUrl",location.protocol+"//s.360.cn/fe/p.htm"),monitor.log(wpo,"wpo")}))},!1),_loader.use("zepto",function(){var e=encodeURIComponent,t=$("#load-more-nodata");!function(){function e(){var e=u.height(),t=a.height(),n=a.scrollTop(),r=e-n-t;return r<t/2&&r>=0}function n(){e()&&(r>10?(o.data("class","").css("visibility","visible"),$(window).off("resize",n),$(window).off("scroll",n)):o.trigger("click",!0))}var r=2,i=!1,s=!1,o=$("#load-more");if(!o.length){t.show();return}o.on("click",function(e,u){if(i||s)return;o.data("class","loading"),i=!0;var a=location.search.replace(/&pn=[^&]*/g,"");a=a.replace(/^\?pn=[^&]*&/g,"?");var f="/nextpage"+a+"&pn="+r+"&ajax=1";$("#adv_tips").length&&(f+="&adv_nomore=1"),$.ajax({url:f,timeout:8e3,success:function(e){if(!e.trim()){s=!0,$("#load-more-wrapper").hide(),t.show();return}var a=$(e);$(".g-card").last().after(a);var f=0;$(".res-list").each(function(e,t){var t=$(t);t.data("index")||(t.data("index",f).data("page",r),f++)}),$(window).trigger("pageLoadmso",[r,{src:"srp_more"}]),r++,u||o.data("class",""),setTimeout(function(){i=!1,n()},500)},error:function(){var e=document.getElementById("mso-speed-tips"),t=e.querySelector("a");/pn=\d+/ig.test(t.href)?t.href=t.href.replace(/pn=\d+/ig,"pn="+r):t.href=t.href+"&pn="+r,e.className="show",o.data("class","").css("visibility","visible"),setTimeout(function(){i=!1},500)}})});var u=$("html"),a=$(window);$("body").hasClass("result-folding")?MSO.Observer.subscribe("fold-expand",function(){setTimeout(function(){$(window).on("resize",n),$(window).on("scroll",n)},20)}):($(window).on("resize",n),$(window).on("scroll",n),n())}()}),_loader.use("zepto",function(){function e(){var e=$(".js-openinapp");e.each(function(e,t){var n=$(t),r=""+n.data("pkg"),i=n.data("versioncode");openinapp_packagename_list[r]?n.addClass("open"):n.addClass("download")})}function t(){if(window.openinapp_packagename_list){$(".js-openinapp").removeClass("hideopen");var t=$(".open-in-app").siblings(),n=t.find("h1 a").add(t.filter(".title"));n.each(function(){var e=$(this).data("md")?$(this).data("md"):{};$(this).data("md",JSON.stringify($.extend(e,{s:"oia"})))}),e()}else $(".js-openinapp").addClass("hideopen");$(".js-openinapp-open").on("click",function(){var e=$(this).parents(".js-openinapp"),t=e.attr("data-wap_schema");if(e.hasClass("open"))return console.log(t.replace("#mse_token",window.mse_token||"#null#")),!1;var n=$(this).prop("href"),r=e.data("name"),i=e.data("logo");if(n&&r&&i)return ZSInstall.ready(function(e){e?ZSInstall.install(r,i,n):location.href=n}),!1})}MSO.Observer.subscribe("oia-ready",t)})</script><script>LS.html2ls("stc_result_basic_js","stc_result_basic_js");LS.updateVersion('stc_ls','2','U')</script><script>_loader.add("monitorDo","http://s8.qhimg.com/static/0734765bc9622fff/monitor-do.js"),_loader.use("zepto,monitorDo",function(){!monitorConfig.version&&function(e){e=e.toLowerCase();if(e.indexOf("360 aphone browser")>-1){var t=/\b360 aphone browser \(([^\)]+)\)/i.exec(e);if(t&&t.length>=2&&t[1]){var n=t[1].replace(/_/g,".");n=n.replace(/[^\.\d]/g,""),monitorConfig.version=n}}}(navigator.userAgent),monitorDo.init(monitorConfig)})</script> 
+<script>
+(function(){
+    var urls = document.getElementsByTagName("a"), i = urls.length-1;
+    for (i; i >= 0; i--){
+        if (urls[i].innerHTML == "url"){
+            window.base_url = urls[i].getAttribute("href");
+            break;
+        }
+    }
+})();
+
+var img_loaded = 1,
+    imgchange_url = "sssssss",
+    sbs_gou = decodeURI("%E2%88%9A"),
+    sbs_site='haosou',
+    annotateType = 'base',
+    vrPos = [];
+
+function loadImage(){
+    var imgs = document.getElementsByTagName("img"), i;
+    for(i = 0; i < imgs.length; i++){
+        try{
+            if (imgs[i].src.split("/")[2].indexOf(imgchange_url) > 0){
+                imgs[i].src = "http://imgstore04.cdn.sogou.com/net/a/04/link?appid=122&url="+encodeURIComponent(imgs[i].src)+"&referer="+encodeURIComponent(base_url);
+            }
+        }catch(E){
+        }
+    }
+    if (site == "m360") {
+        try {
+            $('.mh-img-lft>a,.mh-items>a').each(function(){
+                var url = $(this).css("backgroundImage").split('url(')[1].split(')')[0];
+                if (url.indexOf(imgchange_url)>0 && url.indexOf('cdn.sogou.com')<0) {
+                    url  = "http://imgstore04.cdn.sogou.com/net/a/04/link?appid=122&url="+encodeURIComponent(url)+"&referer="+encodeURIComponent(base_url);
+                    $(this).css({"backgroundImage": "url("+url+")"});
+                }
+            });
+        }catch(E){
+        }
+    }
+    setTimeout(loadImage, 100*img_loaded);
+    img_loaded *= 2;
+}
+
+function findDivs(div_pattern){
+    if (typeof jQuery == "undefined"){
+        var s = document.createElement("script");
+        s.src='http://libs.baidu.com/jquery/1.10.2/jquery.js';
+        document.getElementsByTagName("head")[0].appendChild(s);
+        setTimeout(function(){findDivs(div_pattern)}, 1000);
+        return;
+    }
+
+    window.sbsdivs = jQuery(div_pattern);
+    if(annotateType == 'vr') {
+        findVr('m360');
+    }
+}
+
+function buildSelect(data, className) {
+    var h = [];
+    h.push('<select class="', className,'">');
+    h.push('<option value=0>请选择</option>');
+    for (var i = 0; i < data.length; i++) {
+        h.push('<option value=', (i+1),'>', data[i],'</option>');
+    }
+    h.push('</select>');
+    return h.join('');
+}
+
+//显示标注原因，在annotate.php中调用
+function sbs(score, side){
+    if(annotateType == 'base') {
+        var reasons = {
+            good:["相关性好", "有效性好","需求量大","内容丰富", "页面质量好", "时效性好", "多样性好", "权威性好", "显相关展现好", "便捷性体验好", "好结果排序好", "其他原因"],
+            bad:["相关性差", "有效性差","需求量小","内容较少", "页面质量差", "时效性差", "多样性差", "权威性差", "显相关展现差", "便捷性体验差", "好结果排序差", "其他原因"]
+        };
+    }else {
+        var reasons = {
+            good:["满足主要需求", "满足次要需求", "竞品欠召回", "内容相关性好","UI界面体验好", "交互体验好", "排序合理", "其他"],
+            bad:["过召回", "欠召回", "内容相关性差", "UI界面体验差", "交互体验差", "排序不合理", "内容重复", "章节&剧集更新不及时", "其他"]
+        };
+    }
+
+    if(side == 'left') {
+        var type = score > 0 ? 'good' : 'bad';
+    }else {
+        var type = score < 0 ? 'good' : 'bad';
+    }
+    var btnClass = type == 'good' ? 'sbs_reason3' : 'sbs_reason5';
+
+    if (typeof window.sbsdivs == "undefined"){
+        setTimeout(function(){
+            sbs(score);
+        }, 100);
+        return;
+    }
+
+    sbsdivs.hover(function(){
+        $(this).addClass("sbs_over");
+    }, function(){
+        $(this).removeClass("sbs_over");
+    });
+    sbsdivs.each(function(pos){
+        var btn = $("<div class='sbs_btns " + btnClass + "'><span>" + reasons[type].join("</span><span>") + "</span></div>"),
+            title = jQuery(this).find("h3:first"),
+            lnk = $(this).find("a").attr("href");
+        if (this.className.indexOf('sc_map_new')>=0||this.className.indexOf('cards')>=0||this.className.indexOf('cc-card-stage')>=0) {
+            btn.appendTo($(this));
+        }else if (title.length > 0){
+            jQuery(btn).insertAfter(title);
+        }else{
+            btn.appendTo($(this));
+        }
+        btn.find("span").click(function(){
+            if(annotateType == 'vr') {
+                top.showVrType(pos, vrPos, sbs_site);
+            }
+
+            if (this.className != "active"){
+                if (top.addResult(sbs_site, pos, this.innerHTML, lnk)){
+                    this.className = "active";
+                    this.innerHTML = sbs_gou+this.innerHTML;
+                }
+            }else{
+                this.className = "";
+                this.innerHTML = this.innerHTML.replace(sbs_gou, "");
+                top.deleteResult(sbs_site, pos, this.innerHTML, lnk);
+            }
+            return false;
+        });
+    });
+}
+
+function sbs_baidu(){
+    window.error = 1;
+    imgchange_url="bdstatic.com";
+    loadImage();
+    imgchange_url="baidu.com";
+    loadImage();
+    imgchange_url="bdimg.com";
+    loadImage();
+    findDivs("#content_left>div:not(.c-frame):visible,#content_left>div.c-frame>div>div:visible,#content_left>table:visible")
+}
+
+function sbs_360(){
+    imgchange_url="so.qhimg.com";
+    loadImage();
+    findDivs("ul.result>li:visible")
+}
+
+function sbs_sogou(){
+    imgchange_url="itc.cn";
+    loadImage();
+    findDivs("div.results>div:visible,div.results>table:visible,div.aggrBox>div:visible,div.mainBody>div.vrResult:visible");
+}
+
+function sbs_mbaidu(){
+    window.error = 1;
+    imgchange_url="bdstatic.com";
+    loadImage();
+    imgchange_url="baidu.com";
+    loadImage();
+    findDivs("#page>div#page_bd>div#results>div.result, #page_bd>div.card-result," +
+    "#page_bd>div#results>div.card-result,  #page>div#page-bd>div#results>div.result, #page-bd>div.card-result," +
+    "#page-bd>div#results>div.card-result");
+}
+
+function sbs_m360(){
+    imgchange_url="so.qhimg.com";
+    loadImage();
+    findDivs("ul.result>li:visible,.g-card")
+}
+
+function sbs_msogou(){
+    imgchange_url="qiyipic.com";
+    loadImage();
+    findDivs(".results>div.resitem,.results>div.qa_area,.results>div.result,.results>li,.results>div.vrwrap,.results div.vrResult,.results>div.nBox,.searchresult>li:visible,.searchresult>div.resitem,.results>div.norm");
+}
+
+function sbs_msm(){
+    imgchange_url="s2.zimgs.cn";
+    loadImage();
+    findDivs("div#results>div")
+}
+
+sbs_m360();
+//标注出页面的VR
+
+function findVr(site) {
+    function findSogouVr(element) {
+        var r1 = element.hasClass('vrResult') || element.find('[id^=sogou_vr_]').length > 0 || element.is('li[id^=sogou_vr_]'),
+            r2 = !element.is('[id^=sogou_vr_3], [id^=sogou_vr_11002501]') || element.find('[id^=sogou_vr_3]').length == 0;
+
+        if(r1 && r2) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    function findBaiduVr(element) {
+        if(element.is('[srcid][tpl], [srcid=map]') && !element.is('[tpl^=bk], [tpl=wise_region], [tpl=zhidao], ' +
+            '[tpl=wenku], [tpl=www_video_normal], [tpl=realtime], [tpl=h5_mobile], [tpl=tiebaxml]')) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    function findHaosouVr(element) {
+        if((element.find('[id^="mohe-"], [class="res-list mb"]').length > 0 || element.is('[id^="mohe-"], ' +
+            '[class="res-list mb"], #mso-site')) && !element.is('#mohe-m-auto_brand_360baike')) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    function findSmVr(element) {
+        if(element.is('[data-sc]') && !element.is('[id^=sc_baike], [id^=sc_structure_short_video_], [id^=sc_zhidao], ' +
+            '[id^=sc_structured_bbs], [id^=sc_news], [id^=sc_sitelink]')) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    sbsdivs.each(function(pos) {
+        var that = this;
+        var r = false;
+        var title = jQuery(this).find("h3:first");
+        if(site == 'mbaidu') {
+            r = findBaiduVr($(that));
+        }else if(site == 'm360') {
+            r = findHaosouVr($(that));
+        }else if(site == 'msm') {
+            r = findSmVr($(that));
+        }else {
+            r = findSogouVr($(that));
+        }
+        if(r) {
+            console.log(that);
+            $(that).addClass('vr_area');
+            var tag = $('<div class="vr_btns sbs_reason1"><span>VR</span></div>');
+
+            if (that.className.indexOf('sc_map_new')>=0||that.className.indexOf('cards')>=0||that.className.indexOf('cc-card-stage')>=0) {
+                tag.appendTo($(that));
+            }else if (title.length > 0){
+                jQuery(tag).insertAfter(title);
+            }else{
+                tag.appendTo($(that));
+            }
+
+            vrPos.push(pos);
+        }
+    });
+}
+
+//为了解决某隐藏bug
+function tryReady(){
+    if (top && top.lIfrm && top.rIfrm ){
+        if (top.rIfrm.src == self.window.location.toString() && top.rIfrm != self){
+            top.rIfrm = self;
+        }
+        if (top.lIfrm.src == self.window.location.toString() && top.lIfrm != self){
+            top.lIfrm = self;
+        }
+    }
+    setTimeout(tryReady, 10);
+}
+tryReady();
+//两边页面对比，嵌套到iframe时，两边页面同时滚动
+window.onscroll=function(){
+    if(top && top.lIfrm && top.rIfrm) {
+        top.lIfrm.scrollTo(0, window.scrollY);
+        top.rIfrm.scrollTo(0, window.scrollY);
+    }
+}
+setTimeout(function() {$.os = {}}, 1000);//解决百度页面的bug
+</script>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All clicked results</title>
+    <ul>
+  {{listcontent}}
+</ul>
+</head>
+<body>
+
+</body>
+</html>

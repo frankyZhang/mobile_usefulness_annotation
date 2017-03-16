@@ -1,0 +1,11 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'skip.className = "skip"')
+
+  http://m.yue365.com/js/singer.js:26 in Resize
+  http://m.yue365.com/js/singer.js:33 in onload
+{
+    "document.body.scrollHeight": 1155,
+    "document.body.offsetHeight": 980,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1155
+}

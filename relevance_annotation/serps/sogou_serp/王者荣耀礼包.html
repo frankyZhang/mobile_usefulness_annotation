@@ -1,0 +1,787 @@
+<div id="mainBody" class="mainBody"> <div class="bing-loading-box" id="bing-loading-div" style="display:none"> <div class="bing-loading"><span></span>正在努力为您翻译查询词</div> <div class="bing-bg-write"></div> </div>    <!--pageHideShow area begin--> <style>.area-box{padding:7px 70px 7px 11px;margin-bottom:6px;border:1px solid #e0e0e0;background-color:#fff;line-height:22px;position:relative}.area-link{position:absolute;top:7px;right:11px;height:20px;border:1px solid #ddd;background-color:#fafafa;text-align:center;padding:0 10px;font-size:12px;line-height:20px;border-radius:2px;color:#2d2d2d}.area-span{color:#7ea5f0;margin-right:5px}.area-span:before{content:'';display:inline-block;width:11px;height:12px;background:url(/images/area-ico.png) no-repeat;overflow:hidden;-webkit-background-size:11px auto;background-size:11px auto;margin-right:2px;position:relative;top:1px}</style> <!--pageHideShow area end-->       <!--  --> <div class="results">              <script>
+        (function($){
+            // 点击导航栏“英文”
+            $(".nav_english").click(function(){
+                if(typeof bing_uigs_cl_url != "undefined"){
+                    (new Image()).src = bing_uigs_cl_url+"&clk_target=nav";
+                }
+            });
+            // 点击提示区
+            $(".bing-zy #eng_switch").click(function(){
+                if(typeof bing_uigs_cl_url != "undefined"){
+                    (new Image()).src = bing_uigs_cl_url+"&clk_target=entrance";
+                }
+            });
+        })(Zepto);
+    </script>  <!--顶部广告-->  <!--顶部广告 end-->   <script src="http://dl.web.sogoucdn.com/wapjcs/fm20150710.js" type="text/javascript"></script> <script src="http://dl.web.sogoucdn.com/wapjcs/fi20150708.js" type="text/javascript"></script> <style type="text/css">.vr-app20150212 .app-list2{padding:0 11px 13px}.vr-app20150212 .app-list2 li{border-bottom:1px solid #f5f5f5;position:relative}.vr-app20150212 .app-list2 li a{padding:12px 0 13px;display:block;overflow:hidden;position:relative}.vr-app20150212 li:last-child{border-bottom:0}.vr-app20150212 .app-list2 li a{padding:0;display:block;overflow:hidden;position:relative}.vr-app20150212 .pic{float:left;width:54px;height:54px;margin-right:6px;margin-top:1px;overflow:hidden}.vr-app20150212 .pic img{width:54px;height:54px;border-radius:10px}.vr-app20150212 .list-txt{zoom:1;margin:2px 65px 0 65px}.vr-app20150212 .list-txt p{font-size:12px;color:#999;line-height:18px}.vr-app20150212 .list-txt .app-tit{font-size:14px;color:#00c;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.vr-app20150212 .list-txt .down{color:#777;font-size:12px;margin-bottom:-3px;line-height:18px;overflow:hidden}.vr-app20150212 .list-txt .star{display:inline-block;width:50px;height:10px;margin-right:5px;background:url(/resource/vr/5/images/yingyong/star.png);background-size:10px auto}.vr-app20150212 .list-txt .star span{display:block;height:10px;background:url(/resource/vr/5/images/yingyong/star.png) 0 -15px;background-size:10px auto}.vr-app20150212 .list-txt .down i{color:#ddd;margin:0 5px;font-size:11px;position:relative;top:-1px;font-style:normal}.vr-app20150212 .list-txt .banben,.vr-app20150212 .list-txt .daxiao{color:#777;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.vr-app20150212 .btn-down{position:absolute;right:0;top:16px;color:#999;font-size:12px;text-align:center;width:60px}.vr-app20150212 .btn-down a{display:inline-block;height:22px;width:58px;padding:0;text-align:center;color:#88b0f3;background:#f2f6ff;border-radius:3px;border:1px solid #bad3ff;line-height:22px}.vr-app20150212 .btn-down .img{width:43px;background:#f1f6ff url(/resource/vr/5/images/yingyong/btn_down.png) no-repeat center center;background-size:13px auto;padding:0!important}.vr-app20150212 .btn-down p{padding-top:4px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}.vr-app20150212 .btn-down-v1{height:54px;top:1px;overflow:hidden}.vr-app20150212 .btn-down-v1 .a1{background:#7ca7f5;border:1px solid #7ca7f5;color:#fff;margin-bottom:6px}.vr-app20150212 .btn-down-v1 .a2{background:#fff;border:1px solid #fff}.vr-app20150212 .hot-list-ov{overflow:hidden}.vr-app20150212 .hot-list-box{position:relative}.vr-app20150212 .hot-list-tab{text-align:center;margin:-11px 0 9px}.vr-app20150212 .hot-list-tab span{width:6px;height:6px;border-radius:3px;background:#eee;-webkit-border-radius:3px;display:inline-block;margin:0 5px}.vr-app20150212 .hot-list-tab span.on{background:#ff5a34}.vr-app20150212 .rec-lst{position:relative}.vr-app20150212 .hot-list{overflow:hidden;padding-top:0;margin-bottom:7px;width:100%;display:table}.vr-app20150212 .hot-list li{text-align:center;overflow:hidden;display:table-cell;vertical-align:top}.vr-app20150212 .hot-list li a{width:60px;overflow:hidden;display:inline-block;position:relative;float:left;color:#00c;font-size:14px;text-align:center}.vr-app20150212 .hot-list li a span{width:60px;font-size:12px;color:#262626;display:block;overflow:hidden;padding-top:2px}.vr-app20150212 .hot-list li a img{vertical-align:top;margin-bottom:3px;height:45px;border-radius:10px;-webkit-border-radius:10px}.vr-app20150212 .hot-box{width:60px;display:inline-block}.vr-app20150212 .hot-list-v1{position:absolute;left:100%;top:0;z-index:100}.vr-app20150212 .hot-list:nth-child(2){position:absolute;left:100%;top:0}.vr-app20150212 .hot-tit{margin:0 11px;line-height:24px;border-top:1px solid #f5f5f5;margin-top:-1px;padding-top:6px}.vr-app20150212 .gf{line-height:14px;display:inline-block;margin-right:5px;color:#fff;font-size:12px;text-align:center;padding:0 5px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background:#43b151;vertical-align:top;position:relative;top:2px}.vr-app20150212 .handsgame{padding:0 11px 6px}.vr-app20150212 .handsgame li{border-top:1px solid #f5f5f5;overflow:hidden}.vr-app20150212 .handsgame li:first-of-type{border-top:0;padding-top:0}.vr-app20150212 .handsgame .hg-panel{display:block;color:#262626;padding:11px 90px 10px 0;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.vr-app20150212 .handsgame .hg-panel .hg-newstime{position:absolute;top:12px;right:0;color:#777}.vr-app20150212 .handsgame .hg-panel2{padding-right:50px}.vr-app20150212 .handsgame .hg-panel2 .hg-id{position:absolute;top:8px;right:0;width:39px;height:22px;background:#ff8f75;font-size:12px;color:#fff;border-radius:2px;display:inline-block;line-height:22px;text-align:center}.vr-app20150212 .handsgame .hg-panel2 .hg-id-get{background:#ffb160}.vr-app20150212 .handsgame .hg-panel2 .hg-id-res{background:#85bcff}.vr-app20150212 .handsgame .hg-panel2 .hg-id-over{background:#e8e8e8;color:#999}.vr-app20150212 .btn-free{position:absolute;right:0;top:50%;margin-top:-16px;color:#999;font-size:12px;text-align:center}.vr-app20150212 .btn-free a{height:23px;width:50px;text-align:center;padding:0;background:#fff;border-radius:3px;color:#6090ed;border:1px solid #5385de;line-height:25px}.vr-app20150212 .tuwe{padding:0 11px}.vr-app20150212 .tuwe li{padding:12px 0;border-top:1px solid #f5f5f5}.vr-app20150212 .tuwe li:first-child{border:0}.vr-app20150212 .tuwe li a{display:block;overflow:hidden;max-height:36px}.vr-app20150212 .tuwe .d1{float:left;margin-right:10px;width:46px;height:35px;position:relative}.vr-app20150212 .tuwe .d1 .ico-play{background:url(/resource/vr/5/images/yingyong/ico_play.png) 0 0 no-repeat;width:23px;height:23px;display:block;position:absolute;left:12px;top:6px;background-size:23px 23px}.vr-app20150212 .tuwe .d2{overflow:hidden;line-height:18px;padding-right:45px;position:relative}.vr-app20150212 .tuwe .d2 p{padding:0;color:#262626;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;-webkit-box-flex:1;overflow:hidden}.vr-app20150212 .tuwe-v1 .d2 p{color:#00c}.vr-app20150212 .tuwe .d2 .s-time{position:absolute;font-size:12px;color:#999;right:0;top:0}.vr-app20150212 .hands-game-tit{padding:0 11px 10px;overflow:hidden}.vr-app20150212 .hands-game-tit .hg-img{float:left;width:45px;height:45px;overflow:hidden;margin-right:10px}.vr-app20150212 .hands-game-tit .hg-img img{width:100%}.vr-app20150212 .hands-game-tit .hands-game-con{overflow:hidden;padding-top:2px}.vr-app20150212 .hd-detail{margin-top:3px}.vr-app20150212 .hd-detail a{overflow:hidden;display:block;color:#777;font-size:12px}.vr-app20150212 .hd-detail a img{width:24px;height:15px;margin-right:5px;position:relative;top:1px}.vr-app20150212 .vr-tit{margin:0;font-size:16px}.vr-app20150212 .app-info{font-size:12px;line-height:18px;color:#999;margin:-4px 11px 0;position:relative}.vr-app20150212 .app-info p{padding-bottom:9px}.vr-app20150212 .app-info-p{font-size:12px;line-height:18px;color:#999;clear:both;margin-top:11px}.vr-app20150212 .app-info p a{padding:0 6px;display:inline-block;color:#999;vertical-align:top;margin-left:7px;border:1px solid #dcdcdc;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;line-height:18px;height:17px;position:relative;top:-1px}.vr-app20150212 h4{border-top:1px solid #eee}.vr-app20150212 h4 span,.vr-app20150212 h4 a{font-size:16px;color:#262626;display:block;margin:0 11px;padding:0 8px;line-height:42px;position:relative}.vr-app20150212 h4 a{background:url(/resource/vr/5/images/ico_san.png) 100% 16px no-repeat;background-size:6px 10px}.vr-app20150212 h4 span:before,.vr-app20150212 h4 a:before{content:"";width:3px;height:16px;display:inline-block;position:absolute;left:0;top:13px;background:#fe6847}.vr-app20150212 .tj-tab{margin:0 11px}.vr-app20150212 .tj-tab-box{display:table;width:100%;line-height:32px;background:#fafafa;font-size:14px}.vr-app20150212 .tj-tab-box a{display:table-cell;height:30px;border-bottom:2px solid #fafafa;color:#262626;text-align:center}.vr-app20150212 .tj-tab-box a.cur{border-bottom:2px solid #fe6847;color:#fe6847}.vr-app20150212 .lookmore-c{margin:0 11px;line-height:20px;text-align:right;padding-bottom:9px;margin-top:-4px}.vr-app20150212 .lookmore-c a{color:#ff5a34}.vr-app20150212 .handsgame .tc00c{color:#00c}.vr-app20150212 .tuwe .line1 p{-webkit-line-clamp:1}.vr-app20150212 .wandou{font-size:12px;line-height:18px;color:#999;clear:both;margin-top:11px;position:relative;margin-bottom:-6px}.vr-app20150212 .wandou:after{position:absolute;width:100%;top:9px;content:"";height:1px;overflow:hidden;background:#f5f5f5;left:0}.vr-app20150212 .wandou span{display:inline-block;padding-right:10px;background:#fff;position:relative;z-index:10}.wap-str #download_struct_button{display:none}</style><div class="vrResult" id="sogou_vr_70019401_1">
+<div style="overflow:hidden" class="vr-app20150212">
+<div class="hands-game-tit">
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwww.18183.com%2Fyxzjol%2F%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=singleImg" class="hg-img" data-sub="70019400" data-linkid="singleImg"><img src="http://img.18183.duoku.com/uploads/160427/130-16042G10Zc17.jpg"></a>
+<div class="hands-game-con">
+<h3 class="vr-tit">
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwww.18183.com%2Fyxzjol%2F%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=singleTit" data-sub="70019400" data-linkid="singleTit"><em>王者荣耀</em>专区</a>
+</h3>
+<p class="hd-detail">
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwww.18183.com%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=source" data-sub="70019400" data-linkid="source"><img src="http://img.18183.com/uploads/72.png">更多精选尽在这里</a>
+</p>
+</div>
+</div>
+<div class="tj-tab">
+<div class="tj-tab-box js_tabbox">
+<a href="javascript:void(0)" class="cur">礼包</a><a href="javascript:void(0)">攻略</a><a href="javascript:void(0)">视频</a><a href="javascript:void(0)">资讯</a>
+</div>
+</div>
+<ul class="handsgame js_tabdiv">
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DbPfNNuxiQG6mJ0WT2izbW85odFyA2z73M3NkF_YF25t6cCPWzGzmYsyTjMTA62GGj5PetVt8ILQ.%26w%3D2079&amp;vrid=70019401&amp;wml=list1&amp;linkid=11" class="hg-panel hg-panel2 tc00c" data-sub="70019400" data-linkid="list1">王者荣耀暑期盛典免费福利礼包<span class="hg-id hg-id-tao">淘号</span></a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DbPfNNuxiQG6mJ0WT2izbW85odFyA2z73YCCFkXh7OiB6cCPWzGzmYsyTjMTA62GGj5PetVt8ILQ.%26w%3D2079&amp;vrid=70019401&amp;wml=list1&amp;linkid=12" class="hg-panel hg-panel2 tc00c" data-sub="70019400" data-linkid="list1">王者荣耀暑期盛典88钻独家礼包<span class="hg-id hg-id-get">领取</span></a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DbPfNNuxiQG6mJ0WT2izbW85odFyA2z73zUtrCeFHr0Z6cCPWzGzmYsyTjMTA62GGj5PetVt8ILQ.%26w%3D2079&amp;vrid=70019401&amp;wml=list1&amp;linkid=13" class="hg-panel hg-panel2 tc00c" data-sub="70019400" data-linkid="list1">王者荣耀暑期盛典18183特权礼包<span class="hg-id hg-id-get">领取</span></a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DbPfNNuxiQG6mJ0WT2izbW85odFyA2z73mx2cLRQJ_gV6cCPWzGzmYsyTjMTA62GGj5PetVt8ILQ.%26w%3D2079&amp;vrid=70019401&amp;wml=list1&amp;linkid=14" class="hg-panel hg-panel2 tc00c" data-sub="70019400" data-linkid="list1">王者荣耀暑期盛典18183全民礼包<span class="hg-id hg-id-get">领取</span></a>
+</li>
+</ul>
+<ul class="tuwe tuwe-v1 js_tabdiv" style="display:none">
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH7up9Z5rnNhMXOeo2Hyi3CwCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list2" data-sub="70019400" data-linkid="list2">
+<div class="d2 line1">
+<p>【英雄锦囊】一代女帝武则天 威严神圣不可侵犯</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH7fWid2rJBQ0KWegu2nEDjhCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list2" data-sub="70019400" data-linkid="list2">
+<div class="d2 line1">
+<p>自古套路得人心 王者荣耀不常规英雄的套路盘点</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH4TQUt8oCFgUz-B17O804LiCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list2" data-sub="70019400" data-linkid="list2">
+<div class="d2 line1">
+<p>孙悟空领衔 王者荣耀新手十大热门英雄</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH4ijyC_S-wVdTyy_YjV0LYlCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list2" data-sub="70019400" data-linkid="list2">
+<div class="d2 line1">
+<p>【逗比公社】游戏中遇到这些情况你还得叫爸爸</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+</ul>
+<ul class="tuwe tuwe-v1 js_tabdiv" style="display:none">
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PmhgXjq6EGia-CFlw2h49rdv7N2RtQnDI05ctZNqAQqt0145f5alwB%26w%3D1111&amp;vrid=70019401&amp;wml=1&amp;linkid=list3" data-sub="70019400" data-linkid="list3">
+<div class="d1">
+<img width="46" src="http://file.gao7.com/g1/M00/B6/D4/CilEmlds9dqADv0TAADPYTFvRpo508.jpg?w=450&amp;h=280" height="35" alt="#"><span class="ico-play"></span>
+</div>
+<div class="d2">
+<p>王者荣耀S4版本英雄形象展示优化视频</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH7hqMyw4YhOBoI3tVdw0Ft1CJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list3" data-sub="70019400" data-linkid="list3">
+<div class="d1">
+<img width="46" src="http://img.18183.duoku.com/uploads/160624/70-160624110503319.jpg" height="35" alt="#"><span class="ico-play"></span>
+</div>
+<div class="d2">
+<p>《鱼嘴滑舌》第6期刺客药丸 鱼头教你二度崛起！</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH66ln5TL_yL8qWegu2nEDjhCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list3" data-sub="70019400" data-linkid="list3">
+<div class="d1">
+<img width="46" src="http://img.18183.duoku.com/uploads/160624/70-160624110121444.jpg" height="35" alt="#"><span class="ico-play"></span>
+</div>
+<div class="d2">
+<p>klaus解说：王者荣耀最后的战神 李白五杀封神</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH66ln5TL_yL8nSfxPOhGkdPCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list3" data-sub="70019400" data-linkid="list3">
+<div class="d1">
+<img width="46" src="http://img.18183.duoku.com/uploads/160624/70-160624105915532.jpg" height="35" alt="#"><span class="ico-play"></span>
+</div>
+<div class="d2">
+<p>杀人于无形 王者荣耀兰陵王彰显刺客暴力与优雅</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+</ul>
+<ul class="tuwe tuwe-v1 js_tabdiv" style="display:none">
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH5-9rFObHkdI6Wegu2nEDjhCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list4" data-sub="70019400" data-linkid="list4">
+<div class="d2 line1">
+<p>王者荣耀视觉重磅强化！这发安利我吃了</p>
+<span class="s-time">06-24</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH7Q4YBjEIgOuXOeo2Hyi3CwCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list4" data-sub="70019400" data-linkid="list4">
+<div class="d2 line1">
+<p>王者荣耀新版英雄加强一览 究竟谁可上位</p>
+<span class="s-time">06-22</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH5rj5oXD4GjCaTg71s5HytPCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list4" data-sub="70019400" data-linkid="list4">
+<div class="d2 line1">
+<p>王者荣耀6.21更新 后羿阿尔法小队皮肤登场</p>
+<span class="s-time">06-21</span>
+</div>
+</a>
+</li>
+<li>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwap.sogou.com%2Fapp%2Fredir.jsp%3Fappdown%3D1%26u%3DV14ejE_E-5PoVag1qBPjjXQ1DY6mmElRv6XxY9yLQH6Cw13XCu9P7KTg71s5HytPCJYigFQMYTEWEuoFM6tWAw..%26w%3D2079&amp;vrid=70019401&amp;wml=1&amp;linkid=list4" data-sub="70019400" data-linkid="list4">
+<div class="d2 line1">
+<p>策划大爆料：恋人与基友玩法即将亮相</p>
+<span class="s-time">06-20</span>
+</div>
+</a>
+</li>
+</ul>
+</div>
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fka.18183.com%2Flist_game_2080.shtml%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=more1" class="vr-more js_more" data-sub="70019400" data-linkid="more1">查看全部礼包</a><a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwww.18183.com%2Fyxzjol%2F%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=more2" class="vr-more js_more" data-sub="70019400" data-linkid="more2" style="display:none">查看全部攻略</a><a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwww.18183.com%2Fyxzjol%2F%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=more3" class="vr-more js_more" data-sub="70019400" data-linkid="more3" style="display:none">查看全部视频</a><a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=1&amp;url=http%3A%2F%2Fwww.18183.com%2Fyxzjol%2F%3Fsource%3Dsogou&amp;vrid=70019401&amp;wml=1&amp;linkid=more4" class="vr-more js_more" data-sub="70019400" data-linkid="more4" style="display:none">查看全部资讯</a><script type="text/javascript">
+            (function(w, mainClassID, rank){
+            var subClassIDs = [
+            
+                "11001101"
+            
+            ];
+            if(mainClassID && w["uigs_pv"]){w.uigs_pv('wap_result', 'union_vr', rank, ["mainClass=" + mainClassID, "subClass=" + subClassIDs.join('_')].join("&"))}
+            })(window, "70019401", "1");
+            (function(w, mainClassID, rank){
+                var id = ["sogou", "vr", mainClassID, rank].join("_");
+                $("#" + id).on("click", "a", function(e){
+                    var subClassID = $(this).attr("data-sub"), linkID = $(this).attr("data-linkid");
+                    if(subClassID && linkID){
+                        w["wapvr_cl"] && w["wapvr_cl"](mainClassID, rank, linkID, '&stype=union_vr&subClassID=' + subClassID);
+                    }
+                });         
+            })(window, "70019401", "1");
+        </script><script>
+			(function(){
+			var ID = "sogou_vr_70019401_1";
+			
+				var iCount = 20;
+				var userQuery = window.encodeURIComponent(window["oldQuery"] || "");
+				function init(){
+					var $item = $("#" + ID);
+					if($item.length == 0 && iCount > 0){
+						iCount --;
+						setTimeout(function(){init();}, 10);
+						return ;
+					}
+					$item.find("a").each(function(){
+						try{
+							var reg = /url=([^&]+)/i;
+							var href = this.href;
+							var arr = null, url, other;
+							if(href && href.indexOf("void(0)") === -1){
+								arr = reg.exec(href);
+								if(arr){
+									url = decodeURIComponent(arr[1]);
+									other = this.getAttribute("data-other");
+									if(url && other){
+										other = other + "&fquery=" + userQuery;
+										url = url.indexOf("?") === -1 ? (url + "?" + other) : (url + "&" + other);
+										this.href = href.replace(reg, "url=" + encodeURIComponent(url));
+									}
+								}
+							}
+						}catch(e){}
+					});
+				}
+				init();
+			})();
+			
+		</script>
+</div><script type="text/javascript" src="/staticapp/js/highdown.js?v=56"></script><script type="text/javascript">
+
+(function($){
+	function n(id){return "sogou_vr_"+classid+"_"+rank+(id?"_"+id:"")}
+	function g(id) {
+		return document.getElementById(n(id))
+	}
+	
+	function tabInit(){
+		var _tabs = $(g()).find('.js_tabbox a');
+		var _tabdiv = $(g()).find('.js_tabdiv');
+		var _more = $(g()).find('.js_more');
+		_tabs.click(function(){
+			var _index = $(this).index();
+			_tabs.removeClass('cur');
+			$(this).addClass('cur');
+			_tabdiv.hide().eq(_index).show();
+			_more.hide().eq(_index).show();
+		});
+	}
+
+	function highDown(_data){
+		if(typeof hd_click != 'function'){
+			setTimeout(highDown(_data),50);
+			return;
+		}
+		$(g()).find('.js_fast').click(function(){
+			hd_click.apply(null,_data);
+		});
+	}
+	
+	function initSlide(){
+		var startX,startY,endX,endY,proX,proY,st,et;	
+		var list2 = list;
+		var span = tab.find('span');
+		function touchS(){
+			return function(e){
+				var count = $(this).find('ul').length;
+				if(index==1){
+					startX = e.touches[0].screenX;
+				}else{
+					startX = e.touches[0].screenX + wth;
+				}
+				startY = e.touches[0].screenY;
+				proX = 0;
+				proY = 0;
+			}
+		}
+		
+		function touchM(){
+			return function(e){
+				proX = e.touches[0].screenX - startX;
+				proY = e.touches[0].screenY - startY;
+				if (Math.abs(proX) > Math.abs(proY)) {
+					e.preventDefault();
+					e.stopPropagation();
+					this.style[prefixed('Transform')] = 'translate3d(' + parseInt(proX) + 'px,0px,0px)';					
+					this.style[prefixed('TransitionDuration')] = '0s';
+				}
+				touchmove = true;
+			}
+		}
+
+		function touchE(){
+			return function(e){
+				var count = $(this).find('ul').length;
+				if(touchmove == true){
+				if(index==1){
+					this.style[prefixed('TransitionDuration')] = t1;
+					if(proX<0 && (Math.abs(proX) > (wth/5))){
+						this.style[prefixed('Transform')] = 'translate3d(' + (-wth+2) + 'px,0px,0px)';		
+						index=2;
+					}else{
+						this.style[prefixed('Transform')] = 'translate3d(0px,0px,0px)';
+					}
+				}else{
+					this.style[prefixed('TransitionDuration')] = t1;
+					var tmpproX=proX+wth;
+					if(tmpproX>0 && (Math.abs(tmpproX) > (wth/5))){
+						this.style[prefixed('Transform')] = 'translate3d(0px,0px,0px)';
+						index=1;
+					}else{
+						this.style[prefixed('Transform')] = 'translate3d(' + (-wth+2) + 'px,0px,0px)';		
+					}
+				}
+				span.removeClass('on');
+				switch (index){
+				 	case 2:$(span[1]).addClass('on'); break;
+				 	default:$(span[0]).addClass('on');
+				 }
+				}
+				 touchmove = false;
+			}
+		}
+
+		list2.each(function(){
+			this.style[prefixed('TransitionTimingFunction')] = "ease-out";
+			this.style[prefixed('TransitionDelay')] = 0;
+			this.style[prefixed('TransitionProperty')] = prefixed('transform');
+			this.style[prefixed('TransitionDuration')] = '0s';
+			this.style[prefixed('Transform')] = 'translate3d(0px,0px,0px)';			
+			this.addEventListener("touchstart", touchS(), false);
+			this.addEventListener("touchmove", touchM(), false);
+			this.addEventListener("touchend", touchE(), false);
+		});
+	}
+	
+	function prefixed(p){
+		if(window.Modernizr){
+			return Modernizr.prefixed(p);
+		}else{
+			if(p=='transform'){
+				return "-webkit-transform";
+			}
+			return "webkit"+p;
+		}
+	}
+
+	function resizeScreen(){
+		wth = $('#'+n()).width();
+		//list =  $('#'+n()).find('._list');
+		tab =  $('#'+n()).find('._tab');
+		var list2 = list;
+		var span = tab.find('span');
+		
+		list2.each(function(){
+			this.style[prefixed('TransitionTimingFunction')] = "ease-out";
+			this.style[prefixed('TransitionDelay')] = 0;
+			this.style[prefixed('TransitionProperty')] = prefixed('transform');
+			this.style[prefixed('TransitionDuration')] = '0s';
+			if(index ==1){
+				this.style[prefixed('Transform')] = 'translate3d(0px,0px,0px)';
+			}else{
+				this.style[prefixed('Transform')] = 'translate3d(' + (-wth+2) + 'px,0px,0px)';		
+			}
+						
+		});
+	}
+	
+	var classid,rank,tab,list,wth,t,index=1,touchmove,move,t1;
+	function init(_classid,_rank,_tcurl,_data){
+		classid = _classid;
+		rank = _rank;
+		wth = $('#'+n()).width();
+		list =  $('#'+n()).find('._list2');
+		tab =  $('#'+n()).find('._tab');
+		t = '1.5s';
+		t1 = '0.5s';
+		move = false;
+		$(g()).find('._tab').length != 0 && initSlide();
+		tabInit();
+		$(g()).find('.js_fast').length != 0 && highDown(_data);
+	}
+
+	var sogou = window.sogou = window.sogou||{};
+	var vr = sogou.vr = sogou.vr||{};
+	var vr70019400 = vr.vr70019400 = {};
+	vr70019400.init=init;
+})(Zepto);
+
+
+			(function(){
+			var _app_name = encodeURIComponent('');
+			var _data = ['',
+			_app_name,
+			'',
+			'',
+			'',
+			'',
+			'',
+			'',
+			'0',
+			''];
+			sogou.vr.vr70019400.init('70019401','1','./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=70019401/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;',_data);
+			})();
+		</script>  <div class="vrResult">
+    <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000909/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;pg=webz&amp;clk=2&amp;url=http%3A%2F%2Fm.gamedog.cn%2Fgames%2Fyxzjsy%2F&amp;f=0&amp;vrid=30000909&amp;linkid=0&amp;wml=1&amp;w=1281" class="resultLink" id="sogou_vr_30000909_2" bing_pb="$urlPingSuffix" style="overflow:hidden; padding:0; margin:0 11px;">
+        <em>王者荣耀</em>_<em>王者荣耀</em>攻略_<em>礼包</em>_官网_游戏狗
+                
+        <div class="mod-tuwen">
+                            <div class="mod-tuwen-img">
+                    <img src="http://img02.sogoucdn.com/v2/thumb/resize/w/200/h/150/ir/3/zi/on/iw/75/ih/50/crop/x/0/y/0/w/200/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Fimg1.gamedog.cn%2F2016%2F06%2F05%2F115-1606051400220-L.jpg&amp;referer=http://m.gamedog.cn/games/yxzjsy/" width="100" height="75" alt="">
+                </div>
+                <div class="mod-tuwen-txt"><p class="mod-fourline"><em>王者荣耀</em>是一款拥有浓郁的东方色彩的玄幻类手游,游戏狗<em>王者荣耀</em>官网合作专区将致力于第一时间为玩家提供最新的<em>礼包</em>及<em>王者荣耀</em>攻略.</p></div>
+                    </div>
+    </a>
+    <div class="citeurl">m.gamedog.cn</div>
+</div>
+<script type="text/javascript">
+    (function(d,e){var b=e.sogou=e.sogou||{},b=b.struct=b.struct||{};(b.struct6001=b.struct6001||{}).init=function(b,e){function f(a){return"sogou_vr_"+b+(a?"_"+a:"")+"_"+e}var c=d(document.getElementById(f(void 0))).find(".mod-tuwen-txt"),g=d(document.getElementById(f(void 0))).find(".mod-fourline"),h=d(document.getElementById(f(void 0))).find(".mod-tuwen-img"),a=d(document.getElementById(f(void 0))).find("img");0<a.length&&"none"!=a.css("display")&&(a[0].onerror=function(){c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},setTimeout(function(){!(0>=a.height()||0>=a.width()||"undefined"==typeof a[0].complete)&&a[0].complete||c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},500))}})(Zepto,window); sogou.struct.struct6001.init("30000909", "2");
+</script>  <div class="vrResult">
+    <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000909/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;pg=webz&amp;clk=3&amp;url=http%3A%2F%2Fm.news.4399.com%2Fgonglue%2Fwzlm%2Fzixun%2Fm%2F567112.html&amp;f=0&amp;vrid=30000909&amp;linkid=0&amp;wml=1&amp;w=1281" class="resultLink" id="sogou_vr_30000909_3" bing_pb="$urlPingSuffix" style="overflow:hidden; padding:0; margin:0 11px;">
+        《<em>王者荣耀</em>》4399大<em>礼包</em> 快快领取_4399<em>王者荣耀</em>
+                
+        <div class="mod-tuwen">
+                            <div class="mod-tuwen-img">
+                    <img src="http://img03.sogoucdn.com/v2/thumb/resize/w/200/h/150/ir/3/zi/on/iw/75/ih/50/crop/x/0/y/0/w/200/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Fnewsimg.5054399.com%2Fuploads%2Fuserup%2F1510%2F2G60T93V0.jpg&amp;referer=http://m.news.4399.com/gonglue/wzlm/zixun/m/567112.html" width="100" height="75" alt="">
+                </div>
+                <div class="mod-tuwen-txt"><p class="mod-fourline">进入活动版块,在活动版块点击“全部礼包”活动进入礼包列表页. 2、直接在搜索框中输入礼包名称 <em>王者荣耀礼包</em> ,点击进入领取页面,点击“领取”礼包兑换码即可成功...</p></div>
+                    </div>
+    </a>
+    <div class="citeurl">m.news.4399.com</div>
+</div>
+<script type="text/javascript">
+    (function(d,e){var b=e.sogou=e.sogou||{},b=b.struct=b.struct||{};(b.struct6001=b.struct6001||{}).init=function(b,e){function f(a){return"sogou_vr_"+b+(a?"_"+a:"")+"_"+e}var c=d(document.getElementById(f(void 0))).find(".mod-tuwen-txt"),g=d(document.getElementById(f(void 0))).find(".mod-fourline"),h=d(document.getElementById(f(void 0))).find(".mod-tuwen-img"),a=d(document.getElementById(f(void 0))).find("img");0<a.length&&"none"!=a.css("display")&&(a[0].onerror=function(){c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},setTimeout(function(){!(0>=a.height()||0>=a.width()||"undefined"==typeof a[0].complete)&&a[0].complete||c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},500))}})(Zepto,window); sogou.struct.struct6001.init("30000909", "3");
+</script>  <style type="text/css"></style><div style="display:none;" class="vrResult" id="kmap-wap-business-wrap">
+<script type="text/javascript">
+(function(){
+
+pingback('wap_business', {
+    count: 0,
+    result: 0
+});
+function pingback(type, params){
+    var uuid = '';
+    if(window.uigs_para && window.uigs_para.uuid){
+        uuid = window.uigs_para.uuid;
+    }
+    var url = ['https://pb.sogou.com/pv.gif?uigs_productid=kmap&type=', type];
+    if(uuid){
+        url.push('&k_uuid=' + uuid);
+    }
+    if(window.oldQuery){
+        url.push('&gbkQuery=' + encodeURIComponent(window.oldQuery));
+    }
+    for(var key in params){
+        if(params.hasOwnProperty(key)){
+            url.push('&' + key + '=' + encodeURIComponent(params[key]));
+        }
+    }
+    (new Image()).src = url.join('');
+}
+
+}())
+</script>
+</div>
+  <div class="vrResult">
+    <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000909/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;pg=webz&amp;clk=5&amp;url=http%3A%2F%2Fm.shouji.tgbus.com%2Fwzry%2F229052%2F&amp;f=0&amp;vrid=30000909&amp;linkid=0&amp;wml=1&amp;w=1281" class="resultLink" id="sogou_vr_30000909_5" bing_pb="$urlPingSuffix" style="overflow:hidden; padding:0; margin:0 11px;">
+        <em>王者荣耀</em>最新<em>礼包</em>领取地址一览 钻石金币免费送_<em>王者荣耀</em>_巴士手游 ...
+                
+        <div class="mod-tuwen">
+                            <div class="mod-tuwen-img">
+                    <img src="http://img04.sogoucdn.com/v2/thumb/resize/w/200/h/150/ir/3/zi/on/iw/75/ih/50/crop/x/0/y/0/w/200/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Ftv05.tgbusdata.cn%2Fv3%2Fthumb%2Fjpg%2FMjk2Yiw3MDAsMTAwLDQsMywxLC0xLDEs%2Fu%2Fshouji.tgbus.com%2Fuploads%2Fallimg%2F1602%2F21%2F3244-160221000K7.jpg&amp;referer=http://m.shouji.tgbus.com/wzry/229052/" width="100" height="75" alt="">
+                </div>
+                <div class="mod-tuwen-txt"><p class="mod-fourline"><em>王者荣耀</em>最新<em>礼包</em>领取地址一览,最近<em>王者荣耀</em>又有福利带给大家啦!是大鸡腿哦!<em>礼包</em>内容非常丰富,还有钻石金币免费赠送!废话不多说,来跟小编看看吧!</p></div>
+                    </div>
+    </a>
+    <div class="citeurl">m.shouji.tgbus.com</div>
+</div>
+<script type="text/javascript">
+    (function(d,e){var b=e.sogou=e.sogou||{},b=b.struct=b.struct||{};(b.struct6001=b.struct6001||{}).init=function(b,e){function f(a){return"sogou_vr_"+b+(a?"_"+a:"")+"_"+e}var c=d(document.getElementById(f(void 0))).find(".mod-tuwen-txt"),g=d(document.getElementById(f(void 0))).find(".mod-fourline"),h=d(document.getElementById(f(void 0))).find(".mod-tuwen-img"),a=d(document.getElementById(f(void 0))).find("img");0<a.length&&"none"!=a.css("display")&&(a[0].onerror=function(){c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},setTimeout(function(){!(0>=a.height()||0>=a.width()||"undefined"==typeof a[0].complete)&&a[0].complete||c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},500))}})(Zepto,window); sogou.struct.struct6001.init("30000909", "5");
+</script>    <div class="per-hint" style="margin-bottom:6px;" id="formerhints">  <h4 style="font-size: 120%"><span style="color:red;">92%</span>的人还搜了</h4> <ul>  <li>  <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30010081/tc?pg=webz&amp;clk=6&amp;url=http%3A%2F%2Fwap.sogou.com%2Fweb%2FsearchList.jsp%3Fkeyword%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585%25E9%25A2%2586%25E5%258F%2596%26uID%3D7YwT3G56jxGH_IAj%26dp%3D1%26v%3D5%26s_from%3Dhint_middle%26htpos%3D6%26htindex%3D1%26htdbg%3Didc%253Etc%257CdbgID%253E01%257Cabt%253E0%257Cmth%253E1&amp;f=0&amp;id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9&amp;dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;vrid=30010081&amp;linkid=0&amp;wml=1&amp;w=1281">王者荣耀礼包领取</a>   <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30010081/tc?pg=webz&amp;clk=6&amp;url=http%3A%2F%2Fwap.sogou.com%2Fweb%2FsearchList.jsp%3Fkeyword%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585%25E5%25A4%25A7%25E5%2585%25A8%26uID%3D7YwT3G56jxGH_IAj%26dp%3D1%26v%3D5%26s_from%3Dhint_middle%26htpos%3D6%26htindex%3D2%26htdbg%3Didc%253Etc%257CdbgID%253E01%257Cabt%253E0%257Cmth%253E1&amp;f=0&amp;id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9&amp;dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;vrid=30010081&amp;linkid=0&amp;wml=1&amp;w=1281">王者荣耀礼包大全</a>  </li>  <li>  <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30010081/tc?pg=webz&amp;clk=6&amp;url=http%3A%2F%2Fwap.sogou.com%2Fweb%2FsearchList.jsp%3Fkeyword%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585%25E5%258A%25A9%25E6%2589%258B%26uID%3D7YwT3G56jxGH_IAj%26dp%3D1%26v%3D5%26s_from%3Dhint_middle%26htpos%3D6%26htindex%3D3%26htdbg%3Didc%253Etc%257CdbgID%253E01%257Cabt%253E0%257Cmth%253E1&amp;f=0&amp;id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9&amp;dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;vrid=30010081&amp;linkid=0&amp;wml=1&amp;w=1281">王者荣耀礼包助手</a>   <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30010081/tc?pg=webz&amp;clk=6&amp;url=http%3A%2F%2Fwap.sogou.com%2Fweb%2FsearchList.jsp%3Fkeyword%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585%25E8%25BD%25AF%25E4%25BB%25B6%26uID%3D7YwT3G56jxGH_IAj%26dp%3D1%26v%3D5%26s_from%3Dhint_middle%26htpos%3D6%26htindex%3D4%26htdbg%3Didc%253Etc%257CdbgID%253E01%257Cabt%253E0%257Cmth%253E1&amp;f=0&amp;id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9&amp;dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;vrid=30010081&amp;linkid=0&amp;wml=1&amp;w=1281">王者荣耀礼包软件</a>  </li>  </ul> </div> <script>(function (){var hint = $('#formerhints');hint.on('touchend', function() {if(typeof uigs_cl !== 'undefined') {window.innerWidth >= 568?uigs_cl('hint', '', '', 'page=old&screen=h'):uigs_cl('hint', '', '', 'page=old&screen=s');}});if(typeof  uigs_pv !== 'undefined') {uigs_pv('wap_result', 'hint', 6, 'page=old');}})();</script>  <style type="text/css">.ico_wechat{display:inline-block;width:20px;height:17px;background:url(/resource/vr/5/images/account/ico_wechat.png) 0 0 no-repeat;vertical-align:-2px;background-size:20px 17px}.vr_account{padding:0 11px}.account_tit{display:block;padding-bottom:10px;border-bottom:1px solid #eee}.account_tit2{display:block;padding-bottom:10px;color:#777;font-size:14px;line-height:22px}.account_tit .ico_wechat{vertical-align:-3px}.account_tit2 .ico_wechat{vertical-align:-4px}.account_box{overflow:hidden;padding:13px 0 9px;width:100%;display:table;table-layout:fixed}.account_box2{overflow:hidden}.account_thumb_tit{overflow:hidden;clear:both;width:79px;max-width:95px;max-height:32px;margin:0 auto;padding-top:10px;color:#262626;font-size:14px;line-height:16px;text-align:center}.account_thumb{float:left;position:relative;width:80px;height:80px}.account_thumb_box{margin:0 2px;display:table-cell;vertical-align:top;text-align:center}.account_thumb_box .account_thumb{float:none;width:auto}.account_thumb_box .account_thumb .account_thumb_bg{left:50%;margin-left:-40px}.account_thumb_box .account_thumb .ico_v2{right:50%;margin-right:-35px;z-index:10}.account_thumb_box .account_thumb_tit{width:100%}.account_thumb_box:last-child{margin-right:0}.account_thumb_bg{display:block;display:block;position:absolute;top:0;left:0;width:80px;height:80px;background:url(/resource/vr/5/images/account/img_thumb.png) 0 0 no-repeat;background-size:80px 80px}.ico_v2{display:block;position:absolute;right:5px;bottom:0;width:20px;height:20px;background:url(/resource/vr/5/images/account/ico_v2.png?v=1) 0 0 no-repeat;background-size:20px 20px}.account_info_lst{overflow:hidden;position:relative;font-size:13px;zoom:1;padding-left:10px}.account_info_lst dt{float:left;clear:both;color:#777;line-height:20px;width:67px}.account_info_lst .account_info_lit{padding-bottom:2px;color:#262626;font-size:16px}.account_info_lst dd{overflow:hidden;color:#262626;line-height:19px;position:relative;top:1px}.account_news{display:block;overflow:hidden;padding:9px 0 5px;border-top:1px solid #f5f5f5}.account_news_txt{line-height:18px;max-height:38px;overflow:hidden;display:inline-block}.account_news_tit{color:#777;line-height:19px;padding-bottom:3px}.account_news_time{margin-left:10px;color:#777;font-size:12px;word-break:break-all}.news_lst li{border-bottom:1px solid #f5f5f5}.news_lst_tab{display:block;overflow:hidden;padding:8px 0;line-height:19px}.news_lst li:last-child{border-bottom:0}.news_lst_thumb{float:right;margin-left:5px}.news_lst_thumb img{vertical-align:top}.news_lst_info{padding-top:4px;color:#777;font-size:12px;line-height:15px;padding-bottom:1px}.news_txt_box{overflow:hidden;max-height:38px}.news_lst_txt2{color:#777;font-size:12px}.news_lst_info span{color:#262626}.ico_v{display:inline-block;width:11px;height:11px;margin-left:5px;background:url(/resource/vr/5/images/account/ico_v.png) 0 0 no-repeat;vertical-align:-2px;background-size:11px 11px}.account_box_lst li{border-bottom:1px solid #eee}.account_box_lst li:last-child{border-bottom:0}.vr_account .tabLst .on a{border-bottom-color:#06bf04}.btn_pa_area{overflow:hidden;position:relative;height:38px;border-top:1px solid #e0e0e0;background-color:#f8f8f8;line-height:38px;text-align:center}.btn_pa_area .btn_pg,.btn_pa_area .btn_pg2{position:absolute;width:56px;height:38px;text-align:center}.btn_pg{top:0;left:0;border-right:1px solid #dfdfdf}.btn_pg2{top:0;right:0;border-left:1px solid #dfdfdf}.btn_pa_area .ico_pg,.btn_pa_area .ico_pg2{display:block;width:7px;height:11px;margin:13px auto 0;background-image:url(/resource/vr/5/images/account/pg_arr.png);background-size:7px 59px}.ico_pg{background-position:0 -16px}.ico_pg2{background-position:0 0}span .ico_pg{background-position:0 -48px}span .ico_pg2{background-position:0 -32px}.pg_mid{color:#6c6c6c;font-size:14px}.pg_mid strong{font-weight:normal}.lst_wechat_txt{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;-webkit-box-flex:1;overflow:hidden}.lst_wechat_txt2{overflow:hidden;max-height:40px}.news_lst2 li{border-bottom:1px solid #f5f5f5}.news_lst_tab2{display:block;overflow:hidden;height:74px;padding:12px 0;color:#262626}.news_lst2 li:last-child{border-bottom:0}.news_lst_thumb2{float:right;margin-left:5px}.news_lst_thumb2 img{vertical-align:top}.news_lst_info2{color:#777;font-size:12px;line-height:20px}.news_txt_box2{overflow:hidden;line-height:17px}.news_lst_txt3{color:#777;font-size:12px;line-height:20px}.news_lst_info2 span{color:#262626}.app-tg{font-size:14px;color:#ee4035;line-height:34px;height:34px;text-align:center;background:#fff;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;margin:0 0 6px;display:block}.app-tg span{display:inline-block;padding:0 25px;background:url(/resource/vr/5/images/account/ico_down.png) 0 8px no-repeat;background-size:18px 18px}.app-tg2{margin-bottom:6px;border:1px solid #e0e0e0;background:#fff;overflow:hidden;display:block;height:54px}.app-tg2 .logo-app{float:left;margin:8px 10px 0 11px}.app-tg2 .app-down{line-height:20px;color:#262626;font-size:14px;padding-top:7px}.app-tg2 .app-down span{display:inline-block;font-size:12px;color:#fff;background:#ee4035;line-height:18px;padding:0 5px;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;margin-left:5px;vertical-align:top;position:relative;top:1px}.resultLink .tw-box{overflow:hidden}.resultLink .tw-box .info{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;-webkit-box-flex:1;overflow:hidden}.resultLink .tw-box .news_lst_thumb{margin-top:10px}</style><script type="text/javascript">
+		function vrTimeHandle552(time){
+	if (time) {
+		var type = ["1分钟前", "分钟前", "小时前", "天前", "周前", "个月前", "年前"];
+		var secs = (new Date().getTime())/1000 - time;
+		if(secs < 60){
+			return type[0];
+		}else if(secs < 3600){
+			return Math.floor(secs/60) + type[1];
+		}else if(secs < 24*3600){
+			return Math.floor(secs/3600) + type[2];
+		}else if(secs < 24*3600 *7){
+			return Math.floor(secs/(24*3600)) + type[3];
+		}else if(secs < 24*3600*31){
+			return Math.round(secs/(24*3600*7)) + type[4];
+		}else if(secs < 24*3600*365){
+			return Math.round(secs/(24*3600*31)) + type[5];
+		}else if(secs >= 24*3600*365){
+			return Math.round(secs/(24*3600*365)) + type[6];
+		}else {
+			return '';
+		}
+	} else {
+		return '';
+	}
+}
+
+function vrImgHandle552(obj,width,height){
+       var defaultImage='/resource/vr/5/images/account/wap_dft.png';
+       obj.onerror = function(){
+           obj.src=defaultImage;
+           obj.style.visibility = "visible";
+           obj.style.marginLeft = "0px";
+           obj.style.marginTop = "0px";
+           return;
+       }
+        calImg(obj);
+        obj.style.visibility = "visible";
+       function calImg (that){
+           if (that.height == 0){
+              setTimeout(function (){
+                  calImg(that);
+              }, 50);
+              return;
+           }
+           if(width != that.width){
+              var pos = Math.floor((that.width - width)/2);
+              obj.style.marginLeft = (-pos) + "px";
+           }
+           if(height != that.height){
+              var pos = Math.floor((that.height - height)/2);
+              obj.style.marginTop = (-pos) + "px";
+           }
+       }
+    }
+
+		
+	</script><div class="vrResult" id="sogou_vr_11002501_7">
+<h3 class="vr-tit">
+<a class="account_tit resultLink" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=11002501/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=7&amp;url=http%3A%2F%2Fweixin.sogou.com%2Fweixinwap%3Fie%3Dutf8%26query%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585%26type%3D2%26sourceid%3Dweixinvr&amp;vrid=11002501&amp;wml=1&amp;linkid=0"><em>王者荣耀礼包</em>_微信文章 </a>
+</h3>
+<div class="vr_account">
+<ul class="news_lst">
+<li>
+<a class="news_lst_tab" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=11002501/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=7&amp;url=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3Fsrc%3D3%26timestamp%3D1466938676%26ver%3D1%26signature%3DE7fIuiFDyCAwENxJsG2GWUtsIcbgD3MF-bZULMwR6lc*v8PAdywievhS2573wssFa1Z0qHQVd-NU3-k961cAeQLYRKTLDvXJ8iiBiMHpQbTdLrzjslJyRnOsJ4rpAD4cycnyyCZLpdSViMIlGoPVELPPzTnTwwkbrRYq*SRN1v0%3D&amp;vrid=11002501&amp;wml=1&amp;linkid=11">
+<div style="width:75px;height:55px;overflow:hidden" class="news_lst_thumb">
+<img alt="" onload="vrImgHandle552(this,75,55)" onerror="this.src='/resource/vr/5/images/account/wap_dft.png';this.width=75;this.height=55;" src="http://img01.store.sogou.com/net/a/04/link?appid=100520080&amp;url=http://mmbiz.qpic.cn/mmbiz/FosYHOwiarmGH81aVoMjBPcCcJYewgsWrvFicAIcJL9hsfCRWryhicXUiaGRbgUAialfBz3NuQuyJqwQnvrF37c8L5Q/0?wx_fmt=jpeg" style="margin-top: -8px; visibility: visible;"></div>
+<div class="news_txt_box">
+<p><em>王者荣耀礼包</em></p>
+</div>
+<div lastmodified="" class="news_lst_info _time">2个月前</div>
+</a>
+</li>
+<li>
+<a class="news_lst_tab" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=11002501/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=7&amp;url=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3Fsrc%3D3%26timestamp%3D1466938676%26ver%3D1%26signature%3D0Kc4HFHj6XGSBVDA9taJi4jCYsL47ZVpxAgvhsPzKRLAMkdVNmpIeR5q3A9pw6mAyJ7lcEpBFEXmc4djJt48fnATyF6rgb4nrLL66U5Qc314i7B2CoBu4l8c4N5s7eVmTr8s0kdP*w5Bpm*1d-pwIDnVD2EjcVM-uQRPi324DD8%3D&amp;vrid=11002501&amp;wml=1&amp;linkid=12">
+<div class="news_txt_box">
+<p><em>王者荣耀礼包</em></p>
+</div>
+<div lastmodified="" class="news_lst_info _time">3个月前</div>
+</a>
+</li>
+<li>
+<a class="news_lst_tab" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=11002501/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=7&amp;url=http%3A%2F%2Fmp.weixin.qq.com%2Fs%3Fsrc%3D3%26timestamp%3D1466938676%26ver%3D1%26signature%3DlGOPjnpYQmLhAIgJMHcAJbEP05sEeTzfeeddU-FA1bifpcFBQMLTmOBh4mBLumoMylGxDL6GUwJrBPkBWRnioQOFrVJQf*u9w-5jlWuOaFR53vJJECMnXJV-gU-XTjDIdkK2I3nBdgdNqY5-zZcdjg%3D%3D&amp;vrid=11002501&amp;wml=1&amp;linkid=13">
+<div class="news_txt_box">
+<p>补仓<em>王者荣耀礼包</em>补仓</p>
+</div>
+<div lastmodified="" class="news_lst_info _time">6个月前</div>
+</a>
+</li>
+</ul>
+</div>
+<a class="vr-more" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=11002501/k=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=7&amp;url=http%3A%2F%2Fweixin.sogou.com%2Fweixinwap%3Fie%3Dutf8%26query%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585%26type%3D2%26sourceid%3Dweixinvr&amp;vrid=11002501&amp;wml=1&amp;linkid=2"> 查看更多文章</a>
+</div><script>
+(function(classid,rank){
+
+function n(id){return "sogou_vr_"+classid+"_"+rank+(id?"_"+id:"")}
+var times = $('#'+n()+' ._time');
+if(times){
+	for(var i=0;i<times.length;i++){
+		if($(times[i]).attr("lastModified")>0){
+			$(times[i]).html(vrTimeHandle552($(times[i]).attr("lastModified")));
+			$(times[i]).attr("lastModified","");
+		}
+	}
+}
+})(11002501,'7');
+</script><script>
+
+(function(){
+	function trim(str){
+    return str.replace(/(^\s+)|(\s+$)/g, "").replace(/\s+/g, " ");
+}
+function markRed(str) {
+    var pos = str.lastIndexOf("\ue40a");
+    if (str.lastIndexOf("\ue40b") < pos) {
+        str = str.substring(0, pos) + str.substring(pos + 1);
+    }
+    return str.replace(/\ue40a/g, "<em>").replace(/\ue40b/g, "</em>");
+}
+function cutRed(str) {
+    return str.replace(/<.*?>/g, "").replace(/[\ue40a\ue40b]/g, "");
+}
+function escapeForHtml(str) {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&apos;").replace(/"/g, "&quot;");
+}
+function unescapeForHtml(str) {
+    return str.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&apos;/g, "'").replace(/&quot;/g, "\"").replace(/&amp;/g, "&").replace(/&nbsp;/g," ");
+}
+	var sys = {}, ua = navigator.userAgent.toLowerCase(), s,
+	s = ua.match(/sogousearch/)?1:0;
+	
+	 if (ua.indexOf('iphone') > -1) {
+        sys.ios = true;
+    } else if (ua.indexOf('android') > -1) {
+        sys.android = true;
+    }
+	 
+	 function SogouApp(){};
+	 SogouApp.prototype.init = function(cb){
+        var checkTimes = 20, that = this;
+        function retry(){
+            var support = that.support();
+            if(support == 0 && checkTimes>=0){
+                setTimeout(retry, 20+(20-checkTimes)*10);
+                checkTimes--;
+            } else {
+                cb(support);
+            }
+        }
+        retry();
+    };
+	
+    SogouApp.prototype.support = function(){
+        if (sys.android) {
+            if (window.JSInvoker) {
+                return 1;
+            }
+            return -1;
+        } else if (sys.ios) {
+            if (window.JSInvoker &&typeof window.JSInvoker.openWeixinNews != 'undefined') {
+                return 1;
+            }
+            return 0;
+        }
+    };
+	
+    SogouApp.prototype.open = function(params){
+	   window.JSInvoker.openWeixinNews(JSON.stringify(params));
+   };
+   
+   SogouApp.prototype.getUrlParams = function(paraname, str) {
+		var sValue = str.match(new RegExp("[?&]" + paraname + "=([^&]*)(&?)", "i"));
+		if (sValue ? sValue[1] : sValue == null)
+	    	return sValue ? sValue[1] : sValue;
+	}
+   
+     function init(){
+	   var open = new SogouApp();
+	   open.init(function(n){
+		   var openSupport = n>0, lo = ourl;
+		   if (openSupport && lo.indexOf('searchList')>0) {
+			   $('.vrResult').each(function(){
+					var item = $(this);
+					if (item.find('.account_tit').length<=0) return;
+					if (item.find('.account_tit').html().indexOf('的相关微信公众号文章')>0) {
+						item.find('.vr_account>.news_lst>li').each(function(){
+							var li = $(this),
+								params = {
+								   link: decodeURIComponent(open.getUrlParams("url", li.children('a').attr("href"))),
+								   title:trim(cutRed(unescapeForHtml(li.find("p").first().html()))),
+								   img_list: [li.find(".news_lst_thumb img").attr("src")?li.find(".news_lst_thumb img").attr("src"):''],
+								   pub_source: li.find(".zhz").attr("title") || "",
+								   pub_time: parseInt(new Date().getTime()/1000),
+								   read_num: 0,
+								   video_type: 0,
+								   type:(li.find(".news_lst_thumb img").length>0)?1:0
+								};
+							li.click(function(){
+								open.open(params); 
+								return false;
+							});	
+						});			       			
+					} 
+				/*	if (item.find('.account_tit').html().indexOf('的相关微信公众号')>0) {
+						var	a = item.find('.account_news_txt');
+						if (a.length>0){
+							params = {
+								link: decodeURIComponent(open.getUrlParams("url", a.attr("href"))),
+								title: trim(cutRed(unescapeForHtml(a.html().split("<span")[0]))),
+								img_list: [],
+								pub_source: item.find('.lst_wechat_txt').text(),
+								pub_time: parseInt(new Date().getTime()/1000),
+								read_num: 0,
+								video_type: 0,
+								type:0
+							};
+							a.click(function(){
+								open.open(params); 
+								return false;
+							});
+						}
+					} 
+				*/	
+			   });			   	
+			}			
+	   });
+   }
+   init();
+})();
+
+</script>  <style type="text/css">.wenwen-aggr{padding:0 11px}.wenwen-aggr .resultLink{padding:0 0 10px 0;overflow:inherit;word-wrap:normal;white-space:normal;text-overflow:inherit}.wenwen-aggr p{color:#262626;font-size:14px}.wenwen-aggr .ww-info{font-size:12px;color:#777;-webkit-line-clamp:1;padding:6px 0 2px}.wenwen-aggr .best{display:inline-block;width:53px;height:16px;margin:0 5px 0 0;line-height:16px;font-size:12px;color:#fff;border-radius:2px;background:#08bb06;text-align:center;position:relative;top:-1px}.wenwen-aggr .qust{color:#777}.wenwen-aggr .ww-web{font-size:12px;color:#999}.wenwen-aggr li{border-top:1px solid #f5f5f5;position:relative}.wenwen-aggr li p,.wenwen-aggr2 p{padding:0;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;-webkit-box-flex:1}.wenwen-aggr li a{display:block;padding:7px 65px 7px 0;line-height:20px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal}.wenwen-aggr li .pic-ico,.wenwen-aggr li .ww-ico{width:12px;height:12px;background:#fa804b;color:#fff;font-size:9px;display:inline-block;margin-left:5px;line-height:11px;text-align:center;position:relative;top:-2px;border-radius:2px}.wenwen-aggr li .pic-ico{background:#6598e4}.wenwen-aggr li .num{position:absolute;right:0;top:7px;color:#777;font-size:12px}.wenwen-aggr li:first-child{border-top:0}.wenwen-aggr-ad{position:relative;display:block;padding:10px 30px 10px 11px;margin-top:-11px;overflow:hidden}.wenwen-aggr-ad:after{width:8px;height:10px;overflow:hidden;content:'';display:block;position:absolute;top:50%;right:11px;margin-top:-5px;background:url(/resource/vr/5/images/ico_spr.png) no-repeat -12px -161px;background-size:20px auto}.wenwen-aggr-ad .que{color:#777;font-size:16px;line-height:24px}.wenwen-aggr-ad .ask{color:#c00;font-size:14px;line-height:22px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.wenwen-aggr-ad .ww-pic{float:left;margin-right:9px}.wenwen-aggr-ad img{vertical-align:top}.wenwen-aggr2 .resultLink{padding:0 0 3px}</style><div class="vrResult"><div class="vr-favorable"><ul class="wenwen-aggr"><li><a class="resultLink" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000202/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=8&amp;url=http%3A%2F%2Fwapiknow.baidu.com%2Fquestion%2F1384784737800530020&amp;vrid=30000202&amp;wml=1&amp;linkid=0" id="sogou_vr_30000202"><span>求<em>王者荣耀礼包</em>..._百度知道</span><p class="ww-info">2个回答 &nbsp;&nbsp;&nbsp; 提问时间：2016年01月09日</p><p><span>谁有王者荣耀的礼包什么的 <em>王者荣耀礼包</em>哪里有啊,求链接 王者荣耀预约礼包 <em>王者荣耀礼包</em>领取方法介绍 礼包怎么领取 王者荣耀公测礼包怎么拿 公测礼包领取</span></p></a></li><li><a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000202/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=8&amp;url=http%3A%2F%2Fwapiknow.baidu.com%2Fquestion%2F1884599892198002628%3Fg_f%3D11301026&amp;vrid=30000202&amp;wml=1&amp;linkid=2"><em>王者荣耀礼包</em>怎么领取 礼包兑换码兑换步骤详解<span class="num">2个回答 </span></a></li><li><a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000202/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=8&amp;url=http%3A%2F%2Fwapiknow.baidu.com%2Fquestion%2F457631995421456605%3Fg_f%3D11301026&amp;vrid=30000202&amp;wml=1&amp;linkid=2"><em>王者荣耀礼包</em>领取中心王者霸主<span class="num">2个回答 </span></a></li><li><a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000202/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=8&amp;url=http%3A%2F%2Fwapiknow.baidu.com%2Fquestion%2F1884656769785520668%3Fg_f%3D11301026&amp;vrid=30000202&amp;wml=1&amp;linkid=2"><em>王者荣耀礼包</em>怎么领取<span class="num">1个回答 </span></a></li></ul></div></div>  <style type="text/css">.tieba{margin:2px 11px 0;overflow:hidden}.tieba a{display:block;overflow:hidden}.tieba .tb-avater{float:left;margin-right:10px}.tieba .tb-avater a{display:block}.tieba .tb-avater img{width:40px;height:40px;vertical-align:top}.tb-txt h3{font-size:16px}.tieba .tb-txt .fouce{margin-top:6px;font-size:12px}.tieba .tb-txt .fouce span{margin-right:14px;color:#777}.tieba .tb-txt .fouce span:last-of-type{margin-right:0}.tieba .tb-txt .fouce span em{color:#f66f51}.tb-list{margin-top:12px;border-top:1px solid #eee;padding:3px 11px 3px}.tb-list .tb-con{border-bottom:1px solid #eee;overflow:hidden}.tb-list .tb-con:last-of-type{border:0}.tb-list .tb-con a{display:block}.contxt{position:relative;padding:6px 50px 6px 0;overflow:hidden}.contxt .replay-total{position:absolute;top:9px;right:0;background:url(/resource/vr/5/images/tieba/replay.png) no-repeat 0 50%;background-size:12px auto;padding-left:15px;font-size:12px;color:#999;width:30px}.contxt .contit{line-height:1.45em;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.contxt .replay{color:#777;font-size:12px;margin-top:3px}</style><div class="vrResult" id="sogou_vr_30002401_9">
+<div class="tieba">
+<a id="sogou_vr_30002401_9" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30002401/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=9&amp;url=http%3A%2F%2Ftieba.baidu.com%2Ff%3Fkw%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585&amp;vrid=30002401&amp;wml=1&amp;linkid=0">
+<div class="tb-avater">
+<img src="http://img01.sogoucdn.com/v2/thumb/resize/w/150/h/150/ir/3/zi/on/iw/112/ih/112/crop/x/0/y/0/w/150/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Fm.tiebaimg.com%2Ftimg%3Fwapp%26quality%3D80%26size%3Db150_150%26subsize%3D20480%26cut_x%3D0%26cut_w%3D0%26cut_y%3D0%26cut_h%3D0%26sec%3D1369815402%26srctrace%26di%3D83a6934114aaee7578ff37f5a63afda3%26wh_rate%3Dnull%26src%3Dhttp%253A%252F%252Fimgsrc.baidu.com%252Fforum%252Fpic%252Fitem%252Fe7cd7b899e510fb33e90ec9ade33c895d1430c35.jpg&amp;referer=http://tieba.baidu.com/f?kw=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85"></div>
+<div class="tb-txt">
+<h3><em>王者荣耀礼包</em>吧_百度贴吧</h3>
+<p class="fouce">
+<span>关注：274</span><span>帖子：322</span>
+</p>
+</div>
+</a>
+</div>
+<div class="tb-list">
+<div class="tb-con">
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30002401/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=9&amp;url=http%3A%2F%2Ftieba.baidu.com%2Fp%2F4427850020&amp;vrid=30002401&amp;wml=1&amp;linkid=1">
+<div class="contxt">
+<p class="contit">[<em>王者荣耀</em>专区]官方外团招募公告</p>
+<span class="replay-total" name="sogou_vr_30002401_9">4</span>
+</div>
+</a>
+</div>
+<div class="tb-con">
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30002401/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=9&amp;url=http%3A%2F%2Ftieba.baidu.com%2Fp%2F4359030340&amp;vrid=30002401&amp;wml=1&amp;linkid=2">
+<div class="contxt">
+<p class="contit">每曰</p>
+<span class="replay-total" name="sogou_vr_30002401_9">16</span>
+</div>
+</a>
+</div>
+<div class="tb-con">
+<a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30002401/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=9&amp;url=http%3A%2F%2Ftieba.baidu.com%2Fp%2F4314736564&amp;vrid=30002401&amp;wml=1&amp;linkid=3">
+<div class="contxt">
+<p class="contit">两个<em>礼包</em></p>
+<span class="replay-total" name="sogou_vr_30002401_9">14</span>
+</div>
+</a>
+</div>
+</div>
+<a class="vr-more" href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30002401/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;clk=9&amp;url=http%3A%2F%2Ftieba.baidu.com%2Ff%3Fkw%3D%25E7%258E%258B%25E8%2580%2585%25E8%258D%25A3%25E8%2580%2580%25E7%25A4%25BC%25E5%258C%2585&amp;vrid=30002401&amp;wml=1&amp;linkid=5">查看更多贴吧内容</a><script>
+	(function(h,i){var j=i.sogou=i.sogou||{},g=j.vr=j.vr||{},f=g.vr30000401=g.vr30000401||{};f.init=function(e,b){function a(k){return"sogou_vr_"+e+(k?"_"+k:"")+"_"+b}function c(k){return document.getElementById(a(k))}h(function(){var l="sogou_vr_"+e+"_"+b;var k=h("[name='"+l+"']");h(k).each(function(v,u){var m=h(u).html();try{var w=Number(m);if(w>10000){w=w/10000;w=w.toFixed(0);m=w+"万"}}catch(t){}h(u).html(m)})});var d=h(c()).find(".tb-avater");var n=h(c()).find("img");n.bind("error",function(){d.css("display","none")})}})(Zepto,window);
+	</script><script>(function(){sogou.vr.vr30000401.init('30002401', '9');})();</script>
+</div>  <div class="vrResult">
+    <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000909/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;pg=webz&amp;clk=10&amp;url=http%3A%2F%2Fka.18183.com%2Flist_game_2080.shtml&amp;f=0&amp;vrid=30000909&amp;linkid=0&amp;wml=0&amp;w=1347" class="resultLink" id="sogou_vr_30000909_10" bing_pb="$urlPingSuffix" style="overflow:hidden; padding:0; margin:0 11px;">
+        <em>王者荣耀礼包</em>领取_礼包怎么用_兑换码_18183发号频道
+                
+        <div class="mod-tuwen">
+                            <div class="mod-tuwen-img">
+                    <img src="http://img03.sogoucdn.com/v2/thumb/resize/w/200/h/150/ir/3/zi/on/iw/75/ih/50/crop/x/0/y/0/w/200/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Fimg3.18183.duoku.com%2Fassets%2Fupfile%2F1464249446_159.jpg&amp;referer=http://ka.18183.com/list_game_2080.shtml" width="100" height="75" alt="">
+                </div>
+                <div class="mod-tuwen-txt"><p class="mod-fourline">最新<em>王者荣耀礼包</em>兑换码怎么领取尽在18183发号频道 <em>王者荣耀</em>18183战火燃天88钻<em>礼包</em> <em>王者荣耀</em>18183战火燃天28钻<em>礼包</em> <em>王者荣耀</em>18183五月独家68钻<em>礼包</em> <em>王者荣耀</em>18183母...</p></div>
+                    </div>
+    </a>
+    <div class="citeurl">ka.18183.com</div>
+</div>
+<script type="text/javascript">
+    (function(d,e){var b=e.sogou=e.sogou||{},b=b.struct=b.struct||{};(b.struct6001=b.struct6001||{}).init=function(b,e){function f(a){return"sogou_vr_"+b+(a?"_"+a:"")+"_"+e}var c=d(document.getElementById(f(void 0))).find(".mod-tuwen-txt"),g=d(document.getElementById(f(void 0))).find(".mod-fourline"),h=d(document.getElementById(f(void 0))).find(".mod-tuwen-img"),a=d(document.getElementById(f(void 0))).find("img");0<a.length&&"none"!=a.css("display")&&(a[0].onerror=function(){c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},setTimeout(function(){!(0>=a.height()||0>=a.width()||"undefined"==typeof a[0].complete)&&a[0].complete||c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},500))}})(Zepto,window); sogou.struct.struct6001.init("30000909", "10");
+</script>  <div class="vrResult">
+    <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000909/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;pg=webz&amp;clk=11&amp;url=http%3A%2F%2Fm.pipaw.com%2Fhangyenews%2Fnews_36367.html&amp;f=0&amp;vrid=30000909&amp;linkid=0&amp;wml=1&amp;w=1281" class="resultLink" id="sogou_vr_30000909_11" bing_pb="$urlPingSuffix" style="overflow:hidden; padding:0; margin:0 11px;">
+        <em>王者荣耀</em>不限号<em>礼包</em>领取 不限号活动福利拿不停_琵琶网
+                
+        <div class="mod-tuwen">
+                            <div class="mod-tuwen-img">
+                    <img src="http://img01.sogoucdn.com/v2/thumb/resize/w/200/h/150/ir/3/zi/on/iw/75/ih/50/crop/x/0/y/0/w/200/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Fimg.pipaw.com%2Fwy%2Fsfs%2F2240%2F2c9ebbdcc52700ee166cac6b210dac9b.jpg&amp;referer=http://m.pipaw.com/hangyenews/news_36367.html" width="100" height="75" alt="">
+                </div>
+                <div class="mod-tuwen-txt"><p class="mod-fourline">王者联盟终于在今天开启了不限号,那么有没有不限号礼包领取,不限号活动福利有哪些呢,相信大家都非常期待,下面快随小编看看<em>王者荣耀礼包</em>和活动吧.</p></div>
+                    </div>
+    </a>
+    <div class="citeurl">m.pipaw.com</div>
+</div>
+<script type="text/javascript">
+    (function(d,e){var b=e.sogou=e.sogou||{},b=b.struct=b.struct||{};(b.struct6001=b.struct6001||{}).init=function(b,e){function f(a){return"sogou_vr_"+b+(a?"_"+a:"")+"_"+e}var c=d(document.getElementById(f(void 0))).find(".mod-tuwen-txt"),g=d(document.getElementById(f(void 0))).find(".mod-fourline"),h=d(document.getElementById(f(void 0))).find(".mod-tuwen-img"),a=d(document.getElementById(f(void 0))).find("img");0<a.length&&"none"!=a.css("display")&&(a[0].onerror=function(){c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},setTimeout(function(){!(0>=a.height()||0>=a.width()||"undefined"==typeof a[0].complete)&&a[0].complete||c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},500))}})(Zepto,window); sogou.struct.struct6001.init("30000909", "11");
+</script>  <div class="vrResult">
+    <a href="./uID=7YwT3G56jxGH_IAj/v=5/type=1/sp=1/ct=160626185756/keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85/id=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9/sec=rEFLSBzdJXY9kCK2O3C4Dg../dp=1/vr=30000909/tc?dp=1&amp;key=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;pno=1&amp;g_ut=3&amp;is_per=0&amp;pg=webz&amp;clk=12&amp;url=http%3A%2F%2Fm.yxbao.com%2Fmj%2F142035.html&amp;f=0&amp;vrid=30000909&amp;linkid=0&amp;wml=1&amp;w=1281" class="resultLink" id="sogou_vr_30000909_12" bing_pb="$urlPingSuffix" style="overflow:hidden; padding:0; margin:0 11px;">
+        <em>王者荣耀</em>送英雄及永久皮肤 千万金币钻石活动_游戏堡
+                
+        <div class="mod-tuwen">
+                            <div class="mod-tuwen-img">
+                    <img src="http://img03.sogoucdn.com/v2/thumb/resize/w/200/h/150/ir/3/zi/on/iw/75/ih/50/crop/x/0/y/0/w/200/h/150/retype/ext/jpg?t=2&amp;appid=200549&amp;url=http%3A%2F%2Fimg.yxbao.com%2Farticle%2Fimage%2F201510%2F28%2F36e0466291.jpg&amp;referer=http://m.yxbao.com/mj/142035.html" width="100" height="75" alt="">
+                </div>
+                <div class="mod-tuwen-txt"><p class="mod-fourline">8178 ) 来源:游戏堡 编辑:ace我要评论<em>王者荣耀</em> 送永久英雄及皮肤 千万金币钻石活动开始啦!201510<em>王者荣耀</em>会给玩家们带来哪些福利呢?下面就和小编一起看看福利活...</p></div>
+                    </div>
+    </a>
+    <div class="citeurl">m.yxbao.com</div>
+</div>
+<script type="text/javascript">
+    (function(d,e){var b=e.sogou=e.sogou||{},b=b.struct=b.struct||{};(b.struct6001=b.struct6001||{}).init=function(b,e){function f(a){return"sogou_vr_"+b+(a?"_"+a:"")+"_"+e}var c=d(document.getElementById(f(void 0))).find(".mod-tuwen-txt"),g=d(document.getElementById(f(void 0))).find(".mod-fourline"),h=d(document.getElementById(f(void 0))).find(".mod-tuwen-img"),a=d(document.getElementById(f(void 0))).find("img");0<a.length&&"none"!=a.css("display")&&(a[0].onerror=function(){c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},setTimeout(function(){!(0>=a.height()||0>=a.width()||"undefined"==typeof a[0].complete)&&a[0].complete||c.hasClass("mod-ico-txt")||(h.css("display","none"),c.addClass("mod-ico-txt"),c.html("<span class='mod-ico-tw'>\u56fe\u6587</span>"+g.html()))},500))}})(Zepto,window); sogou.struct.struct6001.init("30000909", "12");
+</script>   <!--底部广告-->  <!--底部广告 end--> </div>  <div id="loading_next_page" class="loading" style="display:none"><span>加载中</span></div> <a id="reloading_next_page" href="javascript:(function($){$('#ajax_next_page').click();$('#reloading_next_page').hide();})(Zepto)" class="page fz-14" style="display:none">网络不给力？请点击<i>重新加载</i></a> <a href="javascript:void(0);" class="page" pagenumpara="2" id="ajax_next_page"><span>下一页</span></a> <script>(function(a){document.getElementById("ajax_next_page").addEventListener("click",function(){sogou.nextPageStart();var h="/web/search/ajax_query.jsp";var b=location.pathname.indexOf("english")!=-1?true:false;if(b){h="/web/search/ajax_query_english.jsp"}var f=0,e=+new Date(),g=a("#ajax_next_page"),j=a("#loading_next_page"),d=a("#reloading_next_page"),c=g.attr("pageNumPara"),k=h+"?type=1&amp;keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;suuid=c9a8de4f-52d9-4b11-b18f-16db7ef8f6e9";var i=0;g.hide();j.show();k=k.replace(/&amp;/g,"&");k+="&p="+c;k+="&s_from=pagenext";window.JSInvoker&&window.JSInvoker.nextPage&&window.JSInvoker.nextPage(c);a.ajax({type:"GET",url:k,dataType:"html",timeout:6000,success:function(n){var u=n.indexOf("[PAGE_INFO]");if(u!=-1){var p=n.substring(0,u).split(",");var o=parseInt(p[0]);var q=parseInt(p[1]);var r=parseInt(p[2]);var v=parseInt(p[3]);var m=(q-1)*r+1;var t=(q-1)*r+v;var s=n.substring(u+11);i=v;if(s.trim()!=""){var w=b?"<div class='results bing-results'></div>":"<div class='results'></div>";var l=a(w);j.before('<div class="sp-rslt-bar">'+m+"-"+t+"条</div>");j.before(l);l[0].innerHTML=s;a("<div></div>").html(s);sogou.nextPageGo();g.attr("pageNumPara",q+1);f=+new Date()-e;if(q<o){g.show();j.hide();return}}}g.hide();j.hide()},error:function(){d.show();j.hide()}});setTimeout(function(){var l=getCookie("wuid");if(typeof(uigs_pv)!="undefined"){uigs_pv("ajax_next_page_clk","searchlist_iphone_v42","","load_page_from=old&wuid="+l+"&ajax_load_time="+f+"&resultsize="+i)}},3000)},false)})(Zepto);
+</script>    <div class="aside">  <script>if(($('.vrResult').attr('float')=='1' || $('.vrResults').attr('float')=='1') && !$('.aside').hasClass('aside-v2')){$('.aside').addClass('aside-v2');}</script>   <div class="hint" id="hint"> <h4>相关搜索</h4>  <ul>  <li>  <a href="?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85%E4%B8%AD%E5%BF%83&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=5&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">王者荣耀礼包中心</a>   <a href="?keyword=%E8%85%BE%E8%AE%AF%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=6&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">腾讯王者荣耀礼包</a>  </li>  <li>  <a href="?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85%E5%85%91%E6%8D%A2&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=7&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">王者荣耀礼包兑换</a>   <a href="?keyword=4399%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=8&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">4399王者荣耀礼包</a>  </li>  <li>  <a href="?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80cdkey%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=9&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">王者荣耀cdkey礼包</a>   <a href="?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E5%AE%98%E7%BD%91%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=10&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">王者荣耀官网礼包</a>  </li>  <li>  <a href="?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E6%B4%BB%E5%8A%A8%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=11&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">王者荣耀活动礼包</a>   <a href="?keyword=%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80%E9%87%91%E5%B8%81%E7%A4%BC%E5%8C%85&amp;uID=7YwT3G56jxGH_IAj&amp;dp=1&amp;v=5&amp;w=1282&amp;htpos=11&amp;s_from=hint_last&amp;htindex=12&amp;htdbg=idc%3Etc%7CdbgID%3E01%7Cabt%3E0%7Cmth%3E1">王者荣耀金币礼包</a>  </li>  </ul> </div> <script>(function (){var hint = $('#hint');hint.on('touchend', function() {if(typeof uigs_cl !== 'undefined') {window.innerWidth >= 568?uigs_cl('hint', '', '', 'page=old&screen=h'):uigs_cl('hint', '', '', 'page=old&screen=s');}});if(typeof  uigs_pv !== 'undefined') {uigs_pv('wap_result', 'hint', '11', 'page=old');}})();</script>    <script>if(window.innerWidth >= 568){HorizontalScreen.getHotNews();}</script>  </div>   </div>

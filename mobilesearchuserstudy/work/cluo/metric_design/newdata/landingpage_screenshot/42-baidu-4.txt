@@ -1,0 +1,13 @@
+Loading a web page
+ReferenceError: Can't find variable: _sohuHD
+
+  http://ly626.com/:373 in global code
+ReferenceError: Can't find variable: _sohuHD
+
+  http://ly626.com/:417 in global code
+{
+    "document.body.scrollHeight": 6996,
+    "document.body.offsetHeight": 6996,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 6996
+}

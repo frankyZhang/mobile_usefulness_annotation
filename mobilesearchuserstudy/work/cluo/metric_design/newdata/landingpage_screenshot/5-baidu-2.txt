@@ -1,0 +1,19 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'e.offsetLeft')
+
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:1 in offsetToParent
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:1 in getImageTxtFeedInfo
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:1 in isFeed
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:2 in traverse
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:1 in findFeedAreas
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:4 in adpPaint
+  https://dup.baidustatic.com/dup/ui/painter/wapInsert.js:4
+Error: ReferenceError: Can't find variable: __docConfig ./MyShare.js
+
+  http://mjs.sinaimg.cn/wap/module/share_2.0/201511031535/js/addShare.min.js:1 in global code
+{
+    "document.body.scrollHeight": 11623,
+    "document.body.offsetHeight": 11623,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 11623
+}

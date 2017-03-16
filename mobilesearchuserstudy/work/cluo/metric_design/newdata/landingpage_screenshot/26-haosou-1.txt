@@ -1,0 +1,15 @@
+Loading a web page
+TypeError: undefined is not an object (evaluating 'r.document.documentElement')
+
+  http://static.tianyaui.com/global/ty2.0/TY_2.0.js:3
+  http://cms.tianyaui.com/cms_fragments/res/11543/js/friend.js?v=1466563150965:128 in init
+  http://cms.tianyaui.com/cms_fragments/res/11543/js/friend.js?v=1466563150965:138
+  http://static.tianyaui.com/global/ty2.0/TY_2.0.js:1 in resolveWith
+  http://static.tianyaui.com/global/ty2.0/TY_2.0.js:1 in ready
+  http://static.tianyaui.com/global/ty2.0/TY_2.0.js:1 in a
+{
+    "document.body.scrollHeight": 2554,
+    "document.body.offsetHeight": 2538,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2554
+}

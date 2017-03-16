@@ -1,0 +1,10 @@
+Loading a web page
+TypeError: undefined is not a constructor (evaluating '$("#common-prompt").switchOver({handler:"#prompt-close",area:"#common-prompt"})')
+
+  http://127.0.0.1:8000/0002_baidu.html:2 in t
+TypeError: undefined is not an object (evaluating 'navigator.geolocation.getCurrentPosition')
+
+  http://127.0.0.1:8000/0002_baidu.html:2 in t
+TypeError: undefined is not a constructor (evaluating '$("#"+o+"_5").live')
+
+  http://127.0.0.1:8000/0002_baidu.html:2 in t

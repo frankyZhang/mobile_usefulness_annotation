@@ -1,0 +1,58 @@
+Loading a web page
+TypeError: undefined is not an object (evaluating 'iframe.document.body')
+
+  http://ent.1ting.com/cpro/wxl4.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe4'].style')
+
+  http://www.1ting.com/v5/cpro/wxl4.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe4'].style')
+
+  http://m.weixinla.com/document/26193429/:1019 in onload
+TypeError: undefined is not an object (evaluating 'iframe.document.body')
+
+  http://ent.1ting.com/cpro/wxl4.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe4'].style')
+
+  http://www.1ting.com/v5/cpro/wxl4.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe4'].style')
+
+  http://m.weixinla.com/document/26193429/:777 in onload
+TypeError: undefined is not an object (evaluating 'iframe.document.body')
+
+  http://ent.1ting.com/cpro/wxl4.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe4'].style')
+
+  http://www.1ting.com/v5/cpro/wxl4.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe4'].style')
+
+  http://m.weixinla.com/document/26193429/:900 in onload
+TypeError: undefined is not an object (evaluating 'iframe.document.body')
+
+  http://ent.1ting.com/cpro/wxl.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe2'].style')
+
+  http://www.1ting.com/v5/cpro/wxl.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['frame2'].style')
+
+  http://m.weixinla.com/document/26193429/:1122 in onload
+TypeError: undefined is not an object (evaluating 'iframe.document.body')
+
+  http://ent.1ting.com/cpro/wxl.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['myframe2'].style')
+
+  http://www.1ting.com/v5/cpro/wxl.html:9 in onload
+TypeError: undefined is not an object (evaluating 'document.all['frame2'].style')
+
+  http://m.weixinla.com/document/26193429/:326 in onload
+TypeError: Attempting to configurable attribute of unconfigurable property.
+
+  http://dn-growing.qbox.me/vds.js:2 in defineProperty
+  http://dn-growing.qbox.me/vds.js:2 in registerHistoryHandler
+  http://dn-growing.qbox.me/vds.js:2 in domLoadedHandler
+  http://dn-growing.qbox.me/vds.js:2
+{
+    "document.body.scrollHeight": 4679,
+    "document.body.offsetHeight": 4679,
+    "document.documentElement.clientHeight": 4679,
+    "document.documentElement.scrollHeight": 4679
+}

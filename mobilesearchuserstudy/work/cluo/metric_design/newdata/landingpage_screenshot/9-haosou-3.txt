@@ -1,0 +1,12 @@
+Loading a web page
+Cannot init XMLHttpRequest object!
+
+  :1 in N
+  :1
+  :1 in AJAX
+{
+    "document.body.scrollHeight": 2589,
+    "document.body.offsetHeight": 2589,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2589
+}

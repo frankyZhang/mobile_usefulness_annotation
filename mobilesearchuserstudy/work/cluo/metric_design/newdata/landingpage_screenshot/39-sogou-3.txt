@@ -1,0 +1,20 @@
+Loading a web page
+Highcharts error #13: www.highcharts.com/errors/13
+
+  http://g.eol.cn/app/static/script/highcharts/highcharts.js:19 in oa
+  http://g.eol.cn/app/static/script/highcharts/highcharts.js:199 in getContainer
+  http://g.eol.cn/app/static/script/highcharts/highcharts.js:213 in firstRender
+  http://g.eol.cn/app/static/script/highcharts/highcharts.js:190 in init
+  http://g.eol.cn/app/static/script/highcharts/highcharts.js:15 in Xa
+  http://g.eol.cn/app/static/script/schoolinfo.js:20 in showLine
+  http://g.eol.cn/app/static/script/schoolinfo.js:146 in success
+  http://g.eol.cn/app/static/script/jquery/jquery-1.9.1.min.js:3 in c
+  http://g.eol.cn/app/static/script/jquery/jquery-1.9.1.min.js:3 in fireWith
+  http://g.eol.cn/app/static/script/jquery/jquery-1.9.1.min.js:5 in k
+  http://g.eol.cn/app/static/script/jquery/jquery-1.9.1.min.js:5 in r
+{
+    "document.body.scrollHeight": 714,
+    "document.body.offsetHeight": 299,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 300
+}

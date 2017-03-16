@@ -1,0 +1,10 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'document.getElementById("fixed").style')
+
+  http://m.e23.cn/style2016/js/screen.js:45 in resizeRoot
+{
+    "document.body.scrollHeight": 3988,
+    "document.body.offsetHeight": 3923,
+    "document.documentElement.clientHeight": 3923,
+    "document.documentElement.scrollHeight": 3988
+}

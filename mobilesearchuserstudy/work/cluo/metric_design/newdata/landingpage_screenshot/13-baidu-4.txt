@@ -1,0 +1,13 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'res.length')
+
+  http://pos.baidu.com/ucum?sz=320x48&rdid=2301664&dc=3&exps=110008&di=u2301664&dri=0&dis=0&dai=2&ps=3300x2&dcb=BAIDU_SSP_define&dtm=HTML_POST&dvi=0.0&dci=-1&dpt=none&tsr=0&tpr=1481683122626&ti=%E6%8B%94%E7%BD%90%E5%90%8E%E9%BB%91%E7%B4%AB%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B_%E6%8B%94%E7%BD%90__99%E5%81%A5%E5%BA%B7%E7%BD%91%E6%89%8B%E6%9C%BA%E7%89%88&ari=2&dbv=0&drs=1&pcs=400x300&pss=400x3302&cfv=0&cpl=0&chi=1&cce=true&cec=GBK&tlm=1481650722&rw=320&ltu=http%3A%2F%2Fm.99.com.cn%2Fa%2F574716%2F&ecd=1&psr=1024x768&par=1024x768&pis=-1x-1&ccd=32&cja=false&cmi=0&col=en-US&cdo=-1&tcn=1481683123&qn=08d81be9e0ebb637&tt=1481683122530.113.303.314:70 in get_tu
+TypeError: null is not an object (evaluating 'res.length')
+
+  http://pos.baidu.com/ucum?sz=320x80&rdid=1679874&dc=3&exps=110008&di=u1679874&dri=0&dis=0&dai=8&ps=4383x2&dcb=BAIDU_SSP_define&dtm=HTML_POST&dvi=0.0&dci=-1&dpt=none&tsr=0&tpr=1481683122626&ti=%E6%8B%94%E7%BD%90%E5%90%8E%E9%BB%91%E7%B4%AB%E6%98%AF%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B_%E6%8B%94%E7%BD%90__99%E5%81%A5%E5%BA%B7%E7%BD%91%E6%89%8B%E6%9C%BA%E7%89%88&ari=2&dbv=0&drs=1&pcs=400x300&pss=400x4385&cfv=0&cpl=0&chi=1&cce=true&cec=GBK&tlm=1481650723&rw=320&ltu=http%3A%2F%2Fm.99.com.cn%2Fa%2F574716%2F&ecd=1&psr=1024x768&par=1024x768&pis=-1x-1&ccd=32&cja=false&cmi=0&col=en-US&cdo=-1&tcn=1481683124&qn=96fa245644690d86&tt=1481683122530.1109.1563.1563:70 in get_tu
+{
+    "document.body.scrollHeight": 5729,
+    "document.body.offsetHeight": 5729,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 5729
+}

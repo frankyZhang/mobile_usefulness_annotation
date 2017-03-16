@@ -1,0 +1,7 @@
+Loading a web page
+TypeError: 'null' is not an object (evaluating 'document.body.scrollHeight')
+
+  phantomjs://webpage.evaluate():3
+  phantomjs://webpage.evaluate():8
+  phantomjs://webpage.evaluate():8
+null

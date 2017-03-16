@@ -1,0 +1,24 @@
+Loading a web page
+TypeError: undefined is not a constructor (evaluating 'self.video.load()')
+
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:872
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:1770
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:1810 in success
+  http://js.ku6cdn.com/m.ku6.com/jquery-1.9.1.min.js:3 in c
+  http://js.ku6cdn.com/m.ku6.com/jquery-1.9.1.min.js:3 in fireWith
+  http://js.ku6cdn.com/m.ku6.com/jquery-1.9.1.min.js:5 in k
+  http://js.ku6cdn.com/m.ku6.com/jquery-1.9.1.min.js:5 in onreadystatechange
+TypeError: undefined is not a constructor (evaluating 'self.video.load()')
+
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:316 in play
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:312 in auto_play
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:205 in start
+  http://js.ku6cdn.com/m.ku6.com/kplayer1612011625.js:181 in after
+  http://pic.fastapi.net/sdk/js/mobile.js:1 in after
+  http://pic.fastapi.net/sdk/js/mobile.js:1
+{
+    "document.body.scrollHeight": 3135,
+    "document.body.offsetHeight": 3041,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 3135
+}

@@ -1,0 +1,15 @@
+Loading a web page
+TypeError: undefined is not an object (evaluating 'data.data[0]')
+
+  http://www.koreastardaily.com/sc/news/72926:764 in getPostComments
+  http://i.ksd-i.com/js/jquery.ksd-1.0.0.js:22
+  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js:2 in o
+  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js:2 in fireWith
+  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js:4 in w
+  http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js:4 in onreadystatechange
+{
+    "document.body.scrollHeight": 16611,
+    "document.body.offsetHeight": 16611,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 16611
+}

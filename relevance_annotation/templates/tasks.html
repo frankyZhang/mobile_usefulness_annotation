@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/static/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+    <script type="text/javascript" src="/static/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+    <link href="/static/conf/annotation.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/static/conf/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/static/conf/jquery-min.js"></script>
+    <script type="text/javascript" src="/static/conf/jquery.bgpos.js"></script>
+    <script type="text/javascript" src="/static/conf/jquery.reveal.js"></script>
+    <script type="text/javascript" src="/static/conf/jquery.raty.js"></script>
+    <script type="text/javascript" src="/static/conf/jquery.raty.min.js"></script>
+    <title>All tasks</title>
+</head>
+<body>
+
+<div class="header">
+    <h2 align="center">清华大学计算机系信息检索组欢迎您！</h2>
+</div>
+<div>
+        <div>
+            <div>
+                <p>您目前正在完成第 {{ current_task_num }} 个标注任务, 共 {{ task_num }} 个标注任务</p>
+
+                <h3 style="color: red">查询描述： {{ description }}</h3>
+                <p></p>
+
+                <div><a href='/resultsnumber/{{ user_id }}/{{ setting_id }}/{{ task_id }}/'
+                        >点击这里开始进行标注</a></div>
+
+            </div>
+
+        </div>
+</div>
+
+</body>
+</html>

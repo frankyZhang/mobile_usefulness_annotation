@@ -1,0 +1,12 @@
+Loading a web page
+TypeError: undefined is not an object (evaluating '$("option[value='"+phase+"']")[0].selected = true')
+
+  http://touch.lecai.com/static/event/2015/bd_aladdin/1/awardResult.html?phase=16109&agentId=5607:206 in success
+  http://touch.lecai.com/static/event/2015/bd_aladdin/js/??index.js,zepto.js,fastclick.js,swiper.min.js:1274 in ajaxSuccess
+  http://touch.lecai.com/static/event/2015/bd_aladdin/js/??index.js,zepto.js,fastclick.js,swiper.min.js:1445 in onreadystatechange
+{
+    "document.body.scrollHeight": 461,
+    "document.body.offsetHeight": 461,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 461
+}

@@ -1,0 +1,7 @@
+Loading a web page
+{
+    "document.body.scrollHeight": 2852,
+    "document.body.offsetHeight": 90,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2852
+}

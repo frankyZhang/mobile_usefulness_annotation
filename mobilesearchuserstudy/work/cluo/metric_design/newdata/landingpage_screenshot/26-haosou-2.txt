@@ -1,0 +1,10 @@
+Loading a web page
+ReferenceError: Can't find variable: GetQueryString
+
+  http://show.g.mediav.com/s?ver=1.2.3&enifr=1&showid=3hRbyO&type=1&of=2&refer=http%253A%252F%252Fchina.ynet.com%252F3.1%252F1609%252F18%252F11747346.html&uid=14816820259232133517570826761482&isifr=1:35 in global code
+{
+    "document.body.scrollHeight": 5001,
+    "document.body.offsetHeight": 5001,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 5001
+}

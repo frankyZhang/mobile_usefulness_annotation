@@ -1,0 +1,14 @@
+Loading a web page
+Error: Load timeout for modules: base,Slider,/js/hospital/page/hospitalView.js
+http://requirejs.org/docs/errors.html#timeout
+
+  http://www.liangyi.com/module/jquery,require,qw.core.js?v=ca43e.js:16 in defaultOnError
+  http://www.liangyi.com/module/jquery,require,qw.core.js?v=ca43e.js:16 in f
+  http://www.liangyi.com/module/jquery,require,qw.core.js?v=ca43e.js:16 in p
+  http://www.liangyi.com/module/jquery,require,qw.core.js?v=ca43e.js:16
+{
+    "document.body.scrollHeight": 1994,
+    "document.body.offsetHeight": 1920,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1994
+}

@@ -1,0 +1,13 @@
+Loading a web page
+TypeError: undefined is not an object (evaluating 'menu.childNodes[0].nodeValue')
+
+  http://www.gz8h.com.cn/:505 in global code
+TypeError: null is not an object (evaluating 'GetObj("List1").innerHTML')
+
+  http://www.gz8h.com.cn/:896 in global code
+{
+    "document.body.scrollHeight": 2496,
+    "document.body.offsetHeight": 2494,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2496
+}

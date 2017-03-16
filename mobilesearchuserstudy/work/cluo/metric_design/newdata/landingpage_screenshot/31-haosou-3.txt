@@ -1,0 +1,15 @@
+Loading a web page
+{
+    "document.body.scrollHeight": 8297,
+    "document.body.offsetHeight": 8297,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 8297
+}
+NETWORK_ERR: XMLHttpRequest Exception 101: A network error occurred in synchronous requests.
+
+  http://pic.ggxt.net/sdk/js/core.js:1 in send
+  http://pic.ggxt.net/sdk/js/core.js:1 in I
+  http://pic.ggxt.net/sdk/js/core.js:1 in ab
+  :0 in exit
+  phantomjs://code/getheight.js:24
+  phantomjs://platform/webpage.js:286 in _onPageOpenFinished

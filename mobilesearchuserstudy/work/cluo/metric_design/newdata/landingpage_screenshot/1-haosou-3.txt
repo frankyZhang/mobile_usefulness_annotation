@@ -1,0 +1,10 @@
+Loading a web page
+TypeError: 'null' is not an object (evaluating 'doc.body.style')
+
+  http://wap.yzmg.com/css/20160727/js/adaptive.js:127
+TypeError: 'null' is not an object (evaluating 'document.body.scrollHeight')
+
+  phantomjs://webpage.evaluate():3
+  phantomjs://webpage.evaluate():8
+  phantomjs://webpage.evaluate():8
+null

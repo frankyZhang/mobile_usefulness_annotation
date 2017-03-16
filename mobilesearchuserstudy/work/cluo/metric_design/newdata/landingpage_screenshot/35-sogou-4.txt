@@ -1,0 +1,26 @@
+Loading a web page
+TypeError: 'undefined' is not a function (evaluating 'u.bind(null,n)')
+
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2 in c
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2 in o
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:3
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:2
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:3
+{
+    "document.body.scrollHeight": 1063,
+    "document.body.offsetHeight": 1019,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1063
+}

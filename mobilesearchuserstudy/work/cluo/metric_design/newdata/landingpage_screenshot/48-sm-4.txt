@@ -1,0 +1,19 @@
+Loading a web page
+ReferenceError: Can't find variable: index_top
+
+  http://m.shenmabook.com/ml-67410/:27 in global code
+ReferenceError: Can't find variable: index_middle
+
+  http://m.shenmabook.com/ml-67410/:38 in global code
+ReferenceError: Can't find variable: index_bottom
+
+  http://m.shenmabook.com/ml-67410/:44 in global code
+ReferenceError: Can't find variable: foot
+
+  http://m.shenmabook.com/ml-67410/:56 in global code
+{
+    "document.body.scrollHeight": 1120,
+    "document.body.offsetHeight": 1120,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1120
+}

@@ -1,0 +1,13 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'e.style')
+
+  http://m.81zw.com/scripts/common.js:3 in global code
+TypeError: null is not an object (evaluating '_bqgmb_h1.style')
+
+  http://m.81zw.com/scripts/common.js:8 in fixwidth
+{
+    "document.body.scrollHeight": 1915,
+    "document.body.offsetHeight": 1915,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1915
+}

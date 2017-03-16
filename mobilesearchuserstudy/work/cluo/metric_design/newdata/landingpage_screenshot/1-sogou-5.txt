@@ -1,0 +1,14 @@
+Loading a web page
+TypeError: 'undefined' is not a function (evaluating '$('.flexslider').flexslider({
+			animation: "slide"
+		  })')
+
+  http://m.ddooo.com/public/main.js:7
+  http://m.ddooo.com/public/jquery.js:53
+  http://m.ddooo.com/public/jquery.js:48
+{
+    "document.body.scrollHeight": 954,
+    "document.body.offsetHeight": 954,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 954
+}

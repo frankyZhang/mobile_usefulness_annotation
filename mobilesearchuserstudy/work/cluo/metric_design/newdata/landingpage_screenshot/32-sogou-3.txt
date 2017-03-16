@@ -1,0 +1,10 @@
+Loading a web page
+ReferenceError: Can't find variable: Class
+
+  http://www.shjxdw.cn//js/cookiejar.js:24 in global code
+{
+    "document.body.scrollHeight": 3485,
+    "document.body.offsetHeight": 3485,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 3485
+}

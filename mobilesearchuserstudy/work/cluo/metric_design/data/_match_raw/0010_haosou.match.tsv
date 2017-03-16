@@ -1,0 +1,16 @@
+1	1	0	385	6	200	刷机时wipecachepartition什么意思?2012年2月7日wipecachepartition这个选项一般是在recovery界面出现的,它的中文翻译为清除系统缓存,一般是在刷机前进行的,如果手机系统出现问题,也可以...电玩巴士
+2	2	0	385	206	387	wipecachepartition什么意思1个回答-提问时间：2012-11-21wipe就是清楚你的手机缓存，手机缓存就是手机里的软件在储存空间里逗留的文件，主要用于下次运行相同任务可以加快访问速度，很占用手机存储空间的。通俗的说就是清理手机垃圾文件。360问答
+3	3	0	385	393	609	如何双清手机_百度经验2014年2月16日239对刷机感兴趣的朋友们一定看过了不少的刷机教程,不过一般刷机教程都要求刷机前要双清,很多朋友对此有疑惑刷机...相关经验：安卓手机屏幕锁忘了怎么办?双清oradb删除百度经验
+4	4	15	370	630	918.75	98%的人还搜了：超级ROOTsd卡修复工具OdinAndroidOSmountsandstoragebackupandrestorewipecachepartitionwipecache
+5	5	0	385	937.75	1144.75	wipecachepartition什么意思?对刷机重要吗?2012年12月26日问:wipecachepartition什么意思?这个对刷机重要吗?答:wipedata/factoryreset的意思是清除所有用户信息和安装的东西。wipecachepartition...g.anqu.com
+None	6	0	385	1150.75	1355.75	点了wipecachePartition的后果是什么?-HTChero论坛/G3论坛-...2个回复-发贴时间-2010年3月24日手机刚入手,在论坛里看了会刷机教程,然后就试了下,当时没敢刷,昨天上班时又进了刷机模式,结果我就乱点了下,好像是点了wipecachePartition结果我发现buffers又原来的199...塞班智能手机论坛
+None	7	0	385	1361.75	1520.75	wipecachepartition什么意思_360问答wipe清除cache缓存partition分区请看.双清:Recovery模式下对手机的两个操作,指:wipedata/factoryreset和【Wipecachepartition】,意思是指恢复出厂数据,和【清除缓存】.操作...360问答
+None	8	15	370	1541.75	1705.5	相关手机360手机红米手机1Sfastboot酷派大神F1
+None	9	0	385	1729.5	1825.5	wipecachepartition_有道翻译译wipe隐藏总谱_loader.add("callbacks_deferred","http://s0.qhimg.com/static/3446842bad1a5242/callbacks_deferred_1.1.2.js"),_loader.add("soundmanager","http://s2.qhimg.com/static/0194d0c483778abe/soundmanager2-nodebug.js"),_loader.add("m_inlineplayer","http://s2.qhimg.com/static/1b2c6cea2e8bd5dd/inlinePlayer.js")_loader.use("zepto,callbacks_deferred,soundmanager,m_inlineplayer",function(){vare=$("#mohe-m-newdict"),t="wipecachepartition",n=$(".js-360-playin",e),r=undefined,i,s=newsoundManager.createSound({id:"m-audio",onfinish:function(){i.removeClass("mh-icon-ringing")},onplay:function(){n.removeClass("mh-icon-ringing"),i.addClass("mh-icon-ringing")},multiShot:!1});n.on("click",function(){i=$(this);vare=i.attr("data");r="http://dict.youdao.com/openapi/speech?audio="+encodeURI(t)+"&le=eng&keyfrom=360.browser&type="+e+"&t="+(newDate).getTime(),s.url=r,s.play()})})
+None	10	0	385	1831.5	2022.5	翻译:wipecachepartition什么意思360问答-2013年7月8日3wipecachepartition的韩文是:캐시삭제;캐시:是cache的音译单词,有擦除的意思;삭제:对应的汉字是削除,也是擦除的意思;캐시삭제连起来就是清除缓存的意思。wipecachepartition的韩文是:캐시삭제;캐시:是cache的音译单词,有擦除的意思;삭제:对应的汉字是削除,也是擦除的意思;캐시삭제连起来就是清除缓存的意思。查看全文展开
+None	11	0	385	2028.5	2187.5	wipecachepartition什么意思?_百度知道是wipecachepartition吗?这个的意思是清除缓存分区(刷机前执行)(系统出问题也可尝试此选项,一般能够解决)...是穿供扁佳壮簧憋伪铂镰wipecachepartition吗?这个的意思是清除...百度知道
+None	12	0	385	2193.5	2352.5	wipecachepartition是什么意思_360问答wipecachepartition是什么意思英语直译为:分区管理器,这是一款硬盘分区软件,一般译作:分区魔术师,无论是已分区的硬盘还是未分区的硬盘,这款软件都可以对其进行首次或者...360问答
+None	13	0	385	2358.5	2573.5	在XT701里面选择了wipecachepartition会有什么后果?_百度知道百度知道-2010年11月23日121、Wipedata/factoryreset::Wipe/dataand/cache擦除内存和缓存数据,2、WipeDalvik-cache::WipeDalvik-cachebothon/dataandext擦除缓存和Ext...1、Wipedata/factoryreset::Wipe/dataand/cache擦除内存和缓存数据,2、WipeDalvik-cache::WipeDalvik-cachebothon/dataandext擦除缓存和Ext...查看全文展开
+None	14	0	385	2579.5	2772.5	wipecachepartition都清除什么?360问答-2014年7月1日相当于WINDOWS的临时文件夹吧,看应用程序而定的,只对清理后应用程序的第一次打开有点影响,会慢一点点,因为要重建部分配置文件。查看原帖>>相当于WINDOWS的临时文件夹吧,看应用程序而定的,只对清理后应用程序的第一次打开有点影响,会慢一点点,因为要重建部分配置文件。查看原帖>>查看全文展开
+None	15	0	0	0	0	
+None	16	0	0	0	0	

@@ -1,0 +1,21 @@
+Loading a web page
+TypeError: undefined is not a constructor (evaluating 'this.video.pause()')
+
+  http://jstatic.letvcdn.com/sdk/player.js:4 in pause
+  http://jstatic.letvcdn.com/sdk/player.js:4 in pause
+  http://jstatic.letvcdn.com/sdk/player.js:4 in startPlayProcesses
+  http://jstatic.letvcdn.com/sdk/player.js:4 in init
+  http://jstatic.letvcdn.com/sdk/player.js:3 in start
+  http://jstatic.letvcdn.com/sdk/player.js:2 in register
+  http://jstatic.letvcdn.com/sdk/player.js:2 in init
+  http://jstatic.letvcdn.com/sdk/player.js:2 in i
+  http://jstatic.letvcdn.com/sdk/player.js:1 in load
+  http://jstatic.letvcdn.com/sdk/player.js:1 in g
+  http://js.letvcdn.com/lc07_js/201612/14/11/44/lejs/base.js:5
+  http://js.letvcdn.com/lc07_js/201612/14/11/44/lejs/base.js:1 in a
+{
+    "document.body.scrollHeight": 2008,
+    "document.body.offsetHeight": 2008,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2008
+}

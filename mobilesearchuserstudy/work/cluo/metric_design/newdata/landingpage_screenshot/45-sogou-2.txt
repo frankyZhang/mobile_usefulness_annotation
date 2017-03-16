@@ -1,0 +1,18 @@
+Loading a web page
+Error: [vuex] vuex requires a Promise polyfill in this browser.
+
+  http://cache.soso.com/mobile/baike/js/vue.custom@2.0.min.js:15 in c
+  http://cache.soso.com/mobile/baike/js/vue.custom@2.0.min.js:15 in x
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1 in e
+  http://cache.soso.com/mobile/baike/js/mobile_lemma-0352bae926.js:1
+{
+    "document.body.scrollHeight": 1177,
+    "document.body.offsetHeight": 1133,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1177
+}

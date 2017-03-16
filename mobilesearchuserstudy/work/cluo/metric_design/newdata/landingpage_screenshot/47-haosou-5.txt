@@ -1,0 +1,623 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+TypeError: null is not an object (evaluating 'h.currentTime')
+
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1 in getCurrent
+  http://static.m1905.cn/assets/vod/js/vod-combo20160314.js:1
+{
+    "document.body.scrollHeight": 3331,
+    "document.body.offsetHeight": 3331,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 3331
+}
+NETWORK_ERR: XMLHttpRequest Exception 101: A network error occurred in synchronous requests.
+
+  http://pic.fastapi.net/static/js/asd.js:1 in send
+  http://pic.fastapi.net/static/js/asd.js:1 in r
+  http://pic.fastapi.net/static/js/asd.js:1 in K
+  :0 in exit
+  phantomjs://code/getheight.js:24
+  phantomjs://platform/webpage.js:286 in _onPageOpenFinished

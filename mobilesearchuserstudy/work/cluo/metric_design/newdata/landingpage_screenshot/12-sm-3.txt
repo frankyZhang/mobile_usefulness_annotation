@@ -1,0 +1,15 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'r[2]')
+
+  http://ad.xildiere.com:8085/request3/?yzid=adfd5373&w=300&h=45&jsv=3.0.0&tp=2&logo=0&tr=http%3A%2F%2Fwap.cioujs.com%2Fadfd5373f.html:37 in getQueryString
+  http://ad.xildiere.com:8085/request3/?yzid=adfd5373&w=300&h=45&jsv=3.0.0&tp=2&logo=0&tr=http%3A%2F%2Fwap.cioujs.com%2Fadfd5373f.html:82
+TypeError: null is not an object (evaluating 'r[2]')
+
+  http://ad.xildiere.com:8085/request3/?yzid=aadda7350&w=300&h=45&jsv=3.0.0&tp=2&logo=0&tr=http%3A%2F%2Fyz.cioujs.com%2Fyz%2Faadda7350-yz.html:37 in getQueryString
+  http://ad.xildiere.com:8085/request3/?yzid=aadda7350&w=300&h=45&jsv=3.0.0&tp=2&logo=0&tr=http%3A%2F%2Fyz.cioujs.com%2Fyz%2Faadda7350-yz.html:82
+{
+    "document.body.scrollHeight": 5612,
+    "document.body.offsetHeight": 5612,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 5612
+}

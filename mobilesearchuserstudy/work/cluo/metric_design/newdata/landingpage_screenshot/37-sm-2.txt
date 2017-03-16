@@ -1,0 +1,10 @@
+Loading a web page
+TypeError: undefined is not an object (evaluating 'navigator.geolocation.getCurrentPosition')
+
+  http://img1.tuniucdn.com/mj/2016121310/global/global.min.js:1 in a
+{
+    "document.body.scrollHeight": 463,
+    "document.body.offsetHeight": 300,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 463
+}

@@ -1,0 +1,10 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'document.getElementById("luntan").href = "http://bbs.cpdyj.com/forum-126-1.html"')
+
+  http://zst.cpdyj.com/search/inc/top.html:123 in getLotto
+{
+    "document.body.scrollHeight": 1895,
+    "document.body.offsetHeight": 1895,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1895
+}

@@ -1,0 +1,50 @@
+Loading a web page
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/js/waptianqi_v20161114180558.js:1 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:4 in global code
+ReferenceError: Can't find variable: echo
+
+  http://waptianqi.2345.com/jinan-54823.htm:4 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:4 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/js/waptianqi_v20161114180558.js:1 in loadBanner
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/jinan-54823.htm:5 in global code
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/js/waptianqi_v20161114180558.js:1 in weaAlertCallBack
+ReferenceError: Can't find variable: $
+
+  http://waptianqi.2345.com/js/waptianqi_v20161114180558.js:1 in setLiveInfo
+  http://waptianqi.2345.com/js/waptianqi_v20161114180558.js:1 in onload
+{
+    "document.body.scrollHeight": 2660,
+    "document.body.offsetHeight": 300,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2660
+}

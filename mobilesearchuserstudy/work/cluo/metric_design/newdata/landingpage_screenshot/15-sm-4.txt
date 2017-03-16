@@ -1,0 +1,22 @@
+Loading a web page
+TypeError: null is not an object (evaluating 'document.getElementById("wflash9").innerHTML')
+
+  http://ent.lnd.com.cn/ent/2016-09/19/content_4453391.htm:536 in global code
+TypeError: null is not an object (evaluating '/Mac OS X (10[\.\_\d]+)/.exec(b)[1]')
+
+  http://static.baifendian.com/api/2.0/bcore.min.js:2 in getOS
+  http://static.baifendian.com/api/2.0/bcore.min.js:3 in init
+  http://static.baifendian.com/api/2.0/bcore.min.js:3 in f
+  http://static.baifendian.com/api/2.0/bcore.min.js:3
+TypeError: undefined is not a constructor (evaluating 'new $Core.inputs.PageView()')
+
+  http://static1.bfdcdn.com/service/beiguo/beiguo.js:1 in detail
+  http://static1.bfdcdn.com/service/beiguo/beiguo.js:1 in d
+  http://static1.bfdcdn.com/service/beiguo/beiguo.js:1
+  http://static1.bfdcdn.com/service/beiguo/beiguo.js:1
+{
+    "document.body.scrollHeight": 1910,
+    "document.body.offsetHeight": 200,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 1910
+}

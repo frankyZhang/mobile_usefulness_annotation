@@ -1,0 +1,11 @@
+Loading a web page
+TypeError: undefined is not a constructor (evaluating 'Array.from(i)')
+
+  https://img3.doubanio.com/f/zerkalo/c3c44f15ac80efc5cc641ad8b68e6ab468aebc4d/dist/js/base.js:1 in load_event_monitor
+  https://img3.doubanio.com/f/zerkalo/c3c44f15ac80efc5cc641ad8b68e6ab468aebc4d/dist/js/base.js:1
+{
+    "document.body.scrollHeight": 2062,
+    "document.body.offsetHeight": 2062,
+    "document.documentElement.clientHeight": 300,
+    "document.documentElement.scrollHeight": 2062
+}
