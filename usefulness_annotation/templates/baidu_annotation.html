@@ -2527,7 +2527,7 @@
 <body>
 {% if is_annotation %}
     <div class="con-wrap">
-        <textarea maxlength="64" id="kw" name="word" class="se-input adjust-input" data-sug="1">{{ query }}</textarea>
+        <textarea maxlength="64" id="kw" name="word" class="se-input adjust-input" data-sug="1"></textarea>
         <div class="se-inner">
             <button id="se-bn" class="se-bn" onclick="finishandredirect()"><span>提交标注</span></button>
     </div>
@@ -2536,7 +2536,7 @@
     function finishandredirect() {
         var results = $("div.results>div.result[style!='display:none;'],div.results div.s-frame[style!='display:none;']");
         var preusefulness = $("#preusefulness_"+{{ result_id }}).val();
-        var attusefulness = $("#attusefulness_"+{{ result_id }}).val();
+        //var attusefulness = $("#attusefulness_"+{{ result_id }}).val();
         var usefulness = $("#usefulness_"+{{ result_id }}).val();
         /*var usefulness_selected = true;
         var num = 0;
@@ -2548,18 +2548,18 @@
                 break;
             }
         }*/
-        if (usefulness == "0" || preusefulness == "0" || attusefulness == "0"){
+        if (usefulness == "0" || preusefulness == "0"){
             alert('未对结果进行相关性标注');
             if (preusefulness == "0"){
                 $("#preusefulness_"+{{ result_id }}).focus();
             }
             else {
-                if (attusefulness == "0") {
-                    $("#attusefulness_" +{{ result_id }}).focus();
-                }
-                else{
+                //if (attusefulness == "0") {
+                //    $("#attusefulness_" +{{ result_id }}).focus();
+                //}
+                //else{
                     $("#usefulness_" +{{ result_id }}).focus();
-                }
+                //}
             }
 
         }
@@ -2574,7 +2574,7 @@
             usefulness_message += "\tRESULT=" + {{ result_id }};
             usefulness_message += "\tNUMBER=" + {{ results_number }};
             usefulness_message += "\tPREUSEFULNESS=" + $("#preusefulness_"+{{ result_id }}).val();
-            usefulness_message += "\tATTUSEFULNESS=" + $("#attusefulness_"+{{ result_id }}).val();
+            //usefulness_message += "\tATTUSEFULNESS=" + $("#attusefulness_"+{{ result_id }}).val();
             usefulness_message += "\tUSEFULNESS=" + $("#usefulness_"+{{ result_id }}).val();
             /*for(var i=0; i<results.length; i++){
                 usefulness = $("#usefulness_"+i).val();
@@ -2641,18 +2641,6 @@
     }
     $(document).on('ready', function(){
         //console.log('hhh');
-        var host = window.location.hostname;
-        var port = window.location.port;
-        var url_message = "";
-        url_message += "SETTING=" + {{ setting_id }};
-        url_message += "\tTASK=" + {{ task_id }};
-        url_message += "\tNUMBER=" + {{ results_number }};
-        /*for(var i=0; i<results.length; i++){
-            usefulness = $("#usefulness_"+i).val();
-            usefulness_message += "\t" + i + ':' + usefulness;
-        }*/
-        var url_url = 'http://'+host+':'+port+"/LogUrl/";
-
         var results = $("div.results>div.result[style!='display:none;'],div.results div.s-frame[style!='display:none;']");
         for(var i=0; i<results.length; i++){
             var result = results[i];
@@ -2660,41 +2648,21 @@
             //console.log(result);
             //var rank = $(result).attr("order");
             //console.log(rank);
-            var anchors = $(result).find('a');
-            var url_info = "";
-            for (var j=0; j<anchors.length; j++){
-                var anchor = anchors[j];
-                url_info += encodeURI($(anchor).attr("href")) + ",,,";
-            }
-            url_message += "\tURL_" + i + "=" + url_info + "\n";
-            $(result).after('<form><div align="center" style="color: red">仅考虑页面上的信息,你觉得页面上的信息与查询任务相关么:  <select id="preusefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 完全无关</option><option value="2">2: 有点相关,但页面上的信息不能满足需求</option><option value="3">3: 基本相关,仅页面上的信息基本能满足需求,但存在不相关的内容</option><option value="4">4: 非常相关</option></select></div></form><br /><form><div align="center" style="color: red">根据页面上的信息判断,你觉得页面信息是否会吸引你点击结果进行查看:  <select id="attusefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 页面信息完全无关,不会点击查看</option><option value="2">2: 页面信息看上去有点相关,但内容有限,会点击结果查看详细结果</option><option value="3">3: 页面信息内容丰富,已经基本满足需求,但想要点击结果查看更多内容</option><option value="4">4: 页面信息非常相关,已经完全满足需求,不需要点击结果查看</option></select></div></form><br /><form><div align="center" style="color: red">根据查看结果的情况判断,你觉得上面这个结果与查询任务相关么:  <select id="usefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 完全无关</option><option value="2">2: 有点相关,但整体上不能满足需求</option><option value="3">3: 基本相关,整体上基本满足需求,但存在不相关的内容</option><option value="4">4: 非常相关</option></select></div></form>');
-            /*}
-            else{
-                $(result).remove();
-            }*/
+            $(result).after('<form><div align="center" style="color: red">仅考虑页面上的信息,你觉得页面信息能满足查询需求么:  <select id="preusefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 页面信息与查询完全无关，不能满足需求</option><option value="2">2: 页面信息与查询有点相关,但基本不能满足需求</option><option value="3">3: 页面信息与查询相关，能满足一部分查询需求</option><option value="4">4: 页面信息与查询非常相关，完全能满足查询需求</option></select></div></form<br /><form><div align="center" style="color: red">根据查看结果的情况判断,你觉得这个结果与查询任务相关么:  <select id="usefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 结果与查询完全无关，不能满足需求</option><option value="2">2: 结果与查询有点相关,但基本不能满足需求</option><option value="3">3: 结果与查询基本相关,能满足一部分查询需求</option><option value="4">4: 结果与查询非常相关，完全能满足查询需求</option></select></div></form>');
+            //}
+            //else{
+            //    $(result).remove();
+            //}
         }
-        $.ajax({
-                type: 'POST',
-                url: url_url,
-                data: {message: url_message},
-                async: false,
-                complete: function (jqXHR, textStatus) {
-                    //alert(textStatus + "----" + jqXHR.status + "----" + jqXHR.readyState);
-                    //should we reset onbeforeunload here?
-                    console.log("synchronously flush hallo answer")
-                }
-            });
-            window.onbeforeunload = null;
-
         var cvalue1 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'preusefulness');
-        var cvalue2 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness');
+        //var cvalue2 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness');
         var cvalue3 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'usefulness');
         if (cvalue1 != ""){
             $("#preusefulness_"+{{ result_id }}).val(cvalue1);
         }
-        if (cvalue2 != ""){
-            $("#attusefulness_"+{{ result_id }}).val(cvalue2);
-        }
+        //if (cvalue2 != ""){
+        //    $("#attusefulness_"+{{ result_id }}).val(cvalue2);
+       // }
         if (cvalue3 != ""){
             $("#usefulness_"+{{ result_id }}).val(cvalue3);
         }
@@ -2707,11 +2675,11 @@
     $("a").click(function(){
         var results = $("div.results>div.result[style!='display:none;'],div.results div.s-frame[style!='display:none;']");
         var cvalue1 = $("#preusefulness_"+{{ result_id }}).val();
-        var cvalue2 = $("#attusefulness_"+{{ result_id }}).val();
+        //var cvalue2 = $("#attusefulness_"+{{ result_id }}).val();
         var cvalue3 = $("#usefulness_"+{{ result_id }}).val();
 
         setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'preusefulness', cvalue1);
-        setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness', cvalue2);
+        //setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness', cvalue2);
         setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'usefulness', cvalue3);
     });
     </script>

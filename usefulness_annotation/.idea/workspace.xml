@@ -1,277 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3cbc7b8-3158-431d-9013-9e2cba9e76ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/2016河南高考状元.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/2016河南高考状元.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/2016河南高考状元.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/2016河南高考状元.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/ResultsParser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/TaskRealismLogParser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/baidu_annotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/haosou_annotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/price tag 歌词.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/price tag 歌词.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/price tag 歌词.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/price tag 歌词.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/random_setting.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/sm_annotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/sogou_annotation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/下关一中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/下关一中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/下关一中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/下关一中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/中南大学官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/中南大学官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/中南大学官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/中南大学官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/中国带州的城市.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/中国带州的城市.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/中国带州的城市.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/中国带州的城市.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/乌鲁木齐到南京机票.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/乌鲁木齐到南京机票.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/乌鲁木齐到南京机票.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/乌鲁木齐到南京机票.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/乐天免税店中文官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/乐天免税店中文官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/乐天免税店中文官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/乐天免税店中文官网.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/兴业银行兑换积分.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/兴业银行兑换积分.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/兴业银行兑换积分.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/兴业银行兑换积分.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/去香港要办什么手续.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/去香港要办什么手续.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/去香港要办什么手续.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/去香港要办什么手续.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/变频空调和定频空调的区别.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/变频空调和定频空调的区别.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/变频空调和定频空调的区别.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/变频空调和定频空调的区别.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/吃饼干表情包.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/吃饼干表情包.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/吃饼干表情包.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/吃饼干表情包.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/婆婆灰.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/婆婆灰.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/婆婆灰.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/婆婆灰.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/小毛驴儿歌视频.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/小毛驴儿歌视频.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/小毛驴儿歌视频.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/小毛驴儿歌视频.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/广州有哪里好玩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/广州有哪里好玩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/广州有哪里好玩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/广州有哪里好玩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/德国影院枪击案.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/德国影院枪击案.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/德国影院枪击案.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/德国影院枪击案.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/手游穿越火线.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/手游穿越火线.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/手游穿越火线.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/手游穿越火线.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/木材怎样变成黑色.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/木材怎样变成黑色.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/木材怎样变成黑色.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/木材怎样变成黑色.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/横县临江壮歌剧.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/横县临江壮歌剧.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/横县临江壮歌剧.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/横县临江壮歌剧.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/犬夜叉.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/犬夜叉.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/犬夜叉.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/犬夜叉.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/白芷的功效与作用.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/白芷的功效与作用.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/白芷的功效与作用.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/白芷的功效与作用.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/盱眙县  怎么读.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/盱眙县  怎么读.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/盱眙县  怎么读.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/盱眙县  怎么读.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/范玮琪.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/范玮琪.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/范玮琪.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/范玮琪.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/蓝莓为什么对眼睛好.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/蓝莓为什么对眼睛好.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/蓝莓为什么对眼睛好.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/蓝莓为什么对眼睛好.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/血糖 诊断标准 历史变化.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/血糖 诊断标准 历史变化.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/血糖 诊断标准 历史变化.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/血糖 诊断标准 历史变化.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/詹姆斯·麦斯登.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/詹姆斯·麦斯登.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/詹姆斯·麦斯登.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/詹姆斯·麦斯登.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/诗经中最唯美的句子.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/诗经中最唯美的句子.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/诗经中最唯美的句子.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/诗经中最唯美的句子.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/跛脚是什么意思.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/跛脚是什么意思.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/跛脚是什么意思.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/跛脚是什么意思.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/踩白块2钢琴版下载.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/踩白块2钢琴版下载.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/踩白块2钢琴版下载.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/踩白块2钢琴版下载.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/邢台崆山白云洞门票多少.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/邢台崆山白云洞门票多少.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/邢台崆山白云洞门票多少.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/邢台崆山白云洞门票多少.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/金曲奖颁奖礼.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/金曲奖颁奖礼.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/金曲奖颁奖礼.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/金曲奖颁奖礼.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/阜新到大连时刻表.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/阜新到大连时刻表.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/阜新到大连时刻表.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/阜新到大连时刻表.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/韩国三大未破案件.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/韩国三大未破案件.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/韩国三大未破案件.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/韩国三大未破案件.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/baidu_serp/龙岩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/haosou_serp/龙岩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sm_serp/龙岩.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/serps/sogou_serp/龙岩.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0-1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/10-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/LogHub.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/LogParser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/SearchResultCrawler.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/SearchResultHub.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/SearchResultPageParser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/SessionAnnoLogParser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/TimeEstLogParser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/migrations/0002_task_audiofilename.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/migrations/0003_setting.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/migrations/0004_auto_20150604_1605.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/migrations/0005_timeestimation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/templatetags/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/templatetags/add_annotation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/anno/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.7z" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/EtimeDtime/Etime_Dtime_byjoin.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/EtimeDtime/Etime_Dtime_bysat.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/EtimeDtime/Etime_Dtime_bytemporal.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/EtimeDtime/Etime_Dtime_bytemporal.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/EtimeDtime/~$Etime_Dtime_byjoin.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/data cleaning.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/dwelltime.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/dwelltime/dwelltime_byjoin.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/dwelltime/dwelltime_bysat.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/dwelltime/dwelltime_bytemporal.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/numofclicks.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/numofclicks/numofclicks_byjoin.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/numofclicks/numofclicks_bysat.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/numofclicks/numofclicks_bytemporal.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/outcome.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/outline.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/querysat.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/satisfaction_raw/satisfaction_byjoin.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/satisfaction_raw/satisfaction_bysat.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/satisfaction_raw/satisfaction_bytemporal.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/satisfaction_raw/satisfaction_bytemporal.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/settings.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/timeestimation.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/userhabit.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/userhabit.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/validusers.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/validusers2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/影响Estimated_time的因素.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/data/影响Estimated_time的因素.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/insight/src/Utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/1.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/1.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/10.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/10.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/11.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/11.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/12.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/12.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/13.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/13.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/14.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/14.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/15.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/15.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/16.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/16.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/17.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/17.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/18.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/18.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/19.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/19.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/2.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/2.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/20.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/20.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/3.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/3.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/4.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/4.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/5.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/5.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/6.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/6.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/7.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/7.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/8.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/8.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/9.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/audio/9.wma" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/.~lock.topics众包测试结果.xlsx#" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/generateoptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/option.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/query.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/query.example" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/result.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/stat.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/stat_cwd.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/table.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/tasksforimport.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/topics.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/topics2015年6月6日修改.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/topics_revised.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/topics众包测试结果.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/~$实验薪酬代发(第一批).xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/~$确定被试时间.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/实验薪酬代发(第一批).xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/确定被试时间.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/temp/被试人员表.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/annotation.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/drop/annolist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/drop/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/drop/questionnaire.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/drop/seekbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/drop/tasks2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/outexplicit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/outimplicit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/result_annotation_template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/taskreview.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/AnnoLogParser.py" afterPath="$PROJECT_DIR$/Utils/AnnoLogParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/InitDatabase.py" afterPath="$PROJECT_DIR$/Utils/InitDatabase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/OutcomeLogParser.py" afterPath="$PROJECT_DIR$/Utils/OutcomeLogParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/QuerySatisfactionLogParser.py" afterPath="$PROJECT_DIR$/Utils/QuerySatisfactionLogParser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anno/models.py" afterPath="$PROJECT_DIR$/anno/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/setting.csv" afterPath="$PROJECT_DIR$/temp/setting.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tasks.html" afterPath="$PROJECT_DIR$/templates/tasks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/timesearch/urls.py" afterPath="$PROJECT_DIR$/timesearch/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/anno/views.py" afterPath="$PROJECT_DIR$/anno/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/conf/wc_log.js" afterPath="$PROJECT_DIR$/static/conf/wc_log.js" />
-    </list>
+    <list default="true" id="e3cbc7b8-3158-431d-9013-9e2cba9e76ef" name="Default" comment="" />
     <ignored path="timesearch.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -292,6 +22,9 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
   <component name="DatabaseView">
     <option name="FLATTEN" value="false" />
     <option name="GROUP_BY_TYPE" value="true" />
@@ -304,50 +37,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/anno/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/timesearch/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/anno/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67948717">
-              <caret line="357" column="12" selection-start-line="357" selection-start-column="12" selection-end-line="357" selection-end-column="12" />
+            <state vertical-scroll-proportion="-18.24" vertical-offset="247" max-vertical-offset="3781">
+              <caret line="59" column="73" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
               <folding>
                 <element signature="e#15#50#0" expanded="true" />
-                <element signature="e#693#970#0" expanded="false" />
-                <element signature="e#1021#1518#0" expanded="false" />
-                <element signature="e#2983#3186#0" expanded="false" />
-                <element signature="e#3244#5326#0" expanded="false" />
-                <element signature="e#5388#5831#0" expanded="false" />
-                <element signature="e#5896#8154#0" expanded="false" />
+                <element signature="e#665#942#0" expanded="false" />
+                <element signature="e#993#1490#0" expanded="false" />
+                <element signature="e#2955#3158#0" expanded="false" />
+                <element signature="e#3216#5298#0" expanded="false" />
+                <element signature="e#5360#5803#0" expanded="false" />
+                <element signature="e#5868#8126#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrlParser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/UrlParser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -355,10 +58,10 @@
       <file leaf-file-name="baidu_annotation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/baidu_annotation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="8.625">
-              <caret line="2666" column="37" selection-start-line="2666" selection-start-column="37" selection-end-line="2666" selection-end-column="37" />
+            <state vertical-scroll-proportion="-17.928572" vertical-offset="1968" max-vertical-offset="3211">
+              <caret line="2654" column="14" selection-start-line="2654" selection-start-column="14" selection-end-line="2654" selection-end-column="14" />
               <folding>
-                <element signature="n#if#0;n#!!top" expanded="false" />
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -367,8 +70,8 @@
       <file leaf-file-name="haosou_annotation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/haosou_annotation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5273" column="37" selection-start-line="5273" selection-start-column="37" selection-end-line="5273" selection-end-column="37" />
+            <state vertical-scroll-proportion="-16.892857" vertical-offset="99486" max-vertical-offset="100700">
+              <caret line="5261" column="13" selection-start-line="5261" selection-start-column="13" selection-end-line="5261" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -377,18 +80,38 @@
       <file leaf-file-name="sm_annotation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/sm_annotation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3184" column="41" selection-start-line="3184" selection-start-column="41" selection-end-line="3184" selection-end-column="41" />
+            <state vertical-scroll-proportion="-14.857142" vertical-offset="59833" max-vertical-offset="60990">
+              <caret line="3171" column="14" selection-start-line="3171" selection-start-column="14" selection-end-line="3171" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sogou_annotation.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sogou_annotation.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/sogou_annotation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3646" column="37" selection-start-line="3646" selection-start-column="37" selection-end-line="3646" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.52497226" vertical-offset="68573" max-vertical-offset="69787">
+              <caret line="3634" column="13" selection-start-line="3634" selection-start-column="13" selection-end-line="3634" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baidu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/baidu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.392858" vertical-offset="47704" max-vertical-offset="50673">
+              <caret line="2529" column="96" selection-start-line="2529" selection-start-column="96" selection-end-line="2529" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnnoLogParser.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/AnnoLogParser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.8" vertical-offset="331" max-vertical-offset="1501">
+              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -399,8 +122,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Html5" />
         <option value="Python Script" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -410,6 +133,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/serps/sogou_serp/横县临江壮歌剧.html" />
         <option value="$PROJECT_DIR$/serps/sm_serp/横县临江壮歌剧.html" />
         <option value="$PROJECT_DIR$/serps/haosou_serp/横县临江壮歌剧.html" />
         <option value="$PROJECT_DIR$/serps/baidu_serp/横县临江壮歌剧.html" />
@@ -448,19 +172,18 @@
         <option value="$PROJECT_DIR$/templates/taskreview.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/tasks.html" />
+        <option value="$PROJECT_DIR$/timesearch/urls.py" />
+        <option value="$PROJECT_DIR$/anno/models.py" />
+        <option value="$PROJECT_DIR$/Utils/AnnoLogParser.py" />
+        <option value="$PROJECT_DIR$/anno/views.py" />
         <option value="$PROJECT_DIR$/templates/baidu.html" />
         <option value="$PROJECT_DIR$/templates/haosou.html" />
         <option value="$PROJECT_DIR$/templates/sm.html" />
         <option value="$PROJECT_DIR$/templates/sogou.html" />
-        <option value="$PROJECT_DIR$/Utils/AnnoLogParser.py" />
-        <option value="$PROJECT_DIR$/anno/models.py" />
         <option value="$PROJECT_DIR$/templates/baidu_annotation.html" />
         <option value="$PROJECT_DIR$/templates/haosou_annotation.html" />
         <option value="$PROJECT_DIR$/templates/sm_annotation.html" />
         <option value="$PROJECT_DIR$/templates/sogou_annotation.html" />
-        <option value="$PROJECT_DIR$/Utils/UrlParser.py" />
-        <option value="$PROJECT_DIR$/timesearch/urls.py" />
-        <option value="$PROJECT_DIR$/anno/views.py" />
       </list>
     </option>
   </component>
@@ -468,12 +191,11 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="x" value="6" />
+    <option name="y" value="7" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -498,8 +220,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -576,13 +296,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mobilesearch" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="FullScreen" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager" selected="Python.test">
@@ -660,80 +382,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="timesearch" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="timesearch" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -752,13 +400,52 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <pass-parent-envs>true</pass-parent-envs>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
       <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="timesearch" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="timesearch" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -823,54 +510,6 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="timesearch" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="py.test">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="timesearch" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="timesearch" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -894,12 +533,10 @@
       <option name="customRunCommand" value="" />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Django server.timesearch" />
-      <item index="1" class="java.lang.String" itemvalue="Django tests.Test: serps.sogou_serp" />
-      <item index="2" class="java.lang.String" itemvalue="Python.OutcomeLogParser" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.random_setting" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.OutcomeLogParser" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.random_setting" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -923,20 +560,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="6" y="7" width="1920" height="1080" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22294022" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23739496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -944,6 +580,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -959,6 +596,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="3" />
@@ -966,382 +608,382 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/serps/haosou_serp/中南大学官网.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
+          <caret line="438" column="0" selection-start-line="438" selection-start-column="0" selection-end-line="438" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serps/sm_serp/中南大学官网.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
+          <caret line="72" column="28025" selection-start-line="72" selection-start-column="28025" selection-end-line="72" selection-end-column="28025" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serps/sogou_serp/中南大学官网.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
+          <caret line="1037" column="2891" selection-start-line="1037" selection-start-column="2891" selection-end-line="1037" selection-end-column="2891" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serps/sogou_serp/婆婆灰.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
+          <caret line="232" column="1146" selection-start-line="232" selection-start-column="1146" selection-end-line="232" selection-end-column="1146" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/serps/sm_serp/婆婆灰.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="30596" selection-start-line="0" selection-start-column="30596" selection-end-line="0" selection-end-column="30596" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/haosou_serp/婆婆灰.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="443" column="9" selection-start-line="443" selection-start-column="9" selection-end-line="443" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/婆婆灰.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="42987" selection-start-line="0" selection-start-column="42987" selection-end-line="0" selection-end-column="42987" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/乌鲁木齐到南京机票.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="65108" selection-start-line="0" selection-start-column="65108" selection-end-line="0" selection-end-column="65108" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/haosou_serp/乌鲁木齐到南京机票.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="823" column="9" selection-start-line="823" selection-start-column="9" selection-end-line="823" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sogou_serp/乌鲁木齐到南京机票.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="2089" column="2311" selection-start-line="2089" selection-start-column="2311" selection-end-line="2089" selection-end-column="2311" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sogou_serp/手游穿越火线.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="580" column="2305" selection-start-line="580" selection-start-column="2305" selection-end-line="580" selection-end-column="2305" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sm_serp/手游穿越火线.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06637168">
+        <state vertical-scroll-proportion="0.06637168" vertical-offset="0" max-vertical-offset="0">
           <caret line="3" column="137816" selection-start-line="3" selection-start-column="137816" selection-end-line="3" selection-end-column="137816" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/haosou_serp/手游穿越火线.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="486" column="0" selection-start-line="486" selection-start-column="0" selection-end-line="486" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/手游穿越火线.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="83945" selection-start-line="0" selection-start-column="83945" selection-end-line="0" selection-end-column="83945" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sm_serp/乌鲁木齐到南京机票.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2764977">
+        <state vertical-scroll-proportion="0.2764977" vertical-offset="0" max-vertical-offset="0">
           <caret line="3" column="369" selection-start-line="3" selection-start-column="369" selection-end-line="3" selection-end-column="369" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temp/tasks.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26745912">
+        <state vertical-scroll-proportion="0.26745912" vertical-offset="0" max-vertical-offset="0">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/蓝莓为什么对眼睛好.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
+        <state vertical-scroll-proportion="1.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="52843" selection-start-line="0" selection-start-column="52843" selection-end-line="0" selection-end-column="52843" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sm_serp/邢台崆山白云洞门票多少.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="56" column="41949" selection-start-line="56" selection-start-column="41949" selection-end-line="56" selection-end-column="41949" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/haosou_serp/邢台崆山白云洞门票多少.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="439" column="9" selection-start-line="439" selection-start-column="9" selection-end-line="439" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/邢台崆山白云洞门票多少.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="59579" selection-start-line="0" selection-start-column="59579" selection-end-line="0" selection-end-column="59579" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sogou_serp/邢台崆山白云洞门票多少.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="870" column="2911" selection-start-line="870" selection-start-column="2911" selection-end-line="870" selection-end-column="2911" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sogou_serp/詹姆斯·麦斯登.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52507377">
+        <state vertical-scroll-proportion="0.52507377" vertical-offset="0" max-vertical-offset="0">
           <caret line="1118" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="1118" selection-end-column="2491" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/haosou_serp/变频空调和定频空调的区别.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38053098">
+        <state vertical-scroll-proportion="0.38053098" vertical-offset="0" max-vertical-offset="0">
           <caret line="381" column="28" selection-start-line="381" selection-start-column="28" selection-end-line="381" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sogou_serp/变频空调和定频空调的区别.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="1130" column="2335" selection-start-line="1130" selection-start-column="2335" selection-end-line="1130" selection-end-column="2335" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sm_serp/变频空调和定频空调的区别.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9557522">
+        <state vertical-scroll-proportion="0.9557522" vertical-offset="0" max-vertical-offset="0">
           <caret line="91" column="34277" selection-start-line="91" selection-start-column="34277" selection-end-line="91" selection-end-column="34277" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/变频空调和定频空调的区别.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="70857" selection-start-line="0" selection-start-column="70857" selection-end-line="0" selection-end-column="70857" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/韩国三大未破案件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="66147" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/haosou_serp/韩国三大未破案件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="437" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sm_serp/韩国三大未破案件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65929204">
+        <state vertical-scroll-proportion="0.65929204" vertical-offset="0" max-vertical-offset="0">
           <caret line="1" column="36921" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="38840" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/sogou_serp/韩国三大未破案件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="0">
           <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serps/baidu_serp/price tag 歌词.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9411764">
+        <state vertical-scroll-proportion="-2.9411764" vertical-offset="0" max-vertical-offset="0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/temp/setting.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sogou.html">
+    <entry file="file://$PROJECT_DIR$/Utils/InitDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3141593">
-          <caret line="3603" column="138" selection-start-line="3603" selection-start-column="138" selection-end-line="3603" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42477876">
-          <caret line="3144" column="138" selection-start-line="3144" selection-start-column="138" selection-end-line="3144" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/haosou.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31710914">
-          <caret line="5235" column="138" selection-start-line="5235" selection-start-column="138" selection-end-line="5235" selection-end-column="138" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/baidu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5575221">
-          <caret line="2628" column="138" selection-start-line="2625" selection-start-column="122" selection-end-line="2628" selection-end-column="138" />
+        <state vertical-scroll-proportion="0.52991456" vertical-offset="0" max-vertical-offset="0">
+          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tasks_finished.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6637168">
+        <state vertical-scroll-proportion="0.6637168" vertical-offset="0" max-vertical-offset="0">
           <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.084070794">
+        <state vertical-scroll-proportion="-0.084070794" vertical-offset="0" max-vertical-offset="0">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/OutcomeLogParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/TaskRealismLogParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/QuerySatisfactionLogParser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53418803">
+        <state vertical-scroll-proportion="0.53418803" vertical-offset="0" max-vertical-offset="0">
           <caret line="27" column="27" selection-start-line="21" selection-start-column="8" selection-end-line="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serps/baidu_serp/2016河南高考状元.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.07109005">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/AnnoLogParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84474885">
-          <caret line="39" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/InitDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.782344">
-          <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/anno/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/UrlParser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sogou_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3646" column="37" selection-start-line="3646" selection-start-column="37" selection-end-line="3646" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/haosou_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5273" column="37" selection-start-line="5273" selection-start-column="37" selection-end-line="5273" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sm_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3184" column="41" selection-start-line="3184" selection-start-column="41" selection-end-line="3184" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/baidu_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="8.625">
-          <caret line="2666" column="37" selection-start-line="2666" selection-start-column="37" selection-end-line="2666" selection-end-column="37" />
-          <folding>
-            <element signature="n#if#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/timesearch/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/anno/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1330" max-vertical-offset="1957">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/AnnoLogParser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.8" vertical-offset="331" max-vertical-offset="1501">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/anno/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67948717">
-          <caret line="357" column="12" selection-start-line="357" selection-start-column="12" selection-end-line="357" selection-end-column="12" />
+        <state vertical-scroll-proportion="-18.24" vertical-offset="247" max-vertical-offset="3781">
+          <caret line="59" column="73" selection-start-line="59" selection-start-column="73" selection-end-line="59" selection-end-column="73" />
           <folding>
             <element signature="e#15#50#0" expanded="true" />
-            <element signature="e#693#970#0" expanded="false" />
-            <element signature="e#1021#1518#0" expanded="false" />
-            <element signature="e#2983#3186#0" expanded="false" />
-            <element signature="e#3244#5326#0" expanded="false" />
-            <element signature="e#5388#5831#0" expanded="false" />
-            <element signature="e#5896#8154#0" expanded="false" />
+            <element signature="e#665#942#0" expanded="false" />
+            <element signature="e#993#1490#0" expanded="false" />
+            <element signature="e#2955#3158#0" expanded="false" />
+            <element signature="e#3216#5298#0" expanded="false" />
+            <element signature="e#5360#5803#0" expanded="false" />
+            <element signature="e#5868#8126#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sogou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30299667" vertical-offset="65942" max-vertical-offset="69217">
+          <caret line="3485" column="65" selection-start-line="3485" selection-start-column="65" selection-end-line="3485" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26970032" vertical-offset="57517" max-vertical-offset="60477">
+          <caret line="3040" column="96" selection-start-line="3040" selection-start-column="96" selection-end-line="3040" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/haosou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3063263" vertical-offset="97346" max-vertical-offset="100206">
+          <caret line="5138" column="96" selection-start-line="5138" selection-start-column="96" selection-end-line="5138" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/baidu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.392858" vertical-offset="47704" max-vertical-offset="50673">
+          <caret line="2529" column="96" selection-start-line="2529" selection-start-column="96" selection-end-line="2529" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/baidu_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.928572" vertical-offset="1968" max-vertical-offset="3211">
+          <caret line="2654" column="14" selection-start-line="2654" selection-start-column="14" selection-end-line="2654" selection-end-column="14" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/haosou_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.892857" vertical-offset="99486" max-vertical-offset="100700">
+          <caret line="5261" column="13" selection-start-line="5261" selection-start-column="13" selection-end-line="5261" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sm_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.857142" vertical-offset="59833" max-vertical-offset="60990">
+          <caret line="3171" column="14" selection-start-line="3171" selection-start-column="14" selection-end-line="3171" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sogou_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52497226" vertical-offset="68573" max-vertical-offset="69787">
+          <caret line="3634" column="13" selection-start-line="3634" selection-start-column="13" selection-end-line="3634" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

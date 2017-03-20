@@ -8,7 +8,7 @@ import re
 patterns = {key: re.compile('%s=(.*?)\\t' % key) for key in ['USER', 'SETTING', 'TASK', 'RESULT', 'NUMBER']}
 anno_info_patterns = {}
 anno_info_patterns['PREUSEFULNESS'] = re.compile('PREUSEFULNESS=(.*?)\\t')
-anno_info_patterns['ATTUSEFULNESS'] = re.compile('ATTUSEFULNESS=(.*?)\\t')
+#anno_info_patterns['ATTUSEFULNESS'] = re.compile('ATTUSEFULNESS=(.*?)\\t')
 anno_info_patterns['USEFULNESS'] = re.compile('\\tUSEFULNESS=(.*?)$')
 
 
@@ -20,7 +20,7 @@ def from_string(line):
     result_id = patterns['RESULT'].search(line).group(1)
     results_number = patterns['NUMBER'].search(line).group(1)
     preusefulness = anno_info_patterns['PREUSEFULNESS'].search(line).group(1)
-    attusefulness = anno_info_patterns['ATTUSEFULNESS'].search(line).group(1)
+    #attusefulness = anno_info_patterns['ATTUSEFULNESS'].search(line).group(1)
     usefulness = anno_info_patterns['USEFULNESS'].search(line).group(1)
     '''results_usefulness = usefulness.split('\t')
     if int(task_id) != 0:
@@ -47,14 +47,14 @@ def from_string(line):
             results_number=int(results_number)
         )
         anno_log_obj.save()
-        anno_log_obj = AttUsefulness.objects.create(
+        '''anno_log_obj = AttUsefulness.objects.create(
             user_id=user_id,
             setting_id=int(setting_id),
             task_id=int(task_id),
             result_id=int(result_id),
             score=int(attusefulness)
         )
-        anno_log_obj.save()
+        anno_log_obj.save()'''
         anno_log_obj = Usefulness.objects.create(
             user_id=user_id,
             setting_id=int(setting_id),

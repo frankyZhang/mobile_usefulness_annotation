@@ -14,7 +14,6 @@ from Utils import OutcomeLogParser
 from Utils import AnnoLogParser
 from Utils import QuerySatisfactionLogParser
 from Utils import TaskRealismLogParser
-from Utils import UrlParser
 import sys
 import urllib
 from bs4 import BeautifulSoup
@@ -58,7 +57,7 @@ def tasks(request, user_id, setting_id):
     for s in finished_relevances:
         if s.task_id:
             task_relevances = PreUsefulness.objects.filter(user_id=user_id, setting_id=int(setting_id), task_id=int(s.task_id))
-            if len(task_relevances) == task_relevances[0].results_number:
+            if len(task_relevances) >= task_relevances[0].results_number:
                 finished_tasks.add(s.task_id)
     if len(all_settings) == len(finished_tasks):
         return HttpResponseRedirect('/tasks/finished/%s/%s/' % (user_id, setting_id))
@@ -341,13 +340,6 @@ def log_outcome(request):
 
 
 @csrf_exempt
-def log_url(request):
-    message = urllib.unquote(request.POST[u'message'])
-    UrlParser.insert_message(message)
-    return HttpResponse('OK')
-
-
-@csrf_exempt
 def log_satisfaction(request):
     message = urllib.unquote(request.POST[u'message'])
     # print message
@@ -360,7 +352,3 @@ def log_realism(request):
     message = urllib.unquote(request.POST[u'message'])
     TaskRealismLogParser.insert_message(message)
     return HttpResponse('OK')
-
-
-def index(request):
-    return HttpResponse(open('templates/index.html').read())

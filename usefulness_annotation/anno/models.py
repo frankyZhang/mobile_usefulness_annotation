@@ -65,13 +65,6 @@ class AttUsefulness(models.Model):
     score = models.IntegerField()
 
 
-class Url(models.Model):
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
-    result_id = models.IntegerField()
-    url = models.CharField(max_length=100000000)
-
-
 class TaskSatisfaction(models.Model):
     user_id = models.CharField(max_length=50)
     setting_id = models.IntegerField()
