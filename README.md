@@ -4,7 +4,7 @@
 * Android Project. 
 * 其实主要部分就是一个Webbrowser，当时主要是用来记录日志，对于usefulness标注应该不需要，只是提供一个视图
 
-## relevance_annotation
+## usefulness_annotation
 * Django Project.
 * 这是标注时用的实验平台，usefulness标注的平台在此基础上按照我们的需求进行修改即可
 * usefulness标注流程：
