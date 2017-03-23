@@ -3036,9 +3036,12 @@
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
 </head>
 <body>
+    <p>您目前正在完成第 {{ current_task_num }} 个标注, 共 {{ task_num }} 个标注</p>
+    <p style="color: red">任务描述: {{ description }}</p>
+    <br>
 {% if is_annotation %}
     <div class="con-wrap">
-        <textarea maxlength="64" id="kw" name="word" class="se-input adjust-input" data-sug="1">{{ query }}</textarea>
+        <textarea maxlength="64" id="kw" name="word" class="se-input adjust-input" data-sug="1">查询词: {{ query }}</textarea>
 
         <div class="se-inner">
             <button id="se-bn" class="se-bn" onclick="finishandredirect()"><span>提交标注</span></button>
@@ -3113,8 +3116,6 @@
         }
     }
     </script>
-    <p style="color: red">查询描述： {{ description }}</p>
-    <br>
 {% else %}
     <div class="con-wrap">
         <textarea maxlength="64" id="kw" name="word" class="se-input adjust-input" data-sug="1"></textarea>
@@ -3160,18 +3161,33 @@
         //console.log('hhh');
         var results = $("div#results>div.card[style!='display:none;'],div#results>div.cards[style!='display:none;'],div#results>div.sc[style!='display:none;'],div#results>div#lg_wrapper");
         for(var i=0; i<results.length; i++){
-            var result = results[i];
+            $(results[i]).remove();
+        }
+        //alert({{ session_id }});
+        {% for unit in units %}
+            var result_id = {{ unit.result_id }};
+            var rank = result_id + 1;
+            var result = results[result_id].cloneNode(true);
+            $("div#results").append(result);
+            //alert(result_id);
+            if ({{ unit.dwell_time }})
+                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><a href="{{ unit.url }}">用户点击的链接在这里</a><form><div align="center" style="color: red">根据以上信息,你觉得这个结果对于用户完成任务有用么: <select id="usefulness_'+i+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+            else
+                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><form><div align="center" style="color: red">根据以上信息,你觉得这个结果对于用户完成任务有用么: <select id="usefulness_'+i+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+        {% endfor %}
+        //for(i=0; i<results.length; i++){
+            //var result = results[i];
             //if(i == {{ result_id }}){
             //console.log(result);
             //var rank = $(result).attr("order");
             //console.log(rank);
-            $(result).after('<form><div align="center" style="color: red">仅考虑页面上的信息,你觉得页面信息能满足查询需求么:  <select id="preusefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 页面信息与查询完全无关，不能满足需求</option><option value="2">2: 页面信息与查询有点相关,但基本不能满足需求</option><option value="3">3: 页面信息与查询相关，能满足一部分查询需求</option><option value="4">4: 页面信息与查询非常相关，完全能满足查询需求</option></select></div></form<br /><form><div align="center" style="color: red">根据查看结果的情况判断,你觉得这个结果与查询任务相关么:  <select id="usefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 结果与查询完全无关，不能满足需求</option><option value="2">2: 结果与查询有点相关,但基本不能满足需求</option><option value="3">3: 结果与查询基本相关,能满足一部分查询需求</option><option value="4">4: 结果与查询非常相关，完全能满足查询需求</option></select></div></form>');
+            //$(result).after('<form><div align="center" style="color: red">仅考虑页面上的信息,你觉得页面信息能满足查询需求么:  <select id="preusefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 页面信息与查询完全无关，不能满足需求</option><option value="2">2: 页面信息与查询有点相关,但基本不能满足需求</option><option value="3">3: 页面信息与查询相关，能满足一部分查询需求</option><option value="4">4: 页面信息与查询非常相关，完全能满足查询需求</option></select></div></form<br /><form><div align="center" style="color: red">根据查看结果的情况判断,你觉得这个结果与查询任务相关么:  <select id="usefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 结果与查询完全无关，不能满足需求</option><option value="2">2: 结果与查询有点相关,但基本不能满足需求</option><option value="3">3: 结果与查询基本相关,能满足一部分查询需求</option><option value="4">4: 结果与查询非常相关，完全能满足查询需求</option></select></div></form>');
             //}
             //else{
-            //    $(result).remove();
-            //}
-        }
-        var cvalue1 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'preusefulness');
+           //     $(result).remove();
+           // }
+        //}
+        /*var cvalue1 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'preusefulness');
         //var cvalue2 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness');
         var cvalue3 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'usefulness');
         if (cvalue1 != ""){
@@ -3182,7 +3198,7 @@
        // }
         if (cvalue3 != ""){
             $("#usefulness_"+{{ result_id }}).val(cvalue3);
-        }
+        }*/
     });
     </script>
     <script>

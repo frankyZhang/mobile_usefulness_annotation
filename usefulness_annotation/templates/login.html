@@ -24,8 +24,8 @@
             else if ((pass.value == "a") && (!isNaN(username.value)) && (username.value.length == 10)) {
                 obj = document.getElementById("settings");
                 var index = obj.selectedIndex;
-                var setting_id = obj.options[index].value;
-                window.location.href='/tasks/'+username.value+'/'+setting_id;
+                var task_id = obj.options[index].value;
+                window.location.href='/tasks/'+username.value+'/'+task_id;
             }
             else {
                 alert("登录失败，请检查用户名和密码是否有误！");
@@ -39,7 +39,7 @@
 <form>
     <table align="center">
         <tr align="center">
-            <td>选择实验配置：</td>
+            <td>选择标注任务：</td>
             <td>
          <select style="width:200px" id="settings">
              {%  for t in settings  %}

@@ -23,12 +23,13 @@
 <div>
         <div>
             <div>
-                <p>您目前正在完成第 {{ current_task_num }} 个标注任务, 共 {{ task_num }} 个标注任务</p>
+                <!--<p>您目前正在完成第 {{ current_task_num }} 个标注, 共 {{ task_num }} 个标注</p>-->
+                <p>您现在标注的是任务{{ task_id }}</p>
 
-                <h3 style="color: red">查询描述： {{ description }}</h3>
+                <h3 style="color: red">任务描述： {{ description }}</h3>
                 <p></p>
 
-                <div><a href='/resultsnumber/{{ user_id }}/{{ setting_id }}/{{ task_id }}/'
+                <div><a href='/annotation/{{ assessor_id }}/{{ task_id }}/'
                         >点击这里开始进行标注</a></div>
 
             </div>

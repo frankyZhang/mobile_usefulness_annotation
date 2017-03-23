@@ -1,3 +1,4 @@
+# coding=utf8
 from django.db import models
 
 # Create your models here.
@@ -20,11 +21,11 @@ from django.db import models
 # FileField	FileField
 
 
-class Setting(models.Model):
+'''class Setting(models.Model):
     setting_id = models.IntegerField()
     task_id = models.IntegerField()
     source = models.CharField(max_length=1000)
-    status = models.IntegerField()
+    status = models.IntegerField()'''
 
 
 class Task(models.Model):
@@ -40,50 +41,40 @@ class Results(models.Model):
     content = models.CharField(max_length=100000000)
 
 
+# 标注的单元为一个session,包含若干units
+class SessionUnit(models.Model):
+    session_id = models.IntegerField()
+    # user_id = models.CharField(max_length=50)
+    task_id = models.IntegerField()
+    source = models.CharField(max_length=1000)
+    index = models.IntegerField()
+    result_id = models.IntegerField()
+    dwell_time = models.FloatField()
+    url = models.CharField(max_length=100000000)
+    exposed_time = models.FloatField()
+
+
+# 我们最后得到的单元是某个assessor对某个session的某个result的usefulness标注(result可能重复出现)
 class Usefulness(models.Model):
-    user_id = models.CharField(max_length=50)
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
-    result_id = models.IntegerField()
+    assessor_id = models.CharField(max_length=50)
+    session_id = models.IntegerField()
+    # user_id = models.CharField(max_length=50)
+    # setting_id = models.IntegerField()
+    # task_id = models.IntegerField()
+    # source = models.CharField(max_length=1000)
+    index = models.IntegerField()
+    # result_id = models.IntegerField()
     score = models.IntegerField()
 
 
-class PreUsefulness(models.Model):
-    user_id = models.CharField(max_length=50)
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
-    result_id = models.IntegerField()
-    score = models.IntegerField()
-    results_number = models.IntegerField()
-
-
-class AttUsefulness(models.Model):
-    user_id = models.CharField(max_length=50)
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
-    result_id = models.IntegerField()
-    score = models.IntegerField()
-
-
+# 我们最后得到的单元是某个assessor对某个session的satisfaction标注
 class TaskSatisfaction(models.Model):
-    user_id = models.CharField(max_length=50)
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
+    assessor_id = models.CharField(max_length=50)
+    session_id = models.IntegerField()
+    # user_id = models.CharField(max_length=50)
+    # task_id = models.IntegerField()
+    # source = models.CharField(max_length=1000)
     score = models.IntegerField()
-
-
-class TaskRealism(models.Model):
-    user_id = models.CharField(max_length=50)
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
-    score = models.IntegerField()
-
-
-class Answer(models.Model):
-    user_id = models.CharField(max_length=50)
-    setting_id = models.IntegerField()
-    task_id = models.IntegerField()
-    answer = models.CharField(max_length=5000)
 
 
 if __name__ == '__main__':
