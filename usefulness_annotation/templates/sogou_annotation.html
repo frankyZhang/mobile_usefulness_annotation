@@ -3505,7 +3505,7 @@
 <body>
     <p>您目前正在完成第 {{ current_task_num }} 个标注, 共 {{ task_num }} 个标注</p>
     <p style="color: red">任务描述: {{ description }}</p>
-    <br>
+    <br />
 {% if is_annotation %}
     <div class="con-wrap">
         <textarea maxlength="64" id="kw" name="word" class="se-input adjust-input" data-sug="1">查询词: {{ query }}</textarea>
@@ -3517,10 +3517,8 @@
     <script>
     function finishandredirect() {
         var results = $("div.results>div[class$='esult'][style!='display:none;'],div.results>div[id^='sogou_vr'][style!='display:none;']");
-        var preusefulness = $("#preusefulness_"+{{ result_id }}).val();
-        //var attusefulness = $("#attusefulness_"+{{ result_id }}).val();
-        var usefulness = $("#usefulness_"+{{ result_id }}).val();
-        /*var usefulness_selected = true;
+        //var usefulness = $("#usefulness_"+{{ result_id }}).val();
+        var usefulness_selected = true;
         var num = 0;
         for (var i=0; i<results.length; i++){
             var usefulness = $("#usefulness_"+i).val();
@@ -3529,43 +3527,40 @@
                 usefulness_selected = false;
                 break;
             }
-        }*/
-        if (usefulness == "0" || preusefulness == "0"){
-            alert('未对结果进行相关性标注');
-            if (preusefulness == "0"){
-                $("#preusefulness_"+{{ result_id }}).focus();
+        }
+        var satisfaction = $("#satisfaction").val();
+        if(!usefulness_selected || satisfaction == "0"){
+            if(!usefulness_selected){
+                alert('未对所有结果进行usefulness标注');
+                $("#usefulness_" +num).focus();
             }
-            else {
-                //if (attusefulness == "0") {
-                //    $("#attusefulness_" +{{ result_id }}).focus();
-                //}
-                //else{
-                    $("#usefulness_" +{{ result_id }}).focus();
-                //}
+            else{
+                alert('未进行satisfaction标注');
+                $("#satisfaction").focus();
             }
-
         }
         else{
             //alert('hh');
             var host = window.location.hostname;
             var port = window.location.port;
+
             var usefulness_message = "";
-            usefulness_message += "USER=" + {{ user_id }};
-            usefulness_message += "\tSETTING=" + {{ setting_id }};
-            usefulness_message += "\tTASK=" + {{ task_id }};
-            usefulness_message += "\tRESULT=" + {{ result_id }};
-            usefulness_message += "\tNUMBER=" + {{ results_number }};
-            usefulness_message += "\tPREUSEFULNESS=" + $("#preusefulness_"+{{ result_id }}).val();
-            //usefulness_message += "\tATTUSEFULNESS=" + $("#attusefulness_"+{{ result_id }}).val();
-            usefulness_message += "\tUSEFULNESS=" + $("#usefulness_"+{{ result_id }}).val();
-            /*for(var i=0; i<results.length; i++){
+            usefulness_message += "ASSESSOR=" + {{ assessor_id }};
+            usefulness_message += "\tSESSION=" + {{ session_id }};
+            usefulness_message += "\tUSEFULNESS=";
+            for(i=0; i<results.length; i++){
                 usefulness = $("#usefulness_"+i).val();
                 usefulness_message += "\t" + i + ':' + usefulness;
-            }*/
+            }
             var usefulness_url = 'http://'+host+':'+port+"/LogUsefulness/";
 
-            if (confirm("提交标注?")) {
+            var satisfaction_message = "";
+            satisfaction_message += "ASSESSOR=" + {{ assessor_id }};
+            satisfaction_message += "\tSESSION=" + {{ session_id }};
+            satisfaction_message += "\tSATISFACTION=" + satisfaction;
+            var satisfaction_url = 'http://'+host+':'+port+"/LogSatisfaction/";
 
+            if (confirm("提交标注?")) {
                 $.ajax({
                     type: 'POST',
                     url: usefulness_url,
@@ -3577,8 +3572,21 @@
                         console.log("synchronously flush hallo answer")
                     }
                 });
+
+                $.ajax({
+                    type: 'POST',
+                    url: satisfaction_url,
+                    data: {message: satisfaction_message},
+                    async: false,
+                    complete: function (jqXHR, textStatus) {
+                        //alert(textStatus + "----" + jqXHR.status + "----" + jqXHR.readyState);
+                        //should we reset onbeforeunload here?
+                        console.log("synchronously flush hallo answer")
+                    }
+                });
+
                 window.onbeforeunload = null;
-                window.location.href = 'http://' + host + ':' + port + '/annotation/{{ user_id }}/{{ setting_id }}/{{ task_id }}/{{ results_number }}';
+                window.location.href = 'http://' + host + ':' + port + '/annotation/{{ assessor_id }}/{{ task_id }}/';
             }
         }
     }
@@ -3627,6 +3635,7 @@
             $(results[i]).remove();
         }
         //alert({{ session_id }});
+        var j = 0;
         {% for unit in units %}
             var result_id = {{ unit.result_id }};
             var rank = result_id + 1;
@@ -3634,35 +3643,18 @@
             $("div.results").append(result);
             //alert(result_id);
             if ({{ unit.dwell_time }})
-                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><a href="{{ unit.url }}">用户点击的链接在这里</a><form><div align="center" style="color: red">根据以上信息,你觉得这个结果对于用户完成任务有用么: <select id="usefulness_'+i+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><a href="{{ unit.url }}">用户点击的链接在这里</a><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_'+j+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
             else
-                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><form><div align="center" style="color: red">根据以上信息,你觉得这个结果对于用户完成任务有用么: <select id="usefulness_'+i+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_'+j+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+            j++;
         {% endfor %}
-
-        //for(i=0; i<nresults.length; i++){
-            //var result = results[i];
-            //if(i == {{ result_id }}){
-            //console.log(result);
-            //var rank = $(result).attr("order");
-            //console.log(rank);
-            //$(result).after('<form><div align="center" style="color: red">仅考虑页面上的信息,你觉得页面信息能满足查询需求么:  <select id="preusefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 页面信息与查询完全无关，不能满足需求</option><option value="2">2: 页面信息与查询有点相关,但基本不能满足需求</option><option value="3">3: 页面信息与查询相关，能满足一部分查询需求</option><option value="4">4: 页面信息与查询非常相关，完全能满足查询需求</option></select></div></form<br /><form><div align="center" style="color: red">根据查看结果的情况判断,你觉得这个结果与查询任务相关么:  <select id="usefulness_'+i+'" style="min-height: 40px; color: red"><option value="0"></option><option value="1">1: 结果与查询完全无关，不能满足需求</option><option value="2">2: 结果与查询有点相关,但基本不能满足需求</option><option value="3">3: 结果与查询基本相关,能满足一部分查询需求</option><option value="4">4: 结果与查询非常相关，完全能满足查询需求</option></select></div></form>');
-            //}
-            //else{
-           //     $(result).remove();
-           // }
-        //}
-        var cvalue1 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'preusefulness');
-        /*var cvalue2 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness');
-        var cvalue3 = getCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'usefulness');*/
-        if (cvalue1 != ""){
-            $("#preusefulness_"+{{ result_id }}).val(cvalue1);
+        $("div.results").after('<br /><form><div align="center" style="color: blue">根据该用户的搜索情况,你认为该用户对于此次搜索是否满意: <select id="satisfaction" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 很不满意</option><option value="2">2: 不太满意</option><option value="3">3: 基本满意</option><option value="4">4: 比较满意</option><option value="5">5: 非常满意</option></select></div></form>');
+        for(i=0; i<j; i++) {
+            var cvalue = getCookie({{ assessor_id }} + String({{ session_id }}) + String(i) + 'usefulness');
+            if (cvalue != "") {
+                $("#usefulness_" +i).val(cvalue);
+            }
         }
-        /*if (cvalue2 != ""){
-            $("#attusefulness_"+{{ result_id }}).val(cvalue2);
-        }
-        if (cvalue3 != ""){
-            $("#usefulness_"+{{ result_id }}).val(cvalue3);
-        }*/
     });
     </script>
     <script>
@@ -3670,14 +3662,13 @@
         document.cookie = cname + "=" + cvalue;
     }
     $("a").click(function(){
-        var results = $("div.results>div[class$='esult'][style!='display:none;'],div.results>div[id^='sogou_vr'][style!='display:none;']");
-        //var cvalue1 = $("#preusefulness_"+{{ result_id }}).val();
-        //var cvalue2 = $("#attusefulness_"+{{ result_id }}).val();
-        var cvalue3 = $("#usefulness_"+{{ result_id }}).val();
-
-        //setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'preusefulness', cvalue1);
-        //setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'attusefulness', cvalue2);
-        setCookie({{ user_id }} + String({{ setting_id }}) + String({{ task_id }}) + String({{ result_id }}) + 'usefulness', cvalue3);
+        alert('hh');
+        /*var results = $("div.results>div[class$='esult'][style!='display:none;'],div.results>div[id^='sogou_vr'][style!='display:none;']");
+        for(var i=0; i<results.length; i++){
+            alert(i);
+            //var cvalue = $("#usefulness_"+i).val();
+            //setCookie({{ assessor_id }} + String({{ session_id }}) + String(i) + 'usefulness', cvalue);
+        }*/
     });
     </script>
 {% endif %}
