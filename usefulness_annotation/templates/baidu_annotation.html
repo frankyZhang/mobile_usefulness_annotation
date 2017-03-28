@@ -2679,20 +2679,22 @@
                 $("#usefulness_" +i).val(cvalue);
             }
         }
-    });
-    </script>
-    <script>
-    function setCookie(cname, cvalue){
-        document.cookie = cname + "=" + cvalue;
-    }
-    $("a").click(function(){
-        alert('hh');
-        /*var results = $("div.results>div[class$='esult'][style!='display:none;'],div.results>div[id^='sogou_vr'][style!='display:none;']");
-        for(var i=0; i<results.length; i++){
-            alert(i);
-            //var cvalue = $("#usefulness_"+i).val();
-            //setCookie({{ assessor_id }} + String({{ session_id }}) + String(i) + 'usefulness', cvalue);
-        }*/
+
+        function setCookie(cname, cvalue){
+            document.cookie = cname + "=" + cvalue;
+        }
+
+
+        $("a").click(function(){
+            alert('hh');
+            /*var results = $("div.results>div[class$='esult'][style!='display:none;'],div.results>div[id^='sogou_vr'][style!='display:none;']");
+            for(var i=0; i<results.length; i++){
+                alert(i);
+                //var cvalue = $("#usefulness_"+i).val();
+                //setCookie({{ assessor_id }} + String({{ session_id }}) + String(i) + 'usefulness', cvalue);
+            }*/
+        });
+
     });
     </script>
 {% endif %}
