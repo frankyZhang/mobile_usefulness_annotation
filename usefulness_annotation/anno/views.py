@@ -52,7 +52,24 @@ def login(request):
 
 def tasks(request, assessor_id, task_id):
     task_id = int(task_id)
-    '''task_session_units = SessionUnit.objects.filter(task_id=task_id)
+
+    task = Task.objects.get(task_id=task_id)
+
+    html = template.Template(open('templates/tasks.html').read())
+    c = template.Context({
+        'task_id': task_id,
+        # 'current_task_num': len(task_sessions) - len(unfinished_sessions) + 1,
+        # 'task_num': len(task_sessions),
+        'description': task.description,
+        'assessor_id': assessor_id,
+        # 'session_id': session_id
+    })
+    respon = HttpResponse(html.render(c))
+    return respon
+
+
+def select_session(request, assessor_id, task_id):
+    task_session_units = SessionUnit.objects.filter(task_id=task_id)
     task_sessions = set()
     for s in task_session_units:
         task_sessions.add(s.session_id)
@@ -69,20 +86,9 @@ def tasks(request, assessor_id, task_id):
     if len(unfinished_sessions) == 0:
         return HttpResponseRedirect('/tasks/finished/%s/%s/' % (assessor_id, str(task_id)))
     random.shuffle(unfinished_sessions)
-    session_id = unfinished_sessions[0]'''
-    task = Task.objects.get(task_id=task_id)
+    session_id = unfinished_sessions[0]
 
-    html = template.Template(open('templates/tasks.html').read())
-    c = template.Context({
-        'task_id': task_id,
-        # 'current_task_num': len(task_sessions) - len(unfinished_sessions) + 1,
-        # 'task_num': len(task_sessions),
-        'description': task.description,
-        'assessor_id': assessor_id,
-        # 'session_id': session_id
-    })
-    respon = HttpResponse(html.render(c))
-    return respon
+    return HttpResponseRedirect('/annotation/%s/%s/%s' % (assessor_id, str(task_id), str(session_id)))
 
 
 def tasks_finished(request, assessor_id, task_id):
@@ -236,8 +242,10 @@ def resultsnumber(request, user_id, setting_id, task_id):
         return HttpResponse(t.render(c))'''
 
 
-def annotation(request, assessor_id, task_id):
+def annotation(request, assessor_id, task_id, session_id):
     task_id = int(task_id)
+    session_id = int(session_id)
+
     task_session_units = SessionUnit.objects.filter(task_id=task_id)
     task_sessions = set()
     for s in task_session_units:
@@ -252,10 +260,10 @@ def annotation(request, assessor_id, task_id):
     for sid in task_sessions:
         if sid not in finished_sessions:
             unfinished_sessions.append(sid)
-    if len(unfinished_sessions) == 0:
+    '''if len(unfinished_sessions) == 0:
         return HttpResponseRedirect('/tasks/finished/%s/%s/' % (assessor_id, str(task_id)))
     random.shuffle(unfinished_sessions)
-    session_id = unfinished_sessions[0]
+    session_id = unfinished_sessions[0]'''
 
     session_units = SessionUnit.objects.filter(session_id=session_id)
     source = session_units[0].source

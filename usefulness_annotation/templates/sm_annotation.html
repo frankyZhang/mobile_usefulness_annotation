@@ -3119,7 +3119,7 @@
                 });
 
                 window.onbeforeunload = null;
-                window.location.href = 'http://' + host + ':' + port + '/annotation/{{ assessor_id }}/{{ task_id }}/';
+                window.location.href = 'http://' + host + ':' + port + '/selectsession/{{ assessor_id }}/{{ task_id }}/';
             }
         }
     }
@@ -3168,10 +3168,10 @@
         }
         return "";
     }
-    $(document).on('ready', function() {
+    $(document).on('ready', function(){
         //console.log('hhh');
         var results = $("div#results>div.card[style!='display:none;'],div#results>div.cards[style!='display:none;'],div#results>div.sc[style!='display:none;'],div#results>div#lg_wrapper");
-        for (var i = 0; i < results.length; i++) {
+        for(var i=0; i<results.length; i++){
             $(results[i]).remove();
         }
         //alert({{ session_id }});
@@ -3180,38 +3180,39 @@
             var result_id = {{ unit.result_id }};
             var rank = result_id + 1;
             var result = results[result_id].cloneNode(true);
-            try {
-                $("div#results").append(result);
-            } catch (error) {
+            try{
+            $("div#results").append(result);
+            } catch(error){
                 console.log(error);
             }
             //alert(result_id);
             if ({{ unit.dwell_time }})
-                $(result).after('<p style="color: blue">上面结果是原始列表的第' + rank + '个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><a href="{{ unit.url }}">用户点击的链接在这里</a><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_' + j + '" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><a href="{{ unit.url }}" class="click-url">用户点击的链接在这里</a><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_'+j+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
             else
-                $(result).after('<p style="color: blue">上面结果是原始列表的第' + rank + '个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户没有点击该结果</p><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_' + j + '" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
+                $(result).after('<p style="color: blue">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue">用户没有点击该结果</p><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_'+j+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
             j++;
         {% endfor %}
         $("div#results").after('<br /><form><div align="center" style="color: blue">根据该用户的搜索情况,你认为该用户对于此次搜索是否满意: <select id="satisfaction" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 很不满意</option><option value="2">2: 不太满意</option><option value="3">3: 基本满意</option><option value="4">4: 比较满意</option><option value="5">5: 非常满意</option></select></div></form>');
-        for (i = 0; i < j; i++) {
-            var cvalue = getCookie({{ assessor_id }} +String({{ session_id }}) + String(i) + 'usefulness');
+        for(i=0; i<j; i++) {
+            var cvalue = getCookie({{ assessor_id }} + String({{ session_id }}) + String(i) + 'usefulness');
             if (cvalue != "") {
-                $("#usefulness_" + i).val(cvalue);
+                $("#usefulness_" +i).val(cvalue);
             }
         }
-        function setCookie(cname, cvalue) {
+
+        function setCookie(cname, cvalue){
             document.cookie = cname + "=" + cvalue;
         }
 
-        $("a").click(function () {
-            alert('hh');
-            /*var results = $("div.results>div[class$='esult'][style!='display:none;'],div.results>div[id^='sogou_vr'][style!='display:none;']");
-            for(var i=0; i<results.length; i++){
-                alert(i);
-                //var cvalue = $("#usefulness_"+i).val();
-                //setCookie({{ assessor_id }} + String({{
-            session_id }}) + String(i) + 'usefulness', cvalue);
-            }*/
+        $("a").click(function(){
+            var j = 0;
+            {% for unit in units %}
+            j++;
+            {% endfor %}
+            for(var i=0; i<j; i++){
+                var cvalue = $("#usefulness_"+i).val();
+                setCookie({{ assessor_id }} + String({{ session_id }}) + String(i) + 'usefulness', cvalue);
+            }
         });
     });
     </script>
