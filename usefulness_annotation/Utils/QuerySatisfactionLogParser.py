@@ -1,4 +1,4 @@
-#coding=utf8
+# coding=utf8
 __author__ = 'defaultstr'
 from anno.models import *
 from django.db import transaction, models
