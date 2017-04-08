@@ -49,6 +49,46 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="baidu_annotation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/baidu_annotation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.125">
+              <caret line="2667" column="19" selection-start-line="2667" selection-start-column="19" selection-end-line="2667" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="haosou_annotation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/haosou_annotation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="5273" column="21" selection-start-line="5273" selection-start-column="21" selection-end-line="5273" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sm_annotation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/sm_annotation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.375">
+              <caret line="3193" column="20" selection-start-line="3181" selection-start-column="60" selection-end-line="3193" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sogou_annotation.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/sogou_annotation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.369863">
+              <caret line="3647" column="19" selection-start-line="3647" selection-start-column="19" selection-end-line="3647" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AnnoLogParser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/AnnoLogParser.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kappa.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="kappa.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/src/kappa.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.3311687">
+            <state vertical-scroll-proportion="0.0">
               <caret line="227" column="183" selection-start-line="227" selection-start-column="183" selection-end-line="227" selection-end-column="183" />
               <folding>
                 <element signature="e#23#68#0" expanded="true" />
@@ -153,15 +193,15 @@
         <option value="$PROJECT_DIR$/anno/models.py" />
         <option value="$PROJECT_DIR$/Utils/AnnoLogParser.py" />
         <option value="$PROJECT_DIR$/anno/views.py" />
-        <option value="$PROJECT_DIR$/templates/baidu_annotation.html" />
-        <option value="$PROJECT_DIR$/templates/haosou_annotation.html" />
         <option value="$PROJECT_DIR$/templates/sm_annotation.html" />
-        <option value="$PROJECT_DIR$/templates/sogou_annotation.html" />
         <option value="$PROJECT_DIR$/templates/baidu.html" />
         <option value="$PROJECT_DIR$/templates/haosou.html" />
         <option value="$PROJECT_DIR$/templates/sm.html" />
         <option value="$PROJECT_DIR$/templates/sogou.html" />
         <option value="$PROJECT_DIR$/data/src/kappa.py" />
+        <option value="$PROJECT_DIR$/templates/baidu_annotation.html" />
+        <option value="$PROJECT_DIR$/templates/haosou_annotation.html" />
+        <option value="$PROJECT_DIR$/templates/sogou_annotation.html" />
       </list>
     </option>
   </component>
@@ -984,45 +1024,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/baidu_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.125">
-          <caret line="2669" column="290" selection-start-line="2669" selection-start-column="266" selection-end-line="2669" selection-end-column="290" />
-          <folding>
-            <element signature="e#18655#19754#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sm_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="183.625">
-          <caret line="3189" column="290" selection-start-line="3189" selection-start-column="290" selection-end-line="3189" selection-end-column="290" />
-          <folding>
-            <element signature="e#130580#130821#1#HTML" expanded="false" />
-            <element signature="e#133888#134609#1#HTML" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/baidu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.86725664">
           <caret line="2661" column="7" selection-start-line="2661" selection-start-column="7" selection-end-line="2661" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sogou_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.5">
-          <caret line="3649" column="290" selection-start-line="3649" selection-start-column="290" selection-end-line="3649" selection-end-column="290" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1053,20 +1060,6 @@
           <caret line="3637" column="7" selection-start-line="3637" selection-start-column="7" selection-end-line="3637" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/haosou_annotation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61651915">
-          <caret line="5275" column="685" selection-start-line="5275" selection-start-column="685" selection-end-line="5275" selection-end-column="685" />
-          <folding>
-            <element signature="e#60446#61541#1#HTML" expanded="true" />
-            <element signature="e#61885#62364#2#HTML" expanded="true" />
-            <element signature="e#122407#122602#1#HTML" expanded="true" />
-            <element signature="e#122904#123107#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1142,12 +1135,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/src/kappa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.3311687">
+        <state vertical-scroll-proportion="0.0">
           <caret line="227" column="183" selection-start-line="227" selection-start-column="183" selection-end-line="227" selection-end-column="183" />
           <folding>
             <element signature="e#23#68#0" expanded="true" />
             <element signature="e#3913#4851#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sm_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.375">
+          <caret line="3193" column="20" selection-start-line="3181" selection-start-column="60" selection-end-line="3193" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/baidu_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.125">
+          <caret line="2667" column="19" selection-start-line="2667" selection-start-column="19" selection-end-line="2667" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/haosou_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="5273" column="21" selection-start-line="5273" selection-start-column="21" selection-end-line="5273" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sogou_annotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.369863">
+          <caret line="3647" column="19" selection-start-line="3647" selection-start-column="19" selection-end-line="3647" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

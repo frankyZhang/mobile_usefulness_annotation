@@ -5270,7 +5270,11 @@
             var result_id = {{ unit.result_id }};
             var rank = result_id + 1;
             var result = results[result_id].cloneNode(true);
+            try{
             $("div.r-results").append(result);
+            } catch(error){
+                console.log(error);
+            }
             //alert(result_id);
             if ({{ unit.dwell_time }})
                 $(result).after('<p style="color: blue; font-size: 16px">上面结果是原始列表的第'+rank+'个结果</p><p style="color: blue; font-size: 16px">用户浏览该结果的摘要的时间: {{ unit.exposed_time }}s</p><p style="color: blue; font-size: 16px">用户点击之后查看该结果的时间: {{ unit.dwell_time }}s</p><a style="font-size: 16px" href="{{ unit.url }}" class="click-url">用户点击的链接在这里</a><form><div align="center" style="color: red">根据以上信息,你认为这个结果对于用户完成任务有用么: <select id="usefulness_'+j+'" style="min-height: 40px; color: red; width: 100%"><option value="0"></option><option value="1">1: 完全没用</option><option value="2">2: 有一点用</option><option value="3">3: 比较有用</option><option value="4">4: 非常有用</option></select></div></form>');
