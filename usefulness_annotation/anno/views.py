@@ -73,10 +73,14 @@ def select_session(request, assessor_id, task_id):
     task_sessions = set()
     for s in task_session_units:
         task_sessions.add(s.session_id)
-    finished_satisfactions = TaskSatisfaction.objects.filter(assessor_id=assessor_id)
+    finished_usefulnesses = Usefulness.objects.filter(assessor_id=assessor_id)
+    finished_sessions = set()
+    for s in finished_usefulnesses:
+        finished_sessions.add(s.session_id)
+    '''finished_satisfactions = TaskSatisfaction.objects.filter(assessor_id=assessor_id)
     finished_sessions = set()
     for s in finished_satisfactions:
-        finished_sessions.add(s.session_id)
+        finished_sessions.add(s.session_id)'''
     # if len(all_sessions) == len(finished_sessions):
     #     return HttpResponseRedirect('/tasks/finished/%s/%s/' % (assessor_id, str(task_id)))
     unfinished_sessions = []

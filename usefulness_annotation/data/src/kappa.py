@@ -8,7 +8,8 @@ import numpy as np
 
 assessor_groups = [
     ['2016211001', '2013011392', '2013012195'],
-    ['2014011426', '2014011325', '2016011258']
+    ['2014011426', '2014011325', '2016011258'],
+    ['2016011335', '2015011319', '2015011403']
 ]
 
 
@@ -23,8 +24,8 @@ def task_to_sessions():
 
 task_to_sessions_dict = task_to_sessions()
 tasks = []
-for i in range(1, 3):
-    if i != 17:
+for i in range(1, 21):
+    if i not in [13, 14, 17]:
         tasks.append(str(i))
 
 
@@ -121,6 +122,7 @@ def fleiss_kappa(table):
     n_rater = table.sum(1)
     n_rat = n_rater.max()
     #assume fully ranked
+    #print n_total, n_sub, n_rat
     assert n_total == n_sub * n_rat
 
     #marginal frequency  of categories
@@ -180,12 +182,13 @@ def usefulness_fleiss_kappa():
         assessors_list.append(assessor)
     annotations_table = []
 
+    fleiss_kappas = []
     for task in tasks:
         sub_num = 0
         for session_id in task_to_sessions_dict[task]:
             for index in usefulnesses[session_id].keys():
                 sub_num += 1
-
+        #print sub_num, task_to_sessions_dict[task]
         annotations_array = np.zeros((sub_num, 4))
         i = 0
         for session_id in task_to_sessions_dict[task]:
@@ -196,6 +199,8 @@ def usefulness_fleiss_kappa():
 
         #print np.matrix(annotations_table)
         print 'task:'+task, '\tusefulness fleiss:', fleiss_kappa(annotations_array)
+        fleiss_kappas.append(fleiss_kappa(annotations_array))
+    print 'average usefulness fleiss:', np.mean(fleiss_kappas)
 
 
 def satisfaction_kappa():
@@ -235,9 +240,12 @@ def satisfactioin_fleiss_kappa():
     assessors = set()
     for line in fin:
         id,assessor_id,session_id,score = line.strip().split(',')
-        if int(score) <= 4:
+        if int(score) <= 3:
             score = '0'
-        if score == '5':
+        #if score == '4':
+         #   score = '1'
+        #if score == '5':
+        else:
             score = '1'
         satisfactions[session_id][assessor_id] = int(score)
         assessors.add(assessor_id)
@@ -246,8 +254,13 @@ def satisfactioin_fleiss_kappa():
         assessors_list.append(assessor)
     annotations_table = []
 
+    fleiss_kappas = []
     for task in tasks:
-        annotations_array = np.zeros((43, 2))
+        sub_num = 0
+        for session_id in task_to_sessions_dict[task]:
+            sub_num += 1
+        #print sub_num, task_to_sessions_dict[task]
+        annotations_array = np.zeros((sub_num, 2))
         i = 0
         for session_id in task_to_sessions_dict[task]:
             for assessor in satisfactions[session_id].keys():
@@ -256,10 +269,12 @@ def satisfactioin_fleiss_kappa():
 
         #print np.matrix(annotations_table)
         print 'task:'+task, '\tsatisfaction fleiss', fleiss_kappa(annotations_array)
+        fleiss_kappas.append(fleiss_kappa(annotations_array))
+    print 'average satisfaction fleiss', np.mean(fleiss_kappas)
 
 
 if __name__ == "__main__":
-    usefulness_kappa()
+    #usefulness_kappa()
     usefulness_fleiss_kappa()
-    satisfaction_kappa()
+    #satisfaction_kappa()
     satisfactioin_fleiss_kappa()
